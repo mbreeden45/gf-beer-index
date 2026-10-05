@@ -41,14 +41,14 @@ export default function Sommelier() {
       let res: Response | null = null;
       for (let attempt = 0; ; attempt++) {
         res = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ messages: next }) });
-        const transient = res.status === 429 || res.status >= 500;
+        const transient = res.status >= 500; // 429 = quota; retrying only burns more of it
         if (!transient || attempt >= delays.length) break;
         setMsgs([...next, { role: "assistant", content: "", status: `Busy right now. Retrying automatically (${attempt + 1}/${delays.length})…` }]);
         await new Promise((r) => setTimeout(r, delays[attempt]));
       }
       if (!res.ok || !res.body) {
         const err = await res.json().catch(() => ({ error: "Something went wrong." }));
-        setMsgs([...next, { role: "assistant", content: `${err.error ?? "Something went wrong."} I tried a few times. Send your message again in a minute.` }]);
+        setMsgs([...next, { role: "assistant", content: `${err.error ?? "Something went wrong."}${res.status === 429 ? "" : " I tried a few times. Send your message again in a minute."}` }]);
         return;
       }
       const reader = res.body.getReader();

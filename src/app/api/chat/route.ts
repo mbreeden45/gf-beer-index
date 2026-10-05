@@ -82,7 +82,7 @@ export async function POST(req: Request) {
       } catch (err) {
         const st = (err as { status?: number }).status;
         if (attempt >= MODELS.length || (st && st < 500 && st !== 429)) throw err;
-        await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
+        if (st !== 429) await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
       }
     }
     const enc = new TextEncoder();
@@ -106,7 +106,16 @@ export async function POST(req: Request) {
   } catch (e) {
     console.error("gemini error:", (e as Error).message);
     const status = (e as { status?: number }).status;
-    if (status === 429) return Response.json({ error: "The Sommelier is swamped right now. Give it a minute and ask again.", detail: "upstream 429" }, { status: 503 });
+    if (status === 429) {
+      // Quota exhaustion (free tier) won't clear by retrying; tell the client how long to wait.
+      const m = /retry in (?:(\d+)h)?(?:(\d+)m)?(?:(\d+(?:\.\d+)?)s)?/i.exec((e as Error).message);
+      const secs = m ? (+(m[1] ?? 0) * 3600 + +(m[2] ?? 0) * 60 + Math.ceil(+(m[3] ?? 0))) : 0;
+      const mins = Math.max(1, Math.ceil(secs / 60));
+      return Response.json(
+        { error: secs ? `The Sommelier has hit its usage limit. It should be back in about ${mins} minute${mins === 1 ? "" : "s"}.` : "The Sommelier has hit its usage limit for now. Please try again a bit later.", retryAfterSec: secs, detail: "upstream 429" },
+        { status: 429 },
+      );
+    }
     return Response.json({ error: "The Sommelier is unavailable right now.", detail: status ? `upstream ${status}` : "upstream error" }, { status: 502 });
   }
 }
