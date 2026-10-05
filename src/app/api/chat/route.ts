@@ -5,7 +5,8 @@ import { CLASS_LABEL, type Beer } from "@/lib/types";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
-const MODEL = process.env.GEMINI_MODEL ?? "gemini-3.8-flash";
+// Newest models are often capacity-limited; fall through the list on 429/5xx.
+const MODELS = [process.env.GEMINI_MODEL, "gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.8-flash"].filter((m, i, a): m is string => !!m && a.indexOf(m) === i);
 const MAX_MESSAGES = 16;
 const MAX_CHARS = 1200;
 
@@ -67,21 +68,21 @@ export async function POST(req: Request) {
   const ai = new GoogleGenAI({ apiKey });
   const beers = await getBeers();
   try {
-    const start = () =>
+    const start = (model: string) =>
       ai.models.generateContentStream({
-        model: MODEL,
+        model,
         contents: msgs,
-        config: { systemInstruction: systemPrompt(beers), temperature: 0.7, maxOutputTokens: 700, thinkingConfig: { thinkingBudget: 0 } },
+        config: { systemInstruction: systemPrompt(beers), temperature: 0.7, maxOutputTokens: 700 },
       });
     let stream;
     for (let attempt = 0; ; attempt++) {
       try {
-        stream = await start();
+        stream = await start(MODELS[attempt % MODELS.length]);
         break;
       } catch (err) {
         const st = (err as { status?: number }).status;
-        if (attempt >= 2 || (st && st < 500 && st !== 429)) throw err;
-        await new Promise((r) => setTimeout(r, 700 * (attempt + 1)));
+        if (attempt >= MODELS.length || (st && st < 500 && st !== 429)) throw err;
+        await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
       }
     }
     const enc = new TextEncoder();
