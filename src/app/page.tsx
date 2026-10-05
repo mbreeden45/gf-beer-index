@@ -14,7 +14,7 @@ export default async function Home() {
           The Gluten-Free <em className="font-normal text-copper">Beer</em> Index
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-muted">
-          Four kinds of &ldquo;gluten-free&rdquo; beer, sorted honestly — from brewed-without-barley to merely light on prolamin — with the receipts for every test reading.
+          Four kinds of beer, sorted honestly — brewed without barley, treated to remove gluten, naturally low in it, and plain old standard — with the receipts for every test reading.
         </p>
       </header>
       <Directory beers={beers} />

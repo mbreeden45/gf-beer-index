@@ -10,6 +10,7 @@ const TABS: { key: string; label: string; match: (c: Classification) => boolean 
   { key: "ngci", label: "100% Dedicated GF", match: (c) => c === "dedicated_ngci" },
   { key: "removed", label: "Gluten-Reduced", match: (c) => c === "crafted_to_remove" },
   { key: "low", label: "Naturally Low ppm (<20 ppm)", match: (c) => c === "adjunct_low_ppm" },
+  { key: "standard", label: "Standard Gluten", match: (c) => c === "standard_gluten" },
 ];
 
 const RISK: Record<Classification, { level: string; note: string }> = {

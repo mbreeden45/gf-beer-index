@@ -10,7 +10,7 @@ import { celiacAssessment, coldLagering, sensoryProfile } from "../src/lib/profi
 
 const UA = "Mozilla/5.0 (compatible; gf-beer-index/1.0; fact-extraction, contact via repo)";
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-const slugify = (s: string) => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const slugify = (s: string) => s.toLowerCase().normalize("NFKD").replace(/\p{M}/gu, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const GRAIN_WORDS = ["millet", "rice", "buckwheat", "sorghum", "corn", "maize", "barley", "wheat", "oats", "quinoa", "chestnut", "cassava", "amaranth"];
 
 const CACHE = ".cache/ingest";
@@ -131,6 +131,33 @@ async function lowGluten(): Promise<Beer[]> {
   return out;
 }
 
+// ---------- lowgluten.org summary table (Imutest spot-intensity estimates + GlutenTox thresholds) ----------
+type TableRow = { name: string; tests: BeerTest[] };
+async function lowGlutenTable(): Promise<TableRow[]> {
+  const src = "https://www.lowgluten.org/gluten-test-results/";
+  const html = await get(src);
+  if (!html) return console.warn("lowgluten table: unreachable"), [];
+  const $ = cheerio.load(html);
+  const rows: TableRow[] = [];
+  $("table tr").each((_, tr) => {
+    const td = $(tr).find("td").map((__, c) => $(c).text().replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim()).get();
+    if (td.length < 3 || !td[0]) return;
+    const tests: BeerTest[] = [];
+    for (const m of td[1].matchAll(/(\d+(?:\.\d+)?)(?:\/(\d+))?\s*\((negative|positive)\)/gi)) {
+      const ppm = +m[1];
+      tests.push({ kit: "Imutest Gluten-in-Food Kit", ppm, result: "numeric", testedAt: null, sourceName: "lowgluten.org (results table)", sourceUrl: src,
+        resultNote: `Spot-intensity estimate${m[2] ? ` (range ${m[1]}–${m[2]} ppm)` : ""}, read as ${m[3].toLowerCase()}. A visual estimate, not a lab assay.` });
+    }
+    for (const m of td[2].matchAll(/(\d+)\s*\((negative|positive)\)/gi)) {
+      tests.push({ kit: "GlutenTox Home Kit", ppm: null, result: m[2].toLowerCase() as "negative" | "positive", testedAt: null, sourceName: "lowgluten.org (results table)", sourceUrl: src,
+        resultNote: `Threshold test at ${m[1]} ppm: ${m[2].toLowerCase() === "negative" ? `no gluten indicated above ${m[1]} ppm` : `gluten indicated at the ${m[1]} ppm threshold`}.` });
+    }
+    if (tests.length) rows.push({ name: td[0], tests });
+  });
+  console.log(`lowgluten table: ${rows.length} rows`);
+  return rows;
+}
+
 // ---------- smartgurlsolutions.com (Playwright; plain HTTP is blocked by mod_security) ----------
 async function smartGurl(): Promise<Beer[]> {
   const src = "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/";
@@ -171,6 +198,7 @@ async function main() {
   const curatedPath = "data/curated-beers.json";
   const curated = existsSync(curatedPath) ? (JSON.parse(readFileSync(curatedPath, "utf8")) as Omit<Beer, "coldLagering" | "sensoryProfile" | "celiacAssessment">[]).map((b) => BeerSchema.parse(finish({ ...b, tests: b.tests ?? [] }))) : [];
   const [a, l, s] = [await allBeerNoGluten(), await lowGluten(), await smartGurl()];
+  const table = await lowGlutenTable();
   const merged = new Map<string, Beer>();
   for (const b of [...curated, ...a, ...l, ...s]) {
     let k = slugify(`${b.brewery}-${b.name}`);
@@ -180,10 +208,19 @@ async function main() {
     if (!prev) merged.set(k, { ...b, slug: k });
     else merged.set(k, { ...prev, style: prev.style === "Unspecified" ? b.style : prev.style, tests: [...prev.tests, ...b.tests], abv: prev.abv ?? b.abv, ibu: prev.ibu ?? b.ibu, grains: [...new Set([...prev.grains, ...b.grains])] });
   }
+  const ALIAS: Record<string, string> = { "estrella-daura": "estrella-damm-daura", "gambrinus": "gambrinus-premium", "budweiser-us": "budweiser", "budweiser-czech-original": "budweiser-original", "bohemia-pilser": "bohemia-pilsner", "atlas-premium": "balboa-premium-classic-lager" };
+  for (const row of table) {
+    const ns = ALIAS[slugify(row.name)] ?? slugify(row.name);
+    const hit = [...merged.values()].find((v) => slugify(v.name) === ns) ?? [...merged.values()].find((v) => ns.length >= 5 && (slugify(v.name).startsWith(ns) || ns.startsWith(slugify(v.name))));
+    if (hit) hit.tests.push(...row.tests);
+    else merged.set(ns, { slug: ns, name: row.name, brewery: "Brewer not stated", style: "Unspecified", abv: null, ibu: null, grains: [], classification: "adjunct_low_ppm", sourceUrl: "https://www.lowgluten.org/gluten-test-results/", tests: row.tests, coldLagering: "", sensoryProfile: "", celiacAssessment: "" });
+  }
+  const isNeg = (t: BeerTest) => t.result === "negative" || (t.result === "numeric" && (t.ppm ?? 99) < 20);
+  const isPos = (t: BeerTest) => t.result === "positive" || (t.result === "numeric" && (t.ppm ?? 0) >= 20);
   const reconcile = (b: Beer): Beer => {
     if (b.classification === "crafted_to_remove" || b.classification === "dedicated_ngci" || !b.tests.length) return b;
-    const pos = b.tests.some((t) => t.result === "positive");
-    const neg = b.tests.every((t) => t.result === "negative");
+    const pos = b.tests.some(isPos);
+    const neg = b.tests.every(isNeg);
     return { ...b, classification: pos ? "standard_gluten" : neg ? "adjunct_low_ppm" : b.classification };
   };
   const all = SeedSchema.parse([...merged.values()].map((b) => finish(reconcile(b))).sort((x, y) => x.brewery.localeCompare(y.brewery) || x.name.localeCompare(y.name)));
