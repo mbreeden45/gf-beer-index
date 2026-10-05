@@ -1,0 +1,326 @@
+{
+ "alt-brew-hollywood-nights": [
+  52,
+  "https://untappd.com/ALT-Brew/beer"
+ ],
+ "alt-brew-copperhead": [
+  27,
+  "https://untappd.com/b/alt-brew-copperhead/993123"
+ ],
+ "alt-brew-1808": [
+  30,
+  "https://untappd.com/b/alt-brew-1808/2374114"
+ ],
+ "alt-brew-holy-hop-grenade": [
+  81,
+  "https://untappd.com/b/alt-brew-holy-hop-grenade/2629744"
+ ],
+ "departed-soles-brewing-company-a-dark-night": [
+  71,
+  "https://untappd.com/b/departed-soles-brewing-company-a-dark-night/1117798"
+ ],
+ "divine-science-brewing-third-contact-ipa": [
+  65,
+  "https://untappd.com/b/divine-science-third-contact-ipa/3073355"
+ ],
+ "evasion-brewing-blood-orange-ipa": [
+  50,
+  "https://untappd.com/b/evasion-brewing-blood-orange-ipa/2402946"
+ ],
+ "ground-breaker-brewing-czechia-later": [
+  27,
+  "https://untappd.com/b/ground-breaker-brewing-czechia-later/6186629"
+ ],
+ "ground-breaker-brewing-inclusion": [
+  30,
+  "https://untappd.com/b/ground-breaker-brewing-inclusion-pale-ale/115559"
+ ],
+ "holidaily-brewing-co-fruited-blonde": [
+  20,
+  "https://untappd.com/b/holidaily-brewing-co-fruited-blonde-sweet-melon/6165747"
+ ],
+ "omission-lager": [
+  20,
+  "https://untappd.com/b/omission-brewing-lager/131266"
+ ],
+ "s-a-damm-estrella-damm-daura": [
+  26,
+  "https://untappd.com/b/damm-daura/12107"
+ ],
+ "stone-brewing-delicious-ipa": [
+  75,
+  "https://untappd.com/b/stone-brewing-stone-delicious-ipa/392748"
+ ],
+ "10-barrel-pub-beer-lager": [
+  18,
+  "https://untappd.com/b/10-barrel-brewing-co-pub-beer/389682"
+ ],
+ "amstel-brouwerij-heineken-amstel": [
+  21,
+  "https://untappd.com/b/amstel-bier-amstel/72160"
+ ],
+ "anheuser-busch-bud-light": [
+  6,
+  "https://untappd.com/b/anheuser-busch-bud-light/3784"
+ ],
+ "anheuser-busch-budweiser": [
+  12,
+  "https://untappd.com/AnheuserBusch/beer"
+ ],
+ "anheuser-busch-inbev-stella-artois": [
+  24,
+  "https://untappd.com/b/stella-artois-stella-artois/4010"
+ ],
+ "asahi-asahi-super-dry": [
+  20,
+  "https://untappd.com/b/asahi-breweries-asahi-super-dry/8020"
+ ],
+ "asia-pacific-breweries-ltd-tiger": [
+  18,
+  "https://untappd.com/b/heineken-asia-pacific-tiger/7747"
+ ],
+ "augustiner-brau-augustiner-helles-augustiner-edelstoff": [
+  12,
+  "https://untappd.com/b/augustiner-brau-munchen-lagerbier-hell/9254"
+ ],
+ "ayinger-celebrator-doppelbock": [
+  24,
+  "https://untappd.com/b/ayinger-privatbrauerei-ayinger-celebrator/6683"
+ ],
+ "ghostfish-brewing-company-watchstander-stout": [
+  30,
+  "https://untappd.com/b/ghostfish-brewing-company-watchstander-stout/967408"
+ ],
+ "anheuser-busch-michelob-ultra": [
+  10,
+  "https://untappd.com/b/anheuser-busch-michelob-ultra/6655"
+ ],
+ "badische-staatsbrauerei-rothaus-rothaus-pils": [
+  32,
+  "https://untappd.com/b/badische-staatsbrauerei-rothaus-rothaus-pils-tannen-zapfle/2395"
+ ],
+ "bitburger-brauerei-bitburger-premium-pils": [
+  23,
+  "https://untappd.com/b/bitburger-brauerei-bitburger-premium-pils/17252"
+ ],
+ "beck-s-brewery-anheuser-busch-inbev-beck-s": [
+  21,
+  "https://untappd.com/b/brauerei-beck-beck-s/6870"
+ ],
+ "brasserie-d-achouffe-la-chouffe-blonde": [
+  20,
+  "https://untappd.com/b/brasserie-d-achouffe-la-chouffe-blonde/52593"
+ ],
+ "brand-bierbrouwerij-brand-pilsener": [
+  27,
+  "https://untappd.com/b/koninklijke-brand-bierbrouwerij-pilsener/63303"
+ ],
+ "breakside-brewing-rainbows-unicorns-ipa": [
+  30,
+  "https://untappd.com/b/breakside-brewery-rainbows-and-unicorns/1160564"
+ ],
+ "carlsberg-group-carlsberg": [
+  8,
+  "https://untappd.com/b/carlsberg-group-carlsberg/5991"
+ ],
+ "cerveceria-y-malteria-quilmes-quilmes": [
+  15,
+  "https://untappd.com/b/cerveceria-y-malteria-quilmes-clasica/2387736"
+ ],
+ "coopers-brewery-coopers-pale-ale": [
+  24,
+  "https://untappd.com/b/coopers-original-pale-ale/7884"
+ ],
+ "kona-brewing-big-wave-golden-ale": [
+  21,
+  "https://untappd.com/konabrewing/beer"
+ ],
+ "kona-brewing-co-fire-rock-pale-ale": [
+  35,
+  "https://untappd.com/b/kona-brewing-company-fire-rock/8843"
+ ],
+ "kona-brewing-co-longboard-island-lager": [
+  20,
+  "https://untappd.com/konabrewing/beer"
+ ],
+ "kona-brewing-co-castaway-ipa": [
+  50,
+  "https://untappd.com/b/kona-brewing-hawaii-castaway-ipa/24589"
+ ],
+ "deschutes-black-butte-porter": [
+  30,
+  "https://untappd.com/b/deschutes-brewery-black-butte-porter/2025"
+ ],
+ "deschutes-mirror-pond-pale-ale": [
+  40,
+  "https://untappd.com/b/deschutes-brewery-mirror-pond/3587"
+ ],
+ "deschutes-jubelale": [
+  65,
+  "https://untappd.com/b/deschutes-brewery-jubelale-2021/4515949"
+ ],
+ "new-belgium-fat-tire-ale": [
+  15,
+  "https://untappd.com/NewBelgium/beer"
+ ],
+ "new-belgium-voodoo-ranger-atomic-pumpkin-ale": [
+  10,
+  "https://untappd.com/b/new-belgium-brewing-company-voodoo-ranger-atomic-pumpkin/2208402"
+ ],
+ "new-belgium-belgian-white-ale": [
+  12,
+  "https://untappd.com/b/new-belgium-brewing-company-fat-tire-belgian-white/1962917"
+ ],
+ "sierra-nevada-narwhal-imperial-stout": [
+  60,
+  "https://untappd.com/b/sierra-nevada-brewing-co-narwhal/263666"
+ ],
+ "koninklijke-grolsch-n-v-grolsch": [
+  28,
+  "https://untappd.com/b/koninklijke-grolsch-grolsch-premium-lager/7221"
+ ],
+ "krombacher-brauerei-krombacher-pils": [
+  24,
+  "https://untappd.com/b/krombacher-gruppe-krombacher-pils/9945"
+ ],
+ "krombacher-brauerei-krombacher-hell": [
+  13,
+  "https://untappd.com/b/krombacher-gruppe-krombacher-hell-premium-lager/579990"
+ ],
+ "heineken-brouwerijen-heineken": [
+  19,
+  "https://untappd.com/b/heineken-heineken/5860"
+ ],
+ "grupo-modelo-corona-extra": [
+  18,
+  "https://untappd.com/b/grupo-modelo-corona-extra/5848"
+ ],
+ "grupo-modelo-modelo-especial": [
+  18,
+  "https://untappd.com/b/grupo-modelo-modelo-especial/6277"
+ ],
+ "coors-brewing-company-coors-light": [
+  10,
+  "https://untappd.com/b/coors-brewing-company-coors-light/3834"
+ ],
+ "miller-brewing-company-miller-lite": [
+  10,
+  "https://untappd.com/b/miller-brewing-company-miller-lite/3811"
+ ],
+ "miller-brewing-company-miller-high-life": [
+  7,
+  "https://untappd.com/b/miller-brewing-company-high-life/3778"
+ ],
+ "pabst-brewing-company-pabst-blue-ribbon": [
+  10,
+  "https://untappd.com/b/pabst-brewing-company-pabst-blue-ribbon/3883"
+ ],
+ "cerveceria-cuahtemoc-dos-equis": [
+  10,
+  "https://untappd.com/search?q=dos+equis+lager+especial"
+ ],
+ "john-smith-s-brewery-newcastle-brown-ale": [
+  18,
+  "https://untappd.com/b/john-smith-s-newcastle-brown-ale/5856"
+ ],
+ "denies-geddes-red-stripe": [
+  23,
+  "https://untappd.com/search?q=red+stripe+jamaican+lager"
+ ],
+ "budejovicky-budvar-n-p-budweiser-original": [
+  32,
+  "https://untappd.com/BudjovickBudvar"
+ ],
+ "paulaner-brauerei-paulaner-weissbier": [
+  16,
+  "https://untappd.com/b/paulaner-brauerei-paulaner-hefe-weissbier-hefe-weizen-weissbier/15677"
+ ],
+ "hofbrau-munich-hofbrau-oktoberfest": [
+  23,
+  "https://untappd.com/b/staatliches-hofbrauhaus-munchen-hofbrau-oktoberfestbier/40139"
+ ],
+ "hofbrau-munich-hofbrau-sommerzwickl": [
+  24,
+  "https://untappd.com/b/staatliches-hofbrauhaus-munchen-hofbrau-sommerzwickl/53115"
+ ],
+ "lowenbrau-lowenbrau-original": [
+  19,
+  "https://untappd.com/b/spaten-franziskaner-lowenbrau-gruppe-lowenbrau-original/25914"
+ ],
+ "lowenbrau-lowenbrau-oktoberfest": [
+  23,
+  "https://untappd.com/b/spaten-franziskaner-lowenbrau-gruppe-lowenbrau-oktoberfestbier/65549"
+ ],
+ "spaten-franziskaner-brau-munich-spaten-oktoberfestbier": [
+  23,
+  "https://untappd.com/b/spaten-franziskaner-lowenbrau-gruppe-spaten-oktoberfestbier/1722617"
+ ],
+ "bayerische-staatsbrauerei-weihenstephan-weihenstephaner-original-helles": [
+  21,
+  "https://untappd.com/b/bayerische-staatsbrauerei-weihenstephan-weihenstephaner-original/2716"
+ ],
+ "warsteiner-brauerei-haus-cramer-kg-warsteiner-premium-verum": [
+  28,
+  "https://untappd.com/b/warsteiner-warsteiner-premium-verum-german-pilsener/4093146"
+ ],
+ "stieglbrauerei-salzburg-stiegl-goldbrau": [
+  20,
+  "https://untappd.com/b/stieglbrauerei-zu-salzburg-stiegl-goldbrau-stiegl-gold/5539"
+ ],
+ "dogfishhead-60-minute-ipa": [
+  60,
+  "https://untappd.com/b/dogfish-head-craft-brewery-60-minute-ipa/3952"
+ ],
+ "fort-george-the-optimist-ipa": [
+  50,
+  "https://untappd.com/b/fort-george-brewery-the-optimist/473918"
+ ],
+ "spoetzl-brewery-shiner-bock": [
+  13,
+  "https://untappd.com/b/spoetzl-brewery-shiner-bock/4488"
+ ],
+ "sapporo-sapporo-black-label": [
+  18,
+  "https://untappd.com/b/sapporo-breweries-sapporo-premium-beer/17636"
+ ],
+ "tsingtao-brewery-tsingtao": [
+  25,
+  "https://untappd.com/b/tsingtao-brewery-tsingtao/6601"
+ ],
+ "united-breweries-group-kingfisher-premium-lager": [
+  20,
+  "https://untappd.com/b/united-breweries-kingfisher-premium-lager/17377"
+ ],
+ "foster-s-group-foster-s-lager": [
+  12,
+  "https://untappd.com/b/foster-s-group-foster-s-lager/5519"
+ ],
+ "mahou-san-miguel-san-miguel-especial": [
+  18,
+  "https://untappd.com/b/mahou-san-miguel-san-miguel-premium-especial/69014"
+ ],
+ "pelican-brewing-bad-santa": [
+  65,
+  "https://untappd.com/b/pelican-brewing-company-bad-santa/3960024/variants"
+ ],
+ "north-coast-brewing-co-old-rasputin-imperial-russian-stout": [
+  75,
+  "https://untappd.com/b/north-coast-brewing-company-old-rasputin/30855/variants"
+ ],
+ "stormbreaker-brewing-winter-coat": [
+  35,
+  "https://untappd.com/b/stormbreaker-brewing-winter-coat/848674"
+ ],
+ "radeberger-exportbierbrauerei-radeberger": [
+  33,
+  "https://untappd.com/b/radeberger-gruppe-radeberger-pilsner/1589"
+ ],
+ "plzesky-prazdroj-gambrinus-premium": [
+  17,
+  "https://untappd.com/b/gambrinus-pilsen/1619862"
+ ],
+ "brouwerij-duvel-moortgat-duvel": [
+  33,
+  "https://untappd.com/b/duvel-moortgat-duvel/6868"
+ ]
+}

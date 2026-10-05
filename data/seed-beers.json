@@ -5,7 +5,7 @@
     "brewery": "10 Barrel",
     "style": "Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 18,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -22,7 +22,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/10-barrel-brewing-co-pub-beer/389682"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -41,7 +46,7 @@
     "brewery": "Alt Brew",
     "style": "Porter",
     "abv": 5.6,
-    "ibu": null,
+    "ibu": 30,
     "classification": "dedicated_ngci",
     "grains": [],
     "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
@@ -63,6 +68,10 @@
       {
         "label": "Madison Magazine",
         "url": "https://www.channel3000.com/madison-magazine/an-alt-ernative-for-gluten-free-beer-lovers/article_32ec6d7a-2835-11ef-a027-9fb098c962ce.html"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/alt-brew-1808/2374114"
       }
     ],
     "tests": []
@@ -73,7 +82,7 @@
     "brewery": "Alt Brew",
     "style": "Copper Ale",
     "abv": 5.1,
-    "ibu": null,
+    "ibu": 27,
     "classification": "dedicated_ngci",
     "grains": [
       "millet"
@@ -97,6 +106,10 @@
       {
         "label": "Madison Magazine",
         "url": "https://www.channel3000.com/madison-magazine/an-alt-ernative-for-gluten-free-beer-lovers/article_32ec6d7a-2835-11ef-a027-9fb098c962ce.html"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/alt-brew-copperhead/993123"
       }
     ],
     "tests": []
@@ -107,7 +120,7 @@
     "brewery": "Alt Brew",
     "style": "IPA",
     "abv": 7.2,
-    "ibu": null,
+    "ibu": 52,
     "classification": "dedicated_ngci",
     "grains": [],
     "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
@@ -129,6 +142,10 @@
       {
         "label": "Madison Magazine",
         "url": "https://www.channel3000.com/madison-magazine/an-alt-ernative-for-gluten-free-beer-lovers/article_32ec6d7a-2835-11ef-a027-9fb098c962ce.html"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/ALT-Brew/beer"
       }
     ],
     "tests": []
@@ -139,7 +156,7 @@
     "brewery": "Alt Brew",
     "style": "Double IPA",
     "abv": 8.9,
-    "ibu": null,
+    "ibu": 81,
     "classification": "dedicated_ngci",
     "grains": [],
     "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
@@ -161,6 +178,10 @@
       {
         "label": "Madison Magazine",
         "url": "https://www.channel3000.com/madison-magazine/an-alt-ernative-for-gluten-free-beer-lovers/article_32ec6d7a-2835-11ef-a027-9fb098c962ce.html"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/alt-brew-holy-hop-grenade/2629744"
       }
     ],
     "tests": []
@@ -267,7 +288,7 @@
     "brewery": "Amstel Brouwerij/Heineken",
     "style": "Pale Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 21,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -284,7 +305,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/amstel-bier-amstel/72160"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -303,7 +329,7 @@
     "brewery": "Anheuser-Busch",
     "style": "Light Lager",
     "abv": 4.2,
-    "ibu": null,
+    "ibu": 6,
     "classification": "adjunct_low_ppm",
     "grains": [
       "rice",
@@ -321,7 +347,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/anheuser-busch-bud-light/3784"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -340,7 +371,7 @@
     "brewery": "Anheuser-Busch",
     "style": "American Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 12,
     "classification": "adjunct_low_ppm",
     "grains": [
       "rice",
@@ -358,7 +389,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/AnheuserBusch/beer"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -413,7 +449,7 @@
     "brewery": "Anheuser-Busch",
     "style": "Light Lager",
     "abv": 4.2,
-    "ibu": null,
+    "ibu": 10,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -430,7 +466,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/anheuser-busch-michelob-ultra/6655"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -486,7 +527,7 @@
     "brewery": "Anheuser-Busch InBev",
     "style": "Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 24,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -503,7 +544,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/stella-artois-stella-artois/4010"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -565,7 +611,7 @@
     "brewery": "Asahi",
     "style": "Dry Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 20,
     "classification": "standard_gluten",
     "grains": [
       "rice",
@@ -584,7 +630,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/asahi-breweries-asahi-super-dry/8020"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -612,7 +663,7 @@
     "brewery": "Asia Pacific Breweries Ltd",
     "style": "Pale Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 18,
     "classification": "adjunct_low_ppm",
     "grains": [
       "corn",
@@ -630,7 +681,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/heineken-asia-pacific-tiger/7747"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -649,7 +705,7 @@
     "brewery": "Augustiner Bräu",
     "style": "Helles",
     "abv": 5.2,
-    "ibu": null,
+    "ibu": 12,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -666,7 +722,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/augustiner-brau-munchen-lagerbier-hell/9254"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -685,7 +746,7 @@
     "brewery": "Ayinger",
     "style": "Doppelbock",
     "abv": 6.7,
-    "ibu": null,
+    "ibu": 24,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -702,7 +763,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/ayinger-privatbrauerei-ayinger-celebrator/6683"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -721,7 +787,7 @@
     "brewery": "Badische Staatsbrauerei Rothaus",
     "style": "Lager",
     "abv": 5.1,
-    "ibu": null,
+    "ibu": 32,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -738,7 +804,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/badische-staatsbrauerei-rothaus-rothaus-pils-tannen-zapfle/2395"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -793,7 +864,7 @@
     "brewery": "Bayerische Staatsbrauerei Weihenstephan",
     "style": "Helles",
     "abv": 5.1,
-    "ibu": null,
+    "ibu": 21,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -810,7 +881,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/bayerische-staatsbrauerei-weihenstephan-weihenstephaner-original/2716"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -829,7 +905,7 @@
     "brewery": "Beck’s Brewery/Anheuser Busch InBev",
     "style": "German Pilsner",
     "abv": 4.9,
-    "ibu": null,
+    "ibu": 21,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -846,7 +922,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/brauerei-beck-beck-s/6870"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1080,7 +1161,7 @@
     "brewery": "Bitburger Brauerei",
     "style": "Lager",
     "abv": 4.8,
-    "ibu": null,
+    "ibu": 23,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -1097,7 +1178,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/bitburger-brauerei-bitburger-premium-pils/17252"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1224,7 +1310,7 @@
     "brewery": "Brand Bierbrouwerij",
     "style": "Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 27,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -1241,7 +1327,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/koninklijke-brand-bierbrouwerij-pilsener/63303"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1297,7 +1388,7 @@
     "brewery": "Brasserie d’Achouffe",
     "style": "Belgian Strong Blonde",
     "abv": 8,
-    "ibu": null,
+    "ibu": 20,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -1314,7 +1405,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/brasserie-d-achouffe-la-chouffe-blonde/52593"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1333,7 +1429,7 @@
     "brewery": "Breakside Brewing",
     "style": "IPA",
     "abv": 5.1,
-    "ibu": null,
+    "ibu": 30,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -1350,7 +1446,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/breakside-brewery-rainbows-and-unicorns/1160564"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -1405,7 +1506,7 @@
     "brewery": "Brouwerij Duvel Moortgat",
     "style": "Belgian Strong Golden Ale",
     "abv": 8.5,
-    "ibu": null,
+    "ibu": 33,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -1422,7 +1523,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/duvel-moortgat-duvel/6868"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1441,7 +1547,7 @@
     "brewery": "Budějovický Budvar n.p.",
     "style": "Czech Pale Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 32,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -1458,7 +1564,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/BudjovickBudvar"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1558,7 +1669,7 @@
     "brewery": "Carlsberg Group",
     "style": "Pilsner",
     "abv": 5,
-    "ibu": null,
+    "ibu": 8,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -1575,7 +1686,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/carlsberg-group-carlsberg/5991"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1630,7 +1746,7 @@
     "brewery": "Cerveceria Cuahtemoc",
     "style": "Mexican Lager",
     "abv": 4.2,
-    "ibu": null,
+    "ibu": 10,
     "classification": "standard_gluten",
     "grains": [
       "corn",
@@ -1648,7 +1764,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/search?q=dos+equis+lager+especial"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -1769,7 +1890,7 @@
     "brewery": "Cerveceria y malteria Quilmes",
     "style": "Argentine Lager",
     "abv": 4.9,
-    "ibu": null,
+    "ibu": 15,
     "classification": "adjunct_low_ppm",
     "grains": [
       "corn",
@@ -1787,7 +1908,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/cerveceria-y-malteria-quilmes-clasica/2387736"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1950,7 +2076,7 @@
     "brewery": "Coopers Brewery",
     "style": "Sparkling Ale",
     "abv": 4.5,
-    "ibu": null,
+    "ibu": 24,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -1967,7 +2093,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/coopers-original-pale-ale/7884"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -1986,7 +2117,7 @@
     "brewery": "Coors Brewing Company",
     "style": "Light Lager",
     "abv": 4.2,
-    "ibu": null,
+    "ibu": 10,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -2003,7 +2134,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/coors-brewing-company-coors-light/3834"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -2022,7 +2158,7 @@
     "brewery": "Denies & Geddes",
     "style": "Jamaican Lager",
     "abv": 4.7,
-    "ibu": null,
+    "ibu": 23,
     "classification": "standard_gluten",
     "grains": [
       "cassava"
@@ -2039,7 +2175,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/search?q=red+stripe+jamaican+lager"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -2058,7 +2199,7 @@
     "brewery": "Departed Soles Brewing Company",
     "style": "Cascadian Dark Ale",
     "abv": 5,
-    "ibu": null,
+    "ibu": 71,
     "classification": "dedicated_ngci",
     "grains": [
       "sorghum"
@@ -2086,6 +2227,10 @@
       {
         "label": "Best Gluten Free Beers",
         "url": "https://bestglutenfreebeers.com/departed-soles-rick-rolled-oat-coffee-stout/"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/departed-soles-brewing-company-a-dark-night/1117798"
       }
     ],
     "tests": []
@@ -2567,7 +2712,7 @@
     "brewery": "Deschutes",
     "style": "Porter",
     "abv": 5.2,
-    "ibu": null,
+    "ibu": 30,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -2584,7 +2729,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/deschutes-brewery-black-butte-porter/2025"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -2603,7 +2753,7 @@
     "brewery": "Deschutes",
     "style": "Winter Ale",
     "abv": 6.7,
-    "ibu": null,
+    "ibu": 65,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -2620,7 +2770,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/deschutes-brewery-jubelale-2021/4515949"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -2639,7 +2794,7 @@
     "brewery": "Deschutes",
     "style": "Pale Ale",
     "abv": 5,
-    "ibu": null,
+    "ibu": 40,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -2656,7 +2811,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/deschutes-brewery-mirror-pond/3587"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -2885,7 +3045,7 @@
     "brewery": "Divine Science Brewing",
     "style": "IPA",
     "abv": 6.8,
-    "ibu": null,
+    "ibu": 65,
     "classification": "dedicated_ngci",
     "grains": [
       "millet",
@@ -2910,6 +3070,10 @@
       {
         "label": "Orange Coast",
         "url": "https://orangecoast.com/2022/gluten-free-beer-at-divine-science-brewing/"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/divine-science-third-contact-ipa/3073355"
       }
     ],
     "tests": []
@@ -2920,7 +3084,7 @@
     "brewery": "DogfishHead",
     "style": "IPA",
     "abv": 6,
-    "ibu": null,
+    "ibu": 60,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -2937,7 +3101,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/dogfish-head-craft-brewery-60-minute-ipa/3952"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -3063,7 +3232,7 @@
     "brewery": "Evasion Brewing",
     "style": "IPA",
     "abv": 6,
-    "ibu": null,
+    "ibu": 50,
     "classification": "dedicated_ngci",
     "grains": [
       "millet",
@@ -3088,6 +3257,10 @@
       {
         "label": "New School Beer",
         "url": "https://newschoolbeer.com/2017/12/look-inside-mcminnvilles-new-evasion-brewing.html"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/evasion-brewing-blood-orange-ipa/2402946"
       }
     ],
     "tests": []
@@ -3346,7 +3519,7 @@
     "brewery": "Fort George",
     "style": "IPA",
     "abv": 6.2,
-    "ibu": null,
+    "ibu": 50,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -3363,7 +3536,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/fort-george-brewery-the-optimist/473918"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -3418,7 +3596,7 @@
     "brewery": "Foster’s Group",
     "style": "Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 12,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -3435,7 +3613,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/foster-s-group-foster-s-lager/5519"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -4334,7 +4517,7 @@
     "brewery": "Ground Breaker Brewing",
     "style": "Pilsner",
     "abv": 4.6,
-    "ibu": null,
+    "ibu": 27,
     "classification": "dedicated_ngci",
     "grains": [
       "rice",
@@ -4362,6 +4545,10 @@
       {
         "label": "Nombase",
         "url": "https://www.nombase.com/companies/groundbreakerbrewing"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/ground-breaker-brewing-czechia-later/6186629"
       }
     ],
     "tests": []
@@ -4448,7 +4635,7 @@
     "brewery": "Ground Breaker Brewing",
     "style": "Pale Ale",
     "abv": 5.5,
-    "ibu": null,
+    "ibu": 30,
     "classification": "dedicated_ngci",
     "grains": [
       "rice",
@@ -4473,6 +4660,10 @@
       {
         "label": "Nombase",
         "url": "https://www.nombase.com/companies/groundbreakerbrewing"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/ground-breaker-brewing-inclusion-pale-ale/115559"
       }
     ],
     "tests": []
@@ -4555,7 +4746,7 @@
     "brewery": "Grupo Modelo",
     "style": "Mexican Lager",
     "abv": 4.6,
-    "ibu": null,
+    "ibu": 18,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley",
@@ -4574,7 +4765,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/grupo-modelo-corona-extra/5848"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -4593,7 +4789,7 @@
     "brewery": "Grupo Modelo",
     "style": "Mexican Lager",
     "abv": 4.4,
-    "ibu": null,
+    "ibu": 18,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley",
@@ -4612,7 +4808,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/grupo-modelo-modelo-especial/6277"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -4712,7 +4913,7 @@
     "brewery": "Heineken Brouwerijen",
     "style": "Pale Lager",
     "abv": 4.7,
-    "ibu": null,
+    "ibu": 19,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -4729,7 +4930,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/heineken-heineken/5860"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -4802,7 +5008,7 @@
     "brewery": "Hofbrau Munich",
     "style": "Oktoberfest Märzen",
     "abv": 6.3,
-    "ibu": null,
+    "ibu": 23,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -4819,7 +5025,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/staatliches-hofbrauhaus-munchen-hofbrau-oktoberfestbier/40139"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -4838,7 +5049,7 @@
     "brewery": "Hofbrau Munich",
     "style": "Zwickelbier",
     "abv": 5.1,
-    "ibu": null,
+    "ibu": 24,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -4855,7 +5066,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/staatliches-hofbrauhaus-munchen-hofbrau-sommerzwickl/53115"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -5114,7 +5330,7 @@
     "brewery": "Holidaily Brewing Co.",
     "style": "Blonde Ale",
     "abv": 5,
-    "ibu": null,
+    "ibu": 20,
     "classification": "dedicated_ngci",
     "grains": [
       "millet",
@@ -5139,6 +5355,10 @@
       {
         "label": "5280",
         "url": "https://5280.com/finally-good-gluten-free-beer/"
+      },
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/holidaily-brewing-co-fruited-blonde-sweet-melon/6165747"
       }
     ],
     "tests": []
@@ -5255,7 +5475,7 @@
     "brewery": "John Smith’s Brewery",
     "style": "English Brown Ale",
     "abv": 4.7,
-    "ibu": null,
+    "ibu": 18,
     "classification": "standard_gluten",
     "grains": [
       "barley",
@@ -5273,7 +5493,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/john-smith-s-newcastle-brown-ale/5856"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -5477,7 +5702,7 @@
     "brewery": "Kona Brewing",
     "style": "Golden Ale",
     "abv": 4.4,
-    "ibu": null,
+    "ibu": 21,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -5494,7 +5719,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/konabrewing/beer"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -5513,7 +5743,7 @@
     "brewery": "Kona Brewing Co",
     "style": "IPA",
     "abv": 6,
-    "ibu": null,
+    "ibu": 50,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -5530,7 +5760,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/kona-brewing-hawaii-castaway-ipa/24589"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -5549,7 +5784,7 @@
     "brewery": "Kona Brewing Co",
     "style": "Pale Ale",
     "abv": 5.8,
-    "ibu": null,
+    "ibu": 35,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -5566,7 +5801,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/kona-brewing-company-fire-rock/8843"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -5621,7 +5861,7 @@
     "brewery": "Kona Brewing Co",
     "style": "Lager",
     "abv": 4.6,
-    "ibu": null,
+    "ibu": 20,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -5638,7 +5878,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/konabrewing/beer"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -5657,7 +5902,7 @@
     "brewery": "Koninklijke Grolsch N.V.",
     "style": "Pilsner",
     "abv": 5,
-    "ibu": null,
+    "ibu": 28,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -5674,7 +5919,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/koninklijke-grolsch-grolsch-premium-lager/7221"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -5729,7 +5979,7 @@
     "brewery": "Krombacher Brauerei",
     "style": "Helles",
     "abv": 5,
-    "ibu": null,
+    "ibu": 13,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -5746,7 +5996,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/krombacher-gruppe-krombacher-hell-premium-lager/579990"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -5765,7 +6020,7 @@
     "brewery": "Krombacher Brauerei",
     "style": "Lager",
     "abv": 4.8,
-    "ibu": null,
+    "ibu": 24,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -5782,7 +6037,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/krombacher-gruppe-krombacher-pils/9945"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -6017,7 +6277,7 @@
     "brewery": "Lowenbrau",
     "style": "Oktoberfest Märzen",
     "abv": 6.1,
-    "ibu": null,
+    "ibu": 23,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -6034,7 +6294,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/spaten-franziskaner-lowenbrau-gruppe-lowenbrau-oktoberfestbier/65549"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -6053,7 +6318,7 @@
     "brewery": "Lowenbrau",
     "style": "Helles",
     "abv": 5.2,
-    "ibu": null,
+    "ibu": 19,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -6070,7 +6335,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/spaten-franziskaner-lowenbrau-gruppe-lowenbrau-original/25914"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -6660,7 +6930,7 @@
     "brewery": "Mahou-San Miguel",
     "style": "Premium Lager",
     "abv": 5.4,
-    "ibu": null,
+    "ibu": 18,
     "classification": "standard_gluten",
     "grains": [
       "corn",
@@ -6678,7 +6948,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/mahou-san-miguel-san-miguel-premium-especial/69014"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -6706,7 +6981,7 @@
     "brewery": "Miller Brewing Company",
     "style": "American Lager",
     "abv": 4.7,
-    "ibu": null,
+    "ibu": 7,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -6723,7 +6998,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/miller-brewing-company-high-life/3778"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -6742,7 +7022,7 @@
     "brewery": "Miller Brewing Company",
     "style": "Light Lager",
     "abv": 4.2,
-    "ibu": null,
+    "ibu": 10,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -6759,7 +7039,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/miller-brewing-company-miller-lite/3811"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -6850,7 +7135,7 @@
     "brewery": "New Belgium",
     "style": "White Ale",
     "abv": 5.2,
-    "ibu": null,
+    "ibu": 12,
     "classification": "standard_gluten",
     "grains": [
       "barley",
@@ -6868,7 +7153,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/new-belgium-brewing-company-fat-tire-belgian-white/1962917"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -6887,7 +7177,7 @@
     "brewery": "New Belgium",
     "style": "Belgian Ale",
     "abv": 5.2,
-    "ibu": null,
+    "ibu": 15,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -6904,7 +7194,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/NewBelgium/beer"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -6923,7 +7218,7 @@
     "brewery": "New Belgium",
     "style": "Pumpkin Ale",
     "abv": 6.4,
-    "ibu": null,
+    "ibu": 10,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -6940,7 +7235,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/new-belgium-brewing-company-voodoo-ranger-atomic-pumpkin/2208402"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -6959,7 +7259,7 @@
     "brewery": "North Coast Brewing Co.",
     "style": "Imperial Stout",
     "abv": 9,
-    "ibu": null,
+    "ibu": 75,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -6976,7 +7276,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/north-coast-brewing-company-old-rasputin/30855/variants"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -7021,7 +7326,7 @@
     "brewery": "Omission",
     "style": "Lager",
     "abv": 4.6,
-    "ibu": null,
+    "ibu": 20,
     "classification": "crafted_to_remove",
     "grains": [
       "barley"
@@ -7038,7 +7343,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/omission-brewing-lager/131266"
+      }
+    ],
     "tests": []
   },
   {
@@ -7437,7 +7747,7 @@
     "brewery": "Pabst Brewing Company",
     "style": "American Lager",
     "abv": 4.74,
-    "ibu": null,
+    "ibu": 10,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -7454,7 +7764,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/pabst-brewing-company-pabst-blue-ribbon/3883"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -7550,7 +7865,7 @@
     "brewery": "Paulaner Brauerei",
     "style": "Hefeweizen",
     "abv": 5.5,
-    "ibu": null,
+    "ibu": 16,
     "classification": "standard_gluten",
     "grains": [
       "barley",
@@ -7568,7 +7883,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/paulaner-brauerei-paulaner-hefe-weissbier-hefe-weizen-weissbier/15677"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -7587,7 +7907,7 @@
     "brewery": "Pelican Brewing",
     "style": "Winter Ale",
     "abv": 7.5,
-    "ibu": null,
+    "ibu": 65,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -7604,7 +7924,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/pelican-brewing-company-bad-santa/3960024/variants"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -7695,7 +8020,7 @@
     "brewery": "Plzesky Prazdroj",
     "style": "Czech Pale Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 17,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -7712,7 +8037,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/gambrinus-pilsen/1619862"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -7776,7 +8106,7 @@
     "brewery": "Radeberger Exportbierbrauerei",
     "style": "Pilsner",
     "abv": 4.8,
-    "ibu": null,
+    "ibu": 33,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -7793,7 +8123,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/radeberger-gruppe-radeberger-pilsner/1589"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -7812,7 +8147,7 @@
     "brewery": "S.A. Damm",
     "style": "Lager",
     "abv": 5.4,
-    "ibu": null,
+    "ibu": 26,
     "classification": "crafted_to_remove",
     "grains": [
       "barley",
@@ -7830,7 +8165,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/damm-daura/12107"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -7883,7 +8223,7 @@
     "brewery": "Sapporo",
     "style": "Dry Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 18,
     "classification": "standard_gluten",
     "grains": [
       "rice",
@@ -7901,7 +8241,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/sapporo-breweries-sapporo-premium-beer/17636"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -7920,7 +8265,7 @@
     "brewery": "Sierra Nevada",
     "style": "Imperial Stout",
     "abv": 10.2,
-    "ibu": null,
+    "ibu": 60,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -7937,7 +8282,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/sierra-nevada-brewing-co-narwhal/263666"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -8064,7 +8414,7 @@
     "brewery": "Spaten-Franziskaner-Bräu Munich",
     "style": "Oktoberfest Märzen",
     "abv": 5.9,
-    "ibu": null,
+    "ibu": 23,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -8081,7 +8431,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/spaten-franziskaner-lowenbrau-gruppe-spaten-oktoberfestbier/1722617"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -8100,7 +8455,7 @@
     "brewery": "Spoetzl Brewery",
     "style": "Bock",
     "abv": 4.4,
-    "ibu": null,
+    "ibu": 13,
     "classification": "standard_gluten",
     "grains": [
       "rice",
@@ -8118,7 +8473,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/spoetzl-brewery-shiner-bock/4488"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -8137,7 +8497,7 @@
     "brewery": "Stieglbrauerei Salzburg",
     "style": "Märzen",
     "abv": 4.9,
-    "ibu": null,
+    "ibu": 20,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -8154,7 +8514,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/stieglbrauerei-zu-salzburg-stiegl-goldbrau-stiegl-gold/5539"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -8209,7 +8574,7 @@
     "brewery": "Stone Brewing",
     "style": "IPA",
     "abv": 7.7,
-    "ibu": null,
+    "ibu": 75,
     "classification": "crafted_to_remove",
     "grains": [
       "barley"
@@ -8226,7 +8591,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/stone-brewing-stone-delicious-ipa/392748"
+      }
+    ],
     "tests": []
   },
   {
@@ -8271,7 +8641,7 @@
     "brewery": "Stormbreaker Brewing",
     "style": "Winter Ale",
     "abv": 7.5,
-    "ibu": null,
+    "ibu": 35,
     "classification": "standard_gluten",
     "grains": [
       "barley"
@@ -8288,7 +8658,12 @@
     ],
     "notes": [],
     "grainsBasis": "reference",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/stormbreaker-brewing-winter-coat/848674"
+      }
+    ],
     "tests": [
       {
         "kit": "Reveal 3-D (gliadin) @ 5 ppm",
@@ -8415,7 +8790,7 @@
     "brewery": "Tsingtao Brewery/青岛啤酒",
     "style": "Pale Lager",
     "abv": 4.7,
-    "ibu": null,
+    "ibu": 25,
     "classification": "standard_gluten",
     "grains": [
       "rice",
@@ -8433,7 +8808,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/tsingtao-brewery-tsingtao/6601"
+      }
+    ],
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -8452,7 +8832,7 @@
     "brewery": "United Breweries Group",
     "style": "Lager",
     "abv": 5,
-    "ibu": null,
+    "ibu": 20,
     "classification": "adjunct_low_ppm",
     "grains": [
       "millet",
@@ -8472,7 +8852,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/united-breweries-kingfisher-premium-lager/17377"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",
@@ -8561,7 +8946,7 @@
     "brewery": "Warsteiner Brauerei Haus Cramer KG",
     "style": "Pilsner",
     "abv": 4.8,
-    "ibu": null,
+    "ibu": 28,
     "classification": "adjunct_low_ppm",
     "grains": [
       "barley"
@@ -8578,7 +8963,12 @@
     ],
     "notes": [],
     "grainsBasis": "listing",
-    "refs": [],
+    "refs": [
+      {
+        "label": "IBU via Untappd",
+        "url": "https://untappd.com/b/warsteiner-warsteiner-premium-verum-german-pilsener/4093146"
+      }
+    ],
     "tests": [
       {
         "kit": "GlutenTox Home Kit",

@@ -38,14 +38,16 @@ const grainsFrom = (t: string) => GRAIN_WORDS.filter((g) => new RegExp(`\\b${g}\
 type Enrichment = { breweries: Record<string, { origin: string; grains: string[]; notes: string[]; ref: { label: string; url: string } }>; beers: Record<string, { ibu?: number; style?: string; origin?: string; grains?: string[]; notes?: string[]; ref?: { label: string; url: string } }>; merge: Record<string, string> };
 const ENRICH: Enrichment = existsSync("data/enrichment.json") ? JSON.parse(readFileSync("data/enrichment.json", "utf8")) : { breweries: {}, beers: {}, merge: {} };
 
+const UNTAPPD: Record<string, [number, string]> = existsSync("data/ibu-untappd.json") ? JSON.parse(readFileSync("data/ibu-untappd.json", "utf8")) : {};
+
 function enrich(b: Beer): Beer {
   const be = ENRICH.breweries[b.brewery];
   const eb = ENRICH.beers[b.slug];
   const style = b.style === "Unspecified" && eb?.style ? eb.style : b.style;
   const grains = b.grains.length ? b.grains : eb?.grains ?? be?.grains ?? [];
   const basis = b.grains.length ? "listing" : eb?.grains ? "reference" : be?.grains?.length ? "brewery-typical" : null;
-  return { ...b, style, ibu: b.ibu || eb?.ibu || null, grains, grainsBasis: basis, origin: eb?.origin ?? be?.origin ?? b.origin ?? null, flavor: flavorFor(style),
-    notes: [...(be?.notes ?? []), ...(eb?.notes ?? [])], refs: [be?.ref, eb?.ref].filter((r): r is { label: string; url: string } => !!r) };
+  return { ...b, style, ibu: b.ibu || UNTAPPD[b.slug]?.[0] || eb?.ibu || null, grains, grainsBasis: basis, origin: eb?.origin ?? be?.origin ?? b.origin ?? null, flavor: flavorFor(style),
+    notes: [...(be?.notes ?? []), ...(eb?.notes ?? [])], refs: [be?.ref, eb?.ref, !b.ibu && UNTAPPD[b.slug] ? { label: "IBU via Untappd", url: UNTAPPD[b.slug][1] } : undefined].filter((r): r is { label: string; url: string } => !!r) };
 }
 
 function finish(b: Omit<Beer, "coldLagering" | "sensoryProfile" | "celiacAssessment">): Beer {

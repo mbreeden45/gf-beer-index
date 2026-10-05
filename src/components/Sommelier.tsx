@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { MessageCircle, Send, X, Wheat } from "lucide-react";
 
-type Msg = { role: "user" | "assistant"; content: string };
+type Msg = { role: "user" | "assistant"; content: string; status?: string };
 const SUGGESTIONS = [
   "I have celiac and love hoppy IPAs",
   "Something light for a hot day",
@@ -16,6 +16,15 @@ export default function Sommelier() {
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const end = useRef<HTMLDivElement>(null);
+  const box = useRef<HTMLTextAreaElement>(null);
+
+  // Grow the textarea with its content (up to max-h), like a typical chat box.
+  useEffect(() => {
+    const el = box.current;
+    if (!el) return;
+    el.style.height = "auto";
+    el.style.height = `${el.scrollHeight}px`;
+  }, [input, open]);
 
   useEffect(() => { end.current?.scrollIntoView({ behavior: "smooth", block: "end" }); }, [msgs, open]);
 
@@ -27,10 +36,19 @@ export default function Sommelier() {
     setInput("");
     setBusy(true);
     try {
-      const res = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ messages: next }) });
+      // Busy upstream (429/5xx): retry automatically so nobody has to retype.
+      const delays = [4000, 8000, 12000];
+      let res: Response | null = null;
+      for (let attempt = 0; ; attempt++) {
+        res = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ messages: next }) });
+        const transient = res.status === 429 || res.status >= 500;
+        if (!transient || attempt >= delays.length) break;
+        setMsgs([...next, { role: "assistant", content: "", status: `Busy right now. Retrying automatically (${attempt + 1}/${delays.length})…` }]);
+        await new Promise((r) => setTimeout(r, delays[attempt]));
+      }
       if (!res.ok || !res.body) {
         const err = await res.json().catch(() => ({ error: "Something went wrong." }));
-        setMsgs([...next, { role: "assistant", content: err.error ?? "Something went wrong." }]);
+        setMsgs([...next, { role: "assistant", content: `${err.error ?? "Something went wrong."} I tried a few times. Send your message again in a minute.` }]);
         return;
       }
       const reader = res.body.getReader();
@@ -78,15 +96,17 @@ export default function Sommelier() {
             )}
             {msgs.map((m, i) => (
               <div key={i} className={m.role === "user" ? "ml-8 border border-rule bg-paper-deep p-3" : "border-l-2 border-gold pl-3"}>
-                <p className="whitespace-pre-wrap">{m.content ? render(m.content) : <span className="text-muted">Pulling a few taps…</span>}</p>
+                <p className="whitespace-pre-wrap">{m.content ? render(m.content) : <span className="text-muted">{m.status ?? "Pulling a few taps…"}</span>}</p>
               </div>
             ))}
             <div ref={end} />
           </div>
-          <form onSubmit={(e) => { e.preventDefault(); send(input); }} className="flex border-t border-rule">
-            <input value={input} onChange={(e) => setInput(e.target.value)} maxLength={1000} placeholder="Ask about a beer, style or mood…" aria-label="Your question"
-              className="min-w-0 flex-1 bg-[#fffdf8] px-3 py-3 text-sm outline-none" />
-            <button type="submit" disabled={busy || !input.trim()} aria-label="Send" className="bg-copper px-4 text-paper disabled:opacity-40"><Send size={16} /></button>
+          <form onSubmit={(e) => { e.preventDefault(); send(input); }} className="flex items-end gap-2 border-t border-rule bg-[#fffdf8] p-2">
+            <textarea ref={box} rows={1} value={input} maxLength={1000} placeholder="Ask about a beer, style or mood…" aria-label="Your question"
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); send(input); } }}
+              className="max-h-40 min-w-0 flex-1 resize-none overflow-y-auto border border-rule bg-paper px-3 py-2 text-sm leading-snug outline-none focus:border-copper" />
+            <button type="submit" disabled={busy || !input.trim()} aria-label="Send" className="h-9 shrink-0 bg-copper px-3 text-paper disabled:opacity-40"><Send size={16} /></button>
           </form>
           <p className="border-t border-rule px-3 py-1.5 text-[10px] text-muted">AI guide, not medical advice. Test kits are screens, not safety guarantees.</p>
         </section>

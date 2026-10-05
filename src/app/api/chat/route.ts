@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 import { getBeers } from "@/lib/data";
-import { CLASS_LABEL, type Beer } from "@/lib/types";
+import type { Beer } from "@/lib/types";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
