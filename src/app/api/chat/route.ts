@@ -63,11 +63,19 @@ export async function POST(req: Request) {
   const ai = new GoogleGenAI({ apiKey });
   const beers = await getBeers();
   try {
-    const stream = await ai.models.generateContentStream({
-      model: MODEL,
-      contents: msgs,
-      config: { systemInstruction: systemPrompt(beers), temperature: 0.7, maxOutputTokens: 700, thinkingConfig: { thinkingBudget: 0 } },
-    });
+    const start = () =>
+      ai.models.generateContentStream({
+        model: MODEL,
+        contents: msgs,
+        config: { systemInstruction: systemPrompt(beers), temperature: 0.7, maxOutputTokens: 700, thinkingConfig: { thinkingBudget: 0 } },
+      });
+    let stream;
+    try {
+      stream = await start();
+    } catch {
+      await new Promise((r) => setTimeout(r, 800));
+      stream = await start();
+    }
     const enc = new TextEncoder();
     return new Response(
       new ReadableStream({
@@ -84,7 +92,7 @@ export async function POST(req: Request) {
     );
   } catch (e) {
     console.error("gemini error:", (e as Error).message);
-    const m = /"code":\s*(\d+)[\s\S]*?"status":\s*"([A-Z_]+)"/.exec((e as Error).message);
-    return Response.json({ error: "The Sommelier is unavailable right now.", detail: m ? `${m[1]} ${m[2]}` : "upstream error" }, { status: 502 });
+    const status = (e as { status?: number }).status;
+    return Response.json({ error: "The Sommelier is unavailable right now.", detail: status ? `upstream ${status}` : "upstream error" }, { status: 502 });
   }
 }
