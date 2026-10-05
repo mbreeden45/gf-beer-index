@@ -90,7 +90,11 @@ export async function POST(req: Request) {
       new ReadableStream({
         async start(controller) {
           try {
-            for await (const chunk of stream) if (chunk.text) controller.enqueue(enc.encode(chunk.text));
+            for await (const chunk of stream) {
+              // Skip "thought" parts so internal reasoning never reaches the user.
+              const parts = chunk.candidates?.[0]?.content?.parts ?? [];
+              for (const part of parts) if (part.text && !part.thought) controller.enqueue(enc.encode(part.text));
+            }
           } catch {
             controller.enqueue(enc.encode("\n\n(The Sommelier lost the thread — please ask again.)"));
           }
