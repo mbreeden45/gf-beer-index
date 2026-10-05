@@ -19,10 +19,14 @@ function limited(ip: string) {
   return recent.length > 12;
 }
 
+const CLS: Record<Beer["classification"], string> = { dedicated_ngci: "NGCI", crafted_to_remove: "CTR", adjunct_low_ppm: "LOW", standard_gluten: "STD" };
+
+// Compact on purpose: the whole catalog rides along on every request, so tokens matter for rate limits.
 function catalogLine(b: Beer) {
   const t = [...b.tests].sort((x, y) => (y.testedAt ?? "").localeCompare(x.testedAt ?? ""))[0];
-  const test = t ? `${t.kit}: ${t.ppm != null ? `~${t.ppm}ppm est.` : t.result}` : "no test";
-  return `${b.brewery}${b.origin ? ` (${b.origin})` : ""} | ${b.name} | ${b.style} | ${CLASS_LABEL[b.classification]} | ${b.abv ?? "?"}%${b.ibu ? `, ${b.ibu} IBU` : ""} | ${b.grains.join("/") || "grains?"} | ${test} (${b.tests.length} tests)`;
+  const test = t ? (t.ppm != null ? `~${t.ppm}ppm` : t.result === "inconclusive" ? "unclear" : t.result) : "-";
+  const where = b.origin?.split(",").pop()?.trim() ?? "";
+  return [b.brewery.split(/[(/]/)[0].trim(), b.name, b.style, CLS[b.classification], b.abv != null ? `${b.abv}%` : "", b.ibu ? `${b.ibu}IBU` : "", b.grains.join("+"), test, where].join("|");
 }
 
 function systemPrompt(beers: Beer[]) {
@@ -30,14 +34,14 @@ function systemPrompt(beers: Beer[]) {
 
 RULES
 - Recommend ONLY beers from the catalog below, by exact brewery and name. If nothing fits, say so and suggest the closest options.
-- Four classes: 100% NGCI (brewed from naturally gluten-free grains, no barley), Crafted to Remove (barley beer treated with enzymes; kits can misread it, many celiac organisations advise caution), Naturally Low ppm (barley beer that read negative on home kits; unverified, NOT a safety guarantee), Standard Gluten (not for celiac).
+- Class codes: NGCI = 100% NGCI, CTR = Crafted to Remove, LOW = Naturally Low ppm, STD = Standard Gluten. In plain words: 100% NGCI (brewed from naturally gluten-free grains, no barley), Crafted to Remove (barley beer treated with enzymes; kits can misread it, many celiac organisations advise caution), Naturally Low ppm (barley beer that read negative on home kits; unverified, NOT a safety guarantee), Standard Gluten (not for celiac).
 - For anyone who says they have celiac disease, lead with 100% NGCI beers and be candid about the limits of the other classes. Never claim a beer is "safe". Home kits are qualitative screens, and ppm figures are visual estimates, not lab results.
 - Quote test evidence from the catalog when relevant (kit, result). Never invent ppm values, ABV, or test results.
 - Keep replies concise (under ~180 words), with short lists of 2-4 beers, each with one line on why. Talk about flavour using style, grains and ABV.
 - Formatting: plain text with **bold** for beer names only; use "-" for bullets; no italics or other markdown.
 - You are not a doctor; for medical questions suggest consulting a clinician. Decline unrelated requests politely.
 
-CATALOG (brewery | name | style | class | ABV | grains | latest test)
+CATALOG (brewery|name|style|class|ABV|IBU|grains|latest test|country)
 ${beers.map(catalogLine).join("\n")}`;
 }
 
@@ -97,6 +101,7 @@ export async function POST(req: Request) {
   } catch (e) {
     console.error("gemini error:", (e as Error).message);
     const status = (e as { status?: number }).status;
+    if (status === 429) return Response.json({ error: "The Sommelier is swamped right now. Give it a minute and ask again.", detail: "upstream 429" }, { status: 503 });
     return Response.json({ error: "The Sommelier is unavailable right now.", detail: status ? `upstream ${status}` : "upstream error" }, { status: 502 });
   }
 }
