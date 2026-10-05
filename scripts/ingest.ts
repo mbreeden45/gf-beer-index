@@ -186,23 +186,39 @@ async function smartGurl(): Promise<Beer[]> {
     const page = await (await browser.newContext({ userAgent: UA })).newPage();
     await page.goto(src, { timeout: 30000 });
     await page.selectOption("select[name$='_length']", "100").catch(() => undefined);
-    const rows = await page.$$eval("table tbody tr", (trs) => trs.map((tr) => [...tr.querySelectorAll("td")].map((td) => (td.textContent ?? "").replace(/\s+/g, " ").trim())));
+    const raw = await page.$$eval("table tbody tr", (trs) => trs.map((tr) => ({
+      cells: [...tr.querySelectorAll("td")].map((td) => (td.textContent ?? "").replace(/\s+/g, " ").trim()),
+      href: tr.querySelector("td a")?.getAttribute("href") ?? null,
+    })));
+    const rows = raw.map((r) => r.cells);
+    // Prefer each beer's own post: strip preview params/stray quotes, then confirm the page loads in the browser.
+    const clean = (h: string | null) => (h ? h.replace(/\?preview=true[^#]*/, "").replace(/\/?"?(#.*?)?"?$/, (_m, hash) => `/${hash ? hash.replace(/"$/, "") : ""}`).replace(/\/\/+$/, "/") : null);
+    const okCache = new Map<string, boolean>();
+    const verify = async (u: string) => {
+      const base = u.split("#")[0];
+      if (!okCache.has(base)) okCache.set(base, await page.goto(base, { timeout: 20000 }).then((r) => (r?.status() ?? 500) < 400).catch(() => false));
+      return okCache.get(base)!;
+    };
+    const links: (string | null)[] = [];
+    for (const r of raw) { const c = clean(r.href); links.push(c && /^https:\/\/smartgurlsolutions\.com\//.test(c) && (await verify(c)) ? c : null); }
     await browser.close();
     const out: Beer[] = [];
-    for (const [name, producer, style, , reveal, , abvRaw] of rows) {
+    for (const [i, [name, producer, style, , reveal, , abvRaw]] of rows.entries()) {
       if (!name || !reveal) continue;
+      const post = links[i];
+      const dateM = post ? /\/(\d{4})\/(\d\d)\/(\d\d)\//.exec(post) : null;
       const lower = reveal.toLowerCase();
       const result: BeerTest["result"] = /positive/.test(lower) ? "positive" : /negative/.test(lower) ? "negative" : "inconclusive";
       const abv = parseFloat(abvRaw ?? "");
       const test: BeerTest = {
         kit: "Reveal 3-D (gliadin) @ 5 ppm", ppm: null, result,
         resultNote: `Table entry: "${reveal}". Qualitative threshold test at 5 ppm, home-run, not a lab assay.`,
-        testedAt: null, sourceName: "smartgurlsolutions.com", sourceUrl: src,
+        testedAt: dateM ? `${dateM[1]}-${dateM[2]}-${dateM[3]}` : null, sourceName: "smartgurlsolutions.com", sourceUrl: post ?? src,
       };
       out.push(BeerSchema.parse(finish({
         slug: slugify(`${producer}-${name}`), name, brewery: producer || "Unknown", style: style || "Unspecified",
         abv: Number.isFinite(abv) ? abv : null, ibu: null, grains: [],
-        classification: result === "negative" ? "adjunct_low_ppm" : "standard_gluten", sourceUrl: src, tests: [test],
+        classification: result === "negative" ? "adjunct_low_ppm" : "standard_gluten", sourceUrl: post ?? src, tests: [test],
       })));
     }
     console.log(`smartgurlsolutions: ${out.length} beers`);

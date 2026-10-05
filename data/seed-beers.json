@@ -765,7 +765,7 @@
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Pale Ale brewed with barley, so expect the full malt body of a traditional recipe. It carries a mid-weight 5.1% ABV.",
     "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2018/04/22/bass-ale/",
     "origin": "Burton upon Trent, England",
     "flavor": [
       "balanced",
@@ -781,9 +781,9 @@
         "ppm": null,
         "result": "positive",
         "resultNote": "Table entry: \"High Positive\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2018-04-22",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2018/04/22/bass-ale/"
       }
     ]
   },
@@ -1341,7 +1341,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A IPA brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 5.1% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/08/16/optimistic-ale/#RainbowsAndUnicorns",
     "origin": "Portland, Oregon, USA",
     "flavor": [
       "hoppy",
@@ -1357,9 +1357,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-08-16",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/08/16/optimistic-ale/#RainbowsAndUnicorns"
       }
     ]
   },
@@ -2575,7 +2575,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Porter brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 5.2% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2018/04/23/deschutes-black-butte-porter/",
     "origin": "Bend, Oregon, USA",
     "flavor": [
       "roasty",
@@ -2591,9 +2591,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2018-04-23",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2018/04/23/deschutes-black-butte-porter/"
       }
     ]
   },
@@ -2611,7 +2611,7 @@
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Winter Ale brewed with barley, so expect the full malt body of a traditional recipe. It carries a robust 6.7% ABV.",
     "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/12/24/holiday-beer/#Jubelale",
     "origin": "Bend, Oregon, USA",
     "flavor": [
       "toasty",
@@ -2627,9 +2627,9 @@
         "ppm": null,
         "result": "positive",
         "resultNote": "Table entry: \"positive\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-12-24",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/12/24/holiday-beer/#Jubelale"
       }
     ]
   },
@@ -3354,7 +3354,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A IPA brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 6.2% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/08/16/optimistic-ale/#TheOptimist",
     "origin": "Astoria, Oregon, USA",
     "flavor": [
       "hoppy",
@@ -3370,9 +3370,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-08-16",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/08/16/optimistic-ale/#TheOptimist"
       }
     ]
   },
@@ -3390,7 +3390,7 @@
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Imperial Stout brewed with barley, so expect the full malt body of a traditional recipe. It carries a robust 10% ABV.",
     "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/07/19/black-is-beautiful-beer/#FortGeorgeBiB",
     "origin": "Astoria, Oregon, USA",
     "flavor": [
       "roasty",
@@ -3406,9 +3406,9 @@
         "ppm": null,
         "result": "positive",
         "resultNote": "Table entry: \"Positive\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-07-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/07/19/black-is-beautiful-beer/#FortGeorgeBiB"
       }
     ]
   },
@@ -3957,7 +3957,7 @@
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Imperial Stout brewed with barley, so expect the full malt body of a traditional recipe. It carries a robust 8.7% ABV.",
     "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/07/19/black-is-beautiful-beer/#giganticBiB",
     "origin": "Portland, Oregon, USA",
     "flavor": [
       "roasty",
@@ -3973,9 +3973,9 @@
         "ppm": null,
         "result": "positive",
         "resultNote": "Table entry: \"Positive\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-07-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/07/19/black-is-beautiful-beer/#giganticBiB"
       }
     ]
   },
@@ -4639,7 +4639,7 @@
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Stout brewed with barley, so expect the full malt body of a traditional recipe. It carries a light 4.3% ABV.",
     "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2018/04/16/guinness-stout/",
     "origin": "Dublin, Ireland",
     "flavor": [
       "roasty",
@@ -4655,9 +4655,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2018-04-16",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2018/04/16/guinness-stout/"
       },
       {
         "kit": "Imutest Gluten-in-Food Kit",
@@ -5501,9 +5501,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-01-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#BigWave"
       }
     ]
   },
@@ -5521,7 +5521,7 @@
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional IPA brewed with barley, so expect the full malt body of a traditional recipe. It carries a mid-weight 6% ABV.",
     "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#castaway",
     "origin": "Kailua-Kona, Hawaii, USA",
     "flavor": [
       "hoppy",
@@ -5537,9 +5537,9 @@
         "ppm": null,
         "result": "positive",
         "resultNote": "Table entry: \"Positive\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-01-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#castaway"
       }
     ]
   },
@@ -5557,7 +5557,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Pale Ale brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 5.8% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#FireRock",
     "origin": "Kailua-Kona, Hawaii, USA",
     "flavor": [
       "balanced",
@@ -5573,9 +5573,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-01-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#FireRock"
       }
     ]
   },
@@ -5593,7 +5593,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Blonde brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a light 4.2% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#Kanaha",
     "origin": "Kailua-Kona, Hawaii, USA",
     "flavor": [
       "light",
@@ -5609,9 +5609,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-01-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#Kanaha"
       }
     ]
   },
@@ -5629,7 +5629,7 @@
     "coldLagering": "Extended cold lagering and fine filtration strip much of the protein, alongside a high adjunct share.",
     "sensoryProfile": "A Lager brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a light 4.6% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#longboard",
     "origin": "Kailua-Kona, Hawaii, USA",
     "flavor": [
       "clean",
@@ -5645,9 +5645,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-01-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/01/19/hawaiian-beer/#longboard"
       }
     ]
   },
@@ -5881,7 +5881,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Imperial Stout brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a robust 10% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/07/19/black-is-beautiful-beer/#LittleBeastBiB",
     "origin": "Beaverton, Oregon, USA",
     "flavor": [
       "roasty",
@@ -5897,9 +5897,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-07-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/07/19/black-is-beautiful-beer/#LittleBeastBiB"
       }
     ]
   },
@@ -6895,7 +6895,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Belgian Ale brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 5.2% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2018/04/28/fat-tire-ale/",
     "origin": "Fort Collins, Colorado, USA",
     "flavor": [
       "balanced",
@@ -6911,9 +6911,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2018-04-28",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2018/04/28/fat-tire-ale/"
       }
     ]
   },
@@ -6931,7 +6931,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Pumpkin Ale brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 6.4% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/10/28/atomic-pumpkin-ale/",
     "origin": "Fort Collins, Colorado, USA",
     "flavor": [
       "toasty",
@@ -6947,9 +6947,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-10-28",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/10/28/atomic-pumpkin-ale/"
       }
     ]
   },
@@ -6967,7 +6967,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Imperial Stout brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a robust 9% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2019/12/21/celebrating-the-stout/#OldRasputin",
     "origin": "Fort Bragg, California, USA",
     "flavor": [
       "roasty",
@@ -6983,9 +6983,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2019-12-21",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2019/12/21/celebrating-the-stout/#OldRasputin"
       }
     ]
   },
@@ -7595,7 +7595,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Winter Ale brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a robust 7.5% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/12/24/holiday-beer/#Badsanta",
     "origin": "Pacific City, Oregon, USA",
     "flavor": [
       "toasty",
@@ -7611,9 +7611,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-12-24",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/12/24/holiday-beer/#Badsanta"
       }
     ]
   },
@@ -7764,9 +7764,9 @@
         "ppm": null,
         "result": "positive",
         "resultNote": "Table entry: \"Positive\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-11-28",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/11/28/brewing-reduces-gluten/"
       }
     ]
   },
@@ -7928,7 +7928,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A Imperial Stout brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a robust 10.2% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2019/12/21/celebrating-the-stout/",
     "origin": "Chico, California, USA",
     "flavor": [
       "roasty",
@@ -7944,9 +7944,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2019-12-21",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2019/12/21/celebrating-the-stout/"
       }
     ]
   },
@@ -7964,7 +7964,7 @@
     "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
     "sensoryProfile": "A IPA brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a robust 6.8% ABV.",
     "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2018/04/28/sidecar-ipa/",
     "origin": "Chico, California, USA",
     "flavor": [
       "hoppy",
@@ -7980,9 +7980,9 @@
         "ppm": null,
         "result": "negative",
         "resultNote": "Table entry: \"Negative\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2018-04-28",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2018/04/28/sidecar-ipa/"
       }
     ]
   },
@@ -8279,7 +8279,7 @@
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Winter Ale brewed with barley, so expect the full malt body of a traditional recipe. It carries a robust 7.5% ABV.",
     "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/12/24/holiday-beer/#Wintercoat",
     "origin": "Portland, Oregon, USA",
     "flavor": [
       "toasty",
@@ -8295,9 +8295,9 @@
         "ppm": null,
         "result": "positive",
         "resultNote": "Table entry: \"Positive\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-12-24",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/12/24/holiday-beer/#Wintercoat"
       }
     ]
   },
@@ -8387,7 +8387,7 @@
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Imperial Stout brewed with barley, so expect the full malt body of a traditional recipe. It carries a robust 10.5% ABV.",
     "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/",
+    "sourceUrl": "https://smartgurlsolutions.com/2020/07/19/black-is-beautiful-beer/#TrapDoorBiB",
     "origin": "Vancouver, Washington, USA",
     "flavor": [
       "roasty",
@@ -8403,9 +8403,9 @@
         "ppm": null,
         "result": "positive",
         "resultNote": "Table entry: \"Positive\". Qualitative threshold test at 5 ppm, home-run, not a lab assay.",
-        "testedAt": null,
+        "testedAt": "2020-07-19",
         "sourceName": "smartgurlsolutions.com",
-        "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
+        "sourceUrl": "https://smartgurlsolutions.com/2020/07/19/black-is-beautiful-beer/#TrapDoorBiB"
       }
     ]
   },
