@@ -85,6 +85,6 @@ export async function POST(req: Request) {
   } catch (e) {
     console.error("gemini error:", (e as Error).message);
     const m = /"code":\s*(\d+)[\s\S]*?"status":\s*"([A-Z_]+)"/.exec((e as Error).message);
-    return Response.json({ error: "The Sommelier is unavailable right now.", detail: m ? `${m[1]} ${m[2]}` : "upstream error" }, { status: 502 });
+    return Response.json({ error: "The Sommelier is unavailable right now.", detail: m ? `${m[1]} ${m[2]}` : (e as Error).message.replace(apiKey, "***").slice(0, 200) }, { status: 502 });
   }
 }
