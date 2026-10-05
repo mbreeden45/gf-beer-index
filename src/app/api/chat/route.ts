@@ -72,7 +72,7 @@ export async function POST(req: Request) {
       ai.models.generateContentStream({
         model,
         contents: msgs,
-        config: { systemInstruction: systemPrompt(beers), temperature: 0.7, maxOutputTokens: 700 },
+        config: { systemInstruction: systemPrompt(beers), temperature: 0.7, maxOutputTokens: 700, abortSignal: AbortSignal.timeout(15_000) },
       });
     let stream;
     for (let attempt = 0; ; attempt++) {
