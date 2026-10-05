@@ -70,11 +70,15 @@ export async function POST(req: Request) {
         config: { systemInstruction: systemPrompt(beers), temperature: 0.7, maxOutputTokens: 700, thinkingConfig: { thinkingBudget: 0 } },
       });
     let stream;
-    try {
-      stream = await start();
-    } catch {
-      await new Promise((r) => setTimeout(r, 800));
-      stream = await start();
+    for (let attempt = 0; ; attempt++) {
+      try {
+        stream = await start();
+        break;
+      } catch (err) {
+        const st = (err as { status?: number }).status;
+        if (attempt >= 2 || (st && st < 500 && st !== 429)) throw err;
+        await new Promise((r) => setTimeout(r, 700 * (attempt + 1)));
+      }
     }
     const enc = new TextEncoder();
     return new Response(
