@@ -48,7 +48,7 @@ export default function Sommelier() {
       }
       if (!res.ok || !res.body) {
         const err = await res.json().catch(() => ({ error: "Something went wrong." }));
-        setMsgs([...next, { role: "assistant", content: `${err.error ?? "Something went wrong."}${res.status === 429 ? "" : " I tried a few times. Send your message again in a minute."}` }]);
+        setMsgs([...next, { role: "assistant", content: res.status === 429 ? "Taproom Sommelier is catching its breath. Please try again in a minute." : `${err.error ?? "Something went wrong."} I tried a few times. Send your message again in a minute.` }]);
         return;
       }
       const reader = res.body.getReader();
