@@ -9,6 +9,7 @@ type P = {
   hasPositiveTest?: boolean;
 };
 
+const styleOf = (s: string) => (s === "Unspecified" ? "beer" : s);
 const fmtGrains = (g: string[]) =>
   g.length ? g.join(", ") : "grains not itemised by the source";
 
@@ -17,10 +18,10 @@ export function sensoryProfile(p: P): string {
   const strength =
     p.abv == null ? "an unstated strength" : p.abv >= 6.5 ? "a robust " + p.abv + "% ABV" : p.abv >= 4.8 ? "a mid-weight " + p.abv + "% ABV" : "a light " + p.abv + "% ABV";
   const base: Record<Classification, string> = {
-    dedicated_ngci: `Built on ${fmtGrains(p.grains)} rather than barley, this ${p.style} leans on the grain's natural character instead of a wheat-style malt backbone.`,
-    crafted_to_remove: `A barley-malt ${p.style} where the grain bill keeps a familiar malt-forward structure before enzymatic treatment.`,
-    adjunct_low_ppm: `A ${p.style} brewed with ${fmtGrains(p.grains)}, which typically gives a lighter, crisper body than an all-malt recipe.`,
-    standard_gluten: `A conventional ${p.style} brewed with ${fmtGrains(p.grains)}, so expect the full malt body of a traditional recipe.`,
+    dedicated_ngci: `Built on ${fmtGrains(p.grains)} rather than barley, this ${styleOf(p.style)} leans on the grain's natural character instead of a wheat-style malt backbone.`,
+    crafted_to_remove: `A barley-malt ${styleOf(p.style)} where the grain bill keeps a familiar malt-forward structure before enzymatic treatment.`,
+    adjunct_low_ppm: `A ${styleOf(p.style)} brewed with ${fmtGrains(p.grains)}, which typically gives a lighter, crisper body than an all-malt recipe.`,
+    standard_gluten: `A conventional ${styleOf(p.style)} brewed with ${fmtGrains(p.grains)}, so expect the full malt body of a traditional recipe.`,
   };
   return `${base[p.classification]} It carries ${strength}.`;
 }

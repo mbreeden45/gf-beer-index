@@ -22,7 +22,7 @@ function limited(ip: string) {
 function catalogLine(b: Beer) {
   const t = [...b.tests].sort((x, y) => (y.testedAt ?? "").localeCompare(x.testedAt ?? ""))[0];
   const test = t ? `${t.kit}: ${t.ppm != null ? `~${t.ppm}ppm est.` : t.result}` : "no test";
-  return `${b.brewery} | ${b.name} | ${b.style} | ${CLASS_LABEL[b.classification]} | ${b.abv ?? "?"}% | ${b.grains.join("/") || "grains?"} | ${test} (${b.tests.length} tests)`;
+  return `${b.brewery}${b.origin ? ` (${b.origin})` : ""} | ${b.name} | ${b.style} | ${CLASS_LABEL[b.classification]} | ${b.abv ?? "?"}%${b.ibu ? `, ${b.ibu} IBU` : ""} | ${b.grains.join("/") || "grains?"} | ${test} (${b.tests.length} tests)`;
 }
 
 function systemPrompt(beers: Beer[]) {

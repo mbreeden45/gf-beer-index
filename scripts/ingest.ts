@@ -5,7 +5,11 @@
  */
 import * as cheerio from "cheerio";
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
-import { BeerSchema, SeedSchema, type Beer, type BeerTest, type Classification } from "../src/lib/types";
+import { BeerSchema, SeedSchema, type Beer as FullBeer, type BeerTest, type Classification } from "../src/lib/types";
+
+// During ingest the enrichment fields are optional; SeedSchema fills defaults on output.
+type Beer = Omit<FullBeer, "origin" | "flavor" | "notes" | "grainsBasis" | "refs"> & Partial<Pick<FullBeer, "origin" | "flavor" | "notes" | "grainsBasis" | "refs">>;
+import { flavorFor } from "../src/lib/flavor";
 import { celiacAssessment, coldLagering, sensoryProfile } from "../src/lib/profile";
 
 const UA = "Mozilla/5.0 (compatible; gf-beer-index/1.0; fact-extraction, contact via repo)";
@@ -30,6 +34,19 @@ async function get(url: string): Promise<string | null> {
   }
 }
 const grainsFrom = (t: string) => GRAIN_WORDS.filter((g) => new RegExp(`\\b${g}\\b`, "i").test(t)).map((g) => (g === "maize" ? "corn" : g)).filter((g, i, a) => a.indexOf(g) === i);
+
+type Enrichment = { breweries: Record<string, { origin: string; grains: string[]; notes: string[]; ref: { label: string; url: string } }>; beers: Record<string, { ibu?: number; style?: string; origin?: string; grains?: string[]; notes?: string[]; ref?: { label: string; url: string } }>; merge: Record<string, string> };
+const ENRICH: Enrichment = existsSync("data/enrichment.json") ? JSON.parse(readFileSync("data/enrichment.json", "utf8")) : { breweries: {}, beers: {}, merge: {} };
+
+function enrich(b: Beer): Beer {
+  const be = ENRICH.breweries[b.brewery];
+  const eb = ENRICH.beers[b.slug];
+  const style = b.style === "Unspecified" && eb?.style ? eb.style : b.style;
+  const grains = b.grains.length ? b.grains : eb?.grains ?? be?.grains ?? [];
+  const basis = b.grains.length ? "listing" : eb?.grains ? "reference" : be?.grains?.length ? "brewery-typical" : null;
+  return { ...b, style, ibu: b.ibu || eb?.ibu || null, grains, grainsBasis: basis, origin: eb?.origin ?? be?.origin ?? b.origin ?? null, flavor: flavorFor(style),
+    notes: [...(be?.notes ?? []), ...(eb?.notes ?? [])], refs: [be?.ref, eb?.ref].filter((r): r is { label: string; url: string } => !!r) };
+}
 
 function finish(b: Omit<Beer, "coldLagering" | "sensoryProfile" | "celiacAssessment">): Beer {
   const hasPositiveTest = b.tests.some((t) => t.result === "positive");
@@ -243,13 +260,17 @@ async function main() {
   }
   const isNeg = (t: BeerTest) => t.result === "negative" || (t.result === "numeric" && (t.ppm ?? 99) < 20);
   const isPos = (t: BeerTest) => t.result === "positive" || (t.result === "numeric" && (t.ppm ?? 0) >= 20);
+  for (const [from, to] of Object.entries(ENRICH.merge)) {
+    const f = merged.get(from), t = merged.get(to);
+    if (f && t) { t.tests.push(...f.tests); t.grains = [...new Set([...t.grains, ...f.grains])]; t.abv = t.abv ?? f.abv; merged.delete(from); }
+  }
   const reconcile = (b: Beer): Beer => {
     if (b.classification === "crafted_to_remove" || b.classification === "dedicated_ngci" || !b.tests.length) return b;
     const pos = b.tests.some(isPos);
     const neg = b.tests.every(isNeg);
     return { ...b, classification: pos ? "standard_gluten" : neg ? "adjunct_low_ppm" : b.classification };
   };
-  const all = SeedSchema.parse([...merged.values()].map((b) => finish(reconcile(b))).sort((x, y) => x.brewery.localeCompare(y.brewery) || x.name.localeCompare(y.name)));
+  const all = SeedSchema.parse([...merged.values()].map((b) => finish(enrich(reconcile(b)))).sort((x, y) => x.brewery.localeCompare(y.brewery) || x.name.localeCompare(y.name)));
   mkdirSync("data", { recursive: true });
   writeFileSync("data/seed-beers.json", JSON.stringify(all, null, 2));
   console.log(`wrote data/seed-beers.json: ${all.length} beers`);

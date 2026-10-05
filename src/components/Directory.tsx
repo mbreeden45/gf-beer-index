@@ -74,7 +74,7 @@ export default function Directory({ beers }: { beers: Beer[] }) {
               </div>
               <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">{b.brewery}</p>
               <h2 className="font-display text-2xl font-semibold leading-tight">{b.name}</h2>
-              <p className="text-sm italic text-muted">{b.style}</p>
+              <p className="text-sm italic text-muted">{b.style}{b.origin ? <span className="not-italic"> · {b.origin}</span> : null}</p>
 
               <dl className="mt-4 grid grid-cols-2 divide-x divide-rule border-y border-rule font-mono">
                 <div className="py-2 pr-3"><dt className="text-[10px] text-muted">ABV</dt><dd className="text-lg font-bold">{b.abv != null ? `${b.abv}%` : "—"}</dd></div>
@@ -83,11 +83,15 @@ export default function Directory({ beers }: { beers: Beer[] }) {
 
               <div className="mt-3 flex flex-wrap gap-1.5">
                 {b.grains.length ? b.grains.map((g) => (
-                  <span key={g} className={`border px-1.5 py-0.5 font-mono text-[10px] uppercase ${["barley", "wheat", "oats"].includes(g) ? "border-copper/60 text-copper" : "border-pine/60 text-pine"}`}>{g}</span>
+                  <span key={g} title={b.grainsBasis === "brewery-typical" ? "Typical of this brewery's grain base; not confirmed for this exact beer" : undefined}
+                    className={`border px-1.5 py-0.5 font-mono text-[10px] uppercase ${b.grainsBasis === "brewery-typical" ? "border-dashed" : ""} ${["barley", "wheat"].includes(g) ? "border-copper/60 text-copper" : "border-pine/60 text-pine"}`}>{g}</span>
                 )) : <span className="font-mono text-[10px] uppercase text-muted">grain bill not itemised</span>}
               </div>
 
-              <p className="mt-4 text-sm leading-relaxed">{b.sensoryProfile}</p>
+              {b.flavor.length > 0 && (
+                <p className="mt-3 font-display text-sm italic text-copper">{b.flavor.join(" · ")}</p>
+              )}
+              <p className="mt-2 text-sm leading-relaxed">{b.sensoryProfile}</p>
               <p className="mt-2 border-l-2 border-gold pl-3 text-sm leading-relaxed text-muted">{b.celiacAssessment}</p>
 
               <div className="mt-auto pt-4">
@@ -110,6 +114,16 @@ export default function Directory({ beers }: { beers: Beer[] }) {
                         </a>
                       </div>
                     ))}
+                    {(b.notes.length > 0 || b.refs.length > 0 || b.grainsBasis === "brewery-typical") && (
+                      <div className="border-t border-rule pt-3 text-xs text-muted">
+                        <div className="font-mono text-[10px] uppercase tracking-wider text-ink">Field notes</div>
+                        {b.grainsBasis === "brewery-typical" && <p className="mt-1">Grain tags (dashed) show this brewery&apos;s typical base, not a confirmed recipe.</p>}
+                        {b.notes.length > 0 && <ul className="mt-1 list-disc pl-4">{b.notes.map((n) => <li key={n}>{n}</li>)}</ul>}
+                        {b.refs.map((r) => (
+                          <a key={r.url} href={r.url} target="_blank" rel="noopener noreferrer" className="mt-1 mr-3 inline-flex items-center gap-1 text-pine underline underline-offset-2">{r.label} <ExternalLink size={10} /></a>
+                        ))}
+                      </div>
+                    )}
                     {b.sourceUrl && <a href={b.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[11px] text-pine underline underline-offset-2">Listing source <ExternalLink size={11} /></a>}
                   </div>
                 )}

@@ -32,9 +32,14 @@ export const BeerSchema = z.object({
   sensoryProfile: z.string(),
   celiacAssessment: z.string(),
   sourceUrl: z.string().url().nullable(),
+  origin: z.string().nullable().default(null),
+  flavor: z.array(z.string()).default([]),
+  notes: z.array(z.string()).default([]),
+  grainsBasis: z.enum(["listing", "brewery-typical", "reference"]).nullable().default(null),
+  refs: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
   tests: z.array(TestSchema),
 });
-export type Beer = z.infer<typeof BeerSchema>;
+export type Beer = z.output<typeof BeerSchema>;
 export const SeedSchema = z.array(BeerSchema);
 
 export const CLASS_LABEL: Record<Classification, string> = {

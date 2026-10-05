@@ -2,10 +2,10 @@ import { readFileSync, mkdirSync } from "node:fs";
 import { SeedSchema } from "../src/lib/types";
 import * as sqliteSchema from "../src/db/schema.sqlite";
 import * as pgSchema from "../src/db/schema.pg";
-import { PG_DDL, SQLITE_DDL } from "../src/db/ddl";
+import { DROP, PG_DDL, SQLITE_DDL } from "../src/db/ddl";
 
 const seed = SeedSchema.parse(JSON.parse(readFileSync("data/seed-beers.json", "utf8")));
-const beerRows = seed.map((b) => { const { tests: _omit, grains, ...rest } = b; void _omit; return { ...rest, grains: JSON.stringify(grains) }; });
+const beerRows = seed.map((b) => { const { tests: _omit, grains, flavor, notes, refs, ...rest } = b; void _omit; return { ...rest, grains: JSON.stringify(grains), flavor: JSON.stringify(flavor), notes: JSON.stringify(notes), refs: JSON.stringify(refs) }; });
 const testRows = seed.flatMap((b) => b.tests.map((t) => ({ beerSlug: b.slug, ...t })));
 const chunk = <T,>(a: T[], n = 200) => Array.from({ length: Math.ceil(a.length / n) }, (_, i) => a.slice(i * n, i * n + n));
 
@@ -15,7 +15,7 @@ async function main() {
     const { drizzle } = await import("drizzle-orm/postgres-js");
     const client = postgres(process.env.DATABASE_URL, { prepare: false });
     const db = drizzle(client);
-    for (const s of PG_DDL) await client.unsafe(s);
+    for (const s of [...DROP, ...PG_DDL]) await client.unsafe(s);
     await db.delete(pgSchema.beerTests);
     await db.delete(pgSchema.beers);
     for (const c of chunk(beerRows)) await db.insert(pgSchema.beers).values(c);
@@ -27,7 +27,7 @@ async function main() {
     const { drizzle } = await import("drizzle-orm/better-sqlite3");
     mkdirSync("data", { recursive: true });
     const sqlite = new Database("data/beers.db");
-    for (const s of SQLITE_DDL) sqlite.exec(s);
+    for (const s of [...DROP, ...SQLITE_DDL]) sqlite.exec(s);
     const db = drizzle(sqlite);
     db.delete(sqliteSchema.beerTests).run();
     db.delete(sqliteSchema.beers).run();

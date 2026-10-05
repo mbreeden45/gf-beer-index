@@ -1,0 +1,1006 @@
+{
+ "breweries": {
+  "Lucky Pigeon Brewing Co.": {
+   "origin": "Biddeford, Maine, USA",
+   "grains": [
+    "millet",
+    "rice",
+    "buckwheat"
+   ],
+   "notes": [
+    "Maine's first dedicated gluten-free brewery (2018), 7-barrel system"
+   ],
+   "ref": {
+    "label": "The Maine Mag",
+    "url": "https://www.themainemag.com/maines-first-gluten-free-brewery-takes-flight-in-biddeford/"
+   }
+  },
+  "Departed Soles Brewing Company": {
+   "origin": "Jersey City, New Jersey, USA",
+   "grains": [
+    "millet",
+    "rice",
+    "buckwheat",
+    "oats",
+    "quinoa"
+   ],
+   "notes": [
+    "Dedicated fermenters that have never touched gluten"
+   ],
+   "ref": {
+    "label": "Jersey Bites",
+    "url": "https://jerseybites.com/departed-soles-gluten-free-beer-for-the-garden-state/"
+   }
+  },
+  "Ghostfish Brewing Company": {
+   "origin": "Seattle, Washington, USA",
+   "grains": [
+    "millet",
+    "rice",
+    "buckwheat"
+   ],
+   "notes": [
+    "Malted millet, malted brown rice and buckwheat replace barley"
+   ],
+   "ref": {
+    "label": "Beer & Brewing",
+    "url": "https://www.beerandbrewing.com/brewers-perspective-going-gluten-free-with-ghostfish"
+   }
+  },
+  "Holidaily Brewing Co.": {
+   "origin": "Golden, Colorado, USA",
+   "grains": [
+    "millet",
+    "buckwheat",
+    "rice"
+   ],
+   "notes": [
+    "Millet-led recipes rather than sorghum; developed with Colorado State University fermentation scientists"
+   ],
+   "ref": {
+    "label": "5280",
+    "url": "https://5280.com/finally-good-gluten-free-beer/"
+   }
+  },
+  "Orange Bike Brewing": {
+   "origin": "Portland, Maine, USA",
+   "grains": [
+    "millet",
+    "buckwheat",
+    "quinoa",
+    "oats",
+    "rice"
+   ],
+   "notes": [
+    "No sorghum, syrups, added sugars or extracts"
+   ],
+   "ref": {
+    "label": "Portland Press Herald",
+    "url": "https://pressherald.com/2024/11/25/orange-bike-honors-tradition-while-breaking-new-ground-with-its-gluten-free-beers"
+   }
+  },
+  "Glutenberg Brewery": {
+   "origin": "Montréal, Québec, Canada",
+   "grains": [
+    "millet",
+    "buckwheat",
+    "corn",
+    "quinoa"
+   ],
+   "notes": [],
+   "ref": {
+    "label": "Best Gluten Free Beers",
+    "url": "https://bestglutenfreebeers.com/glutenberg-american-pale-ale/"
+   }
+  },
+  "Alt Brew": {
+   "origin": "Madison, Wisconsin, USA",
+   "grains": [],
+   "notes": [
+    "One-barrel nano brewery on dedicated gluten-free equipment",
+    "Brewed with honey, using an altbier-style yeast and cool fermentation"
+   ],
+   "ref": {
+    "label": "Madison Magazine",
+    "url": "https://www.channel3000.com/madison-magazine/an-alt-ernative-for-gluten-free-beer-lovers/article_32ec6d7a-2835-11ef-a027-9fb098c962ce.html"
+   }
+  },
+  "Divine Science Brewing": {
+   "origin": "Orange County, California, USA",
+   "grains": [
+    "millet",
+    "rice",
+    "buckwheat"
+   ],
+   "notes": [
+    "Malted gluten-free grains; the Divine Millsner is millet, water, hops and yeast"
+   ],
+   "ref": {
+    "label": "Orange Coast",
+    "url": "https://orangecoast.com/2022/gluten-free-beer-at-divine-science-brewing/"
+   }
+  },
+  "Evasion Brewing": {
+   "origin": "McMinnville, Oregon, USA",
+   "grains": [
+    "millet",
+    "rice",
+    "buckwheat"
+   ],
+   "notes": [
+    "Alternative-grain recipes built to resemble barley beers"
+   ],
+   "ref": {
+    "label": "New School Beer",
+    "url": "https://newschoolbeer.com/2017/12/look-inside-mcminnvilles-new-evasion-brewing.html"
+   }
+  },
+  "Ground Breaker Brewing": {
+   "origin": "Portland, Oregon, USA",
+   "grains": [
+    "rice",
+    "millet",
+    "sorghum",
+    "quinoa",
+    "chestnut"
+   ],
+   "notes": [
+    "First dedicated, certified gluten-free brewery in the US (2011)",
+    "Willamette Valley hops and chestnuts"
+   ],
+   "ref": {
+    "label": "Nombase",
+    "url": "https://www.nombase.com/companies/groundbreakerbrewing"
+   }
+  },
+  "Bierly Brewing": {
+   "origin": "McMinnville, Oregon, USA",
+   "grains": [
+    "rice",
+    "buckwheat",
+    "millet",
+    "sorghum"
+   ],
+   "notes": [
+    "Opened St. Patrick's Day 2016 by two owners who both have celiac disease"
+   ],
+   "ref": {
+    "label": "Visit McMinnville",
+    "url": "https://visitmcminnville.com/about/articles/bierly-brewing/"
+   }
+  }
+ },
+ "beers": {
+  "lucky-pigeon-brewing-co-eclectus": {
+   "grains": [
+    "millet",
+    "rice",
+    "buckwheat"
+   ],
+   "ref": {
+    "label": "Hannaford listing",
+    "url": "https://hannaford.com/groceries/product/lucky-pigeon-brewing-co-gluten-free-eclectus-blonde-ale-beer-4-pk-16-oz-cans/382948"
+   }
+  },
+  "lucky-pigeon-brewing-co-rock-dove": {
+   "grains": [
+    "millet",
+    "rice",
+    "buckwheat",
+    "oats"
+   ],
+   "ref": {
+    "label": "Hannaford listing",
+    "url": "https://hannaford.com/groceries/product/lucky-pigeon-brewing-co-gluten-free-rock-dove-new-england-ipa-beer-4-pk-16-oz-cans/382949"
+   }
+  },
+  "ghostfish-brewing-company-kick-step-ipa": {
+   "grains": [
+    "millet"
+   ],
+   "ref": {
+    "label": "The Mountaineers",
+    "url": "https://www.mountaineers.org/blog/introducing-kick-step-ipa-a-beer-partnership-with-ghostfish-brewing"
+   },
+   "notes": [
+    "Made in partnership with The Mountaineers; sales support outdoor recreation"
+   ]
+  },
+  "ghostfish-brewing-company-grapefruit-ipa": {
+   "notes": [
+    "Grapefruit peel plus an experimental grapefruit-forward hop; published IBU figures vary by source"
+   ]
+  },
+  "holidaily-brewing-co-favorite-blonde-ale": {
+   "grains": [
+    "millet",
+    "buckwheat"
+   ]
+  },
+  "glutenberg-brewery-american-pale-ale": {
+   "grains": [
+    "millet",
+    "buckwheat",
+    "corn",
+    "quinoa"
+   ]
+  },
+  "glutenberg-brewery-ipa": {
+   "grains": [
+    "millet",
+    "buckwheat",
+    "corn",
+    "rice"
+   ],
+   "notes": [
+    "Includes black rice"
+   ]
+  },
+  "glutenberg-brewery-stout": {
+   "grains": [
+    "millet",
+    "corn"
+   ],
+   "notes": [
+    "Candi syrup, cocoa nibs and coffee"
+   ]
+  },
+  "departed-soles-brewing-company-a-dark-night": {
+   "grains": [
+    "sorghum"
+   ],
+   "notes": [
+    "Sorghum-extract based, heavy Cascade and Citra hopping"
+   ],
+   "ref": {
+    "label": "Best Gluten Free Beers",
+    "url": "https://bestglutenfreebeers.com/departed-soles-rick-rolled-oat-coffee-stout/"
+   }
+  },
+  "ground-breaker-brewing-99-light": {
+   "grains": [
+    "rice",
+    "millet",
+    "sorghum",
+    "quinoa"
+   ],
+   "ref": {
+    "label": "Epicurean Trader",
+    "url": "https://theepicureantrader.com/products/ground-breaker-brewing-99-light-ipa-12oz"
+   }
+  },
+  "amstel-brouwerij-heineken-amstel": {
+   "style": "Pale Lager",
+   "origin": "Amsterdam, Netherlands"
+  },
+  "anheuser-busch-bud-light": {
+   "style": "Light Lager",
+   "origin": "St. Louis, Missouri, USA",
+   "grains": [
+    "barley",
+    "rice"
+   ]
+  },
+  "anheuser-busch-budweiser": {
+   "style": "American Lager",
+   "origin": "St. Louis, Missouri, USA",
+   "grains": [
+    "barley",
+    "rice"
+   ]
+  },
+  "anheuser-busch-busch": {
+   "style": "American Lager",
+   "origin": "St. Louis, Missouri, USA"
+  },
+  "anheuser-busch-michelob-ultra": {
+   "style": "Light Lager",
+   "origin": "St. Louis, Missouri, USA",
+   "grains": [
+    "barley",
+    "rice"
+   ]
+  },
+  "anheuser-busch-odoul-s": {
+   "style": "Non-Alcoholic Lager",
+   "origin": "St. Louis, Missouri, USA"
+  },
+  "anheuser-busch-inbev-stella-artois": {
+   "style": "Pilsner",
+   "origin": "Leuven, Belgium"
+  },
+  "asahi-asahi-dry-zero": {
+   "style": "Non-Alcoholic Lager",
+   "origin": "Tokyo, Japan"
+  },
+  "asahi-asahi-super-dry": {
+   "style": "Dry Lager",
+   "origin": "Tokyo, Japan"
+  },
+  "asahi-beer-k-k-asahi": {
+   "style": "Dry Lager",
+   "origin": "Tokyo, Japan"
+  },
+  "asia-pacific-breweries-ltd-tiger": {
+   "style": "Pale Lager",
+   "origin": "Singapore"
+  },
+  "augustiner-brau-augustiner-helles-augustiner-edelstoff": {
+   "style": "Helles",
+   "origin": "Munich, Germany"
+  },
+  "ayinger-celebrator-doppelbock": {
+   "style": "Doppelbock",
+   "origin": "Aying, Germany",
+   "grains": [
+    "barley"
+   ]
+  },
+  "badische-staatsbrauerei-rothaus-rothaus-pils": {
+   "style": "Pilsner",
+   "origin": "Black Forest, Germany"
+  },
+  "bass-brewers-ltd-bass-ale": {
+   "style": "English Pale Ale",
+   "origin": "Burton upon Trent, England",
+   "grains": [
+    "barley"
+   ]
+  },
+  "bayerische-staatsbrauerei-weihenstephan-weihenstephaner-original-helles": {
+   "style": "Helles",
+   "origin": "Freising, Germany"
+  },
+  "beck-s-brewery-anheuser-busch-inbev-beck-s": {
+   "style": "German Pilsner",
+   "origin": "Bremen, Germany"
+  },
+  "bitburger-brauerei-bitburger-premium-pils": {
+   "style": "German Pilsner",
+   "origin": "Bitburg, Germany"
+  },
+  "blast-beer-company-key-west-florida-usa-save-the-day-ipa": {
+   "style": "IPA",
+   "origin": "Key West, Florida, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "boag-s-brewery-j-boag-son-owned-by-lion-group-james-boag-s-premium-lager": {
+   "style": "Premium Lager",
+   "origin": "Launceston, Tasmania, Australia",
+   "grains": [
+    "barley"
+   ]
+  },
+  "boston-beer-company-samuel-adams-boston-lager": {
+   "style": "Vienna Lager",
+   "origin": "Boston, Massachusetts, USA",
+   "grains": [
+    "barley"
+   ],
+   "ibu": 30
+  },
+  "brand-bierbrouwerij-brand-pilsener": {
+   "style": "Pilsner",
+   "origin": "Wijlre, Netherlands"
+  },
+  "brasserie-cantillon-cantillon-gueuze": {
+   "style": "Gueuze",
+   "origin": "Brussels, Belgium",
+   "grains": [
+    "barley",
+    "wheat"
+   ]
+  },
+  "brasserie-d-achouffe-la-chouffe-blonde": {
+   "style": "Belgian Strong Blonde",
+   "origin": "Achouffe, Belgium"
+  },
+  "breakside-brewing-rainbows-unicorns-ipa": {
+   "style": "IPA",
+   "origin": "Portland, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "brooklyn-brewery-brooklyn-lager": {
+   "style": "Amber Lager",
+   "origin": "Brooklyn, New York, USA"
+  },
+  "brouwerij-duvel-moortgat-duvel": {
+   "style": "Belgian Strong Golden Ale",
+   "origin": "Breendonk, Belgium",
+   "grains": [
+    "barley"
+   ]
+  },
+  "budejovicky-budvar-n-p-budweiser-original": {
+   "style": "Czech Pale Lager",
+   "origin": "České Budějovice, Czechia"
+  },
+  "carlsberg-tuborg-julebryg": {
+   "style": "Christmas Lager",
+   "origin": "Copenhagen, Denmark"
+  },
+  "carlsberg-tuborg-pilsener": {
+   "style": "Pilsner",
+   "origin": "Copenhagen, Denmark"
+  },
+  "carlsberg-group-carlsberg": {
+   "style": "Pilsner",
+   "origin": "Copenhagen, Denmark"
+  },
+  "ccc-compania-cervecera-de-canarias-dorada": {
+   "style": "Pale Lager",
+   "origin": "Canary Islands, Spain"
+  },
+  "cerveceria-cuahtemoc-dos-equis": {
+   "style": "Mexican Lager",
+   "origin": "Monterrey, Mexico"
+  },
+  "cerveceria-cuauhtemoc-moctezuma-bohemia-pilsner": {
+   "style": "Pilsner",
+   "origin": "Monterrey, Mexico"
+  },
+  "cerveceria-cuauhtemoc-moctezuma-carta-blanca": {
+   "style": "Mexican Lager",
+   "origin": "Monterrey, Mexico"
+  },
+  "cerveceria-national-s-a-balboa-ice": {
+   "style": "Ice Lager",
+   "origin": "Panama"
+  },
+  "cerveceria-y-malteria-quilmes-quilmes": {
+   "style": "Argentine Lager",
+   "origin": "Quilmes, Argentina"
+  },
+  "china-resources-snow-breweries-ltd-snow": {
+   "style": "Pale Lager",
+   "origin": "China"
+  },
+  "coopers-brewery-coopers-birell-ultra-light": {
+   "style": "Low-Alcohol Lager",
+   "origin": "Adelaide, Australia"
+  },
+  "coopers-brewery-coopers-clear": {
+   "style": "Australian Lager",
+   "origin": "Adelaide, Australia",
+   "grains": [
+    "barley"
+   ]
+  },
+  "coopers-brewery-coopers-lager": {
+   "style": "Australian Lager",
+   "origin": "Adelaide, Australia",
+   "grains": [
+    "barley"
+   ]
+  },
+  "coopers-brewery-coopers-pale-ale": {
+   "style": "Sparkling Ale",
+   "origin": "Adelaide, Australia"
+  },
+  "coors-brewing-company-coors-light": {
+   "style": "Light Lager",
+   "origin": "Golden, Colorado, USA"
+  },
+  "denies-geddes-red-stripe": {
+   "style": "Jamaican Lager",
+   "origin": "Kingston, Jamaica",
+   "grains": [
+    "barley",
+    "cassava"
+   ]
+  },
+  "deschutes-black-butte-porter": {
+   "style": "Porter",
+   "origin": "Bend, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "deschutes-jubelale": {
+   "style": "Winter Ale",
+   "origin": "Bend, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "deschutes-mirror-pond-pale-ale": {
+   "style": "American Pale Ale",
+   "origin": "Bend, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "dogfishhead-60-minute-ipa": {
+   "style": "IPA",
+   "origin": "Milton, Delaware, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "dortmunder-actien-brauerei-dab-export": {
+   "style": "Dortmunder Export",
+   "origin": "Dortmund, Germany"
+  },
+  "erzquell-brauerei-bielstein-erzquell-pils": {
+   "style": "Pilsner",
+   "origin": "Bielstein, Germany",
+   "grains": [
+    "barley"
+   ]
+  },
+  "fabrica-de-bere-timisoreana": {
+   "style": "Pale Lager",
+   "origin": "Timișoara, Romania"
+  },
+  "firestone-walker-brewing-company-pale-31": {
+   "style": "American Pale Ale",
+   "origin": "Paso Robles, California, USA"
+  },
+  "fort-george-the-optimist-ipa": {
+   "style": "IPA",
+   "origin": "Astoria, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "fort-george-brewing-black-is-beautiful-imperial-coffee-stout": {
+   "style": "Imperial Stout",
+   "origin": "Astoria, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "foster-s-group-foster-s-lager": {
+   "style": "Australian Lager",
+   "origin": "Melbourne, Australia",
+   "grains": [
+    "barley"
+   ]
+  },
+  "frankfurter-brauhaus-perlenbacher-pilsner": {
+   "style": "Pilsner",
+   "origin": "Frankfurt, Germany"
+  },
+  "gigantic-brewing-black-is-beautiful-imperial-stout": {
+   "style": "Imperial Stout",
+   "origin": "Portland, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "grupo-modelo-corona-extra": {
+   "style": "Mexican Lager",
+   "origin": "Mexico City, Mexico"
+  },
+  "grupo-modelo-modelo-especial": {
+   "style": "Mexican Lager",
+   "origin": "Mexico City, Mexico"
+  },
+  "guinness-guinness-draught": {
+   "style": "Irish Dry Stout",
+   "origin": "Dublin, Ireland",
+   "grains": [
+    "barley"
+   ],
+   "ibu": 40
+  },
+  "st-james-s-gate-brewery-diageo-guinness": {
+   "style": "Irish Dry Stout",
+   "origin": "Dublin, Ireland",
+   "grains": [
+    "barley"
+   ]
+  },
+  "lapin-kulta": {
+   "style": "Lager",
+   "origin": "Tornio, Finland"
+  },
+  "heineken-brouwerijen-heineken": {
+   "style": "Pale Lager",
+   "origin": "Amsterdam, Netherlands"
+  },
+  "herforder-brauerei-herforder-pils": {
+   "style": "Pilsner",
+   "origin": "Herford, Germany"
+  },
+  "hofbrau-munich-hofbrau-oktoberfest": {
+   "style": "Oktoberfest Märzen",
+   "origin": "Munich, Germany"
+  },
+  "hofbrau-munich-hofbrau-sommerzwickl": {
+   "style": "Zwickelbier",
+   "origin": "Munich, Germany",
+   "grains": [
+    "barley"
+   ]
+  },
+  "jack-s-abby-craft-lagers-jack-s-abby-house-lager-style-pale-lager": {
+   "style": "Pale Lager",
+   "origin": "Framingham, Massachusetts, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "john-smith-s-brewery-newcastle-brown-ale": {
+   "style": "English Brown Ale",
+   "origin": "Newcastle, England"
+  },
+  "kirin-heartland": {
+   "style": "Pale Lager",
+   "origin": "Tokyo, Japan"
+  },
+  "kirin-brewery-kirin-heartland": {
+   "style": "Pale Lager",
+   "origin": "Tokyo, Japan"
+  },
+  "kirin-hard-cidre": {
+   "style": "Hard Cider",
+   "origin": "Tokyo, Japan"
+  },
+  "kirin-ichiban-shibori": {
+   "style": "Pale Lager",
+   "origin": "Tokyo, Japan",
+   "grains": [
+    "barley"
+   ]
+  },
+  "kirin-nodogoshi-nama": {
+   "style": "Happoshu (malt-reduced)",
+   "origin": "Tokyo, Japan"
+  },
+  "kompania-piwowarska-tyskie-gronie": {
+   "style": "Pale Lager",
+   "origin": "Tychy, Poland"
+  },
+  "kona-brewing-big-wave-golden-ale": {
+   "style": "Golden Ale",
+   "origin": "Kailua-Kona, Hawaii, USA"
+  },
+  "koninklijke-grolsch-n-v-grolsch": {
+   "style": "Pilsner",
+   "origin": "Enschede, Netherlands"
+  },
+  "koninklijke-grolsch-n-v-grolsch-kanon": {
+   "style": "Strong Lager",
+   "origin": "Enschede, Netherlands"
+  },
+  "krombacher-brauerei-krombacher-hell": {
+   "style": "Helles",
+   "origin": "Kreuztal, Germany"
+  },
+  "krombacher-brauerei-krombacher-pils": {
+   "style": "Pilsner",
+   "origin": "Kreuztal, Germany"
+  },
+  "la-zaragozana-ambar-especial": {
+   "style": "Pale Lager",
+   "origin": "Zaragoza, Spain",
+   "grains": [
+    "barley"
+   ]
+  },
+  "lion-nathan-steinlager-pure": {
+   "style": "Pilsner",
+   "origin": "Auckland, New Zealand"
+  },
+  "little-beast-brewing-black-is-beautiful-cookies-cream-imperial-stout": {
+   "style": "Imperial Stout",
+   "origin": "Beaverton, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "little-beast-brewing-sparkle-horn-sour-ale": {
+   "style": "Sour Ale",
+   "origin": "Beaverton, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "lobethal-bierhaus-bohemian-philsner": {
+   "style": "Bohemian Pilsner",
+   "origin": "Lobethal, South Australia",
+   "grains": [
+    "barley"
+   ]
+  },
+  "lost-grounded-brewers-keller-pils": {
+   "style": "Keller Pils",
+   "origin": "Bristol, England",
+   "grains": [
+    "barley"
+   ]
+  },
+  "lowenbrau-lowenbrau-oktoberfest": {
+   "style": "Oktoberfest Märzen",
+   "origin": "Munich, Germany"
+  },
+  "lowenbrau-lowenbrau-original": {
+   "style": "Helles",
+   "origin": "Munich, Germany"
+  },
+  "mahou-san-miguel-san-miguel": {
+   "style": "Pale Lager",
+   "origin": "Madrid, Spain"
+  },
+  "mahou-san-miguel-san-miguel-especial": {
+   "style": "Premium Lager",
+   "origin": "Madrid, Spain"
+  },
+  "miller-brewing-company-miller-high-life": {
+   "style": "American Lager",
+   "origin": "Milwaukee, Wisconsin, USA"
+  },
+  "miller-brewing-company-miller-lite": {
+   "style": "Light Lager",
+   "origin": "Milwaukee, Wisconsin, USA",
+   "grains": [
+    "barley",
+    "corn"
+   ]
+  },
+  "moosehead-breweries-moosehead-lager": {
+   "style": "Canadian Lager",
+   "origin": "Saint John, New Brunswick, Canada",
+   "grains": [
+    "barley",
+    "corn"
+   ]
+  },
+  "mythos-brewery-mythos": {
+   "style": "Pale Lager",
+   "origin": "Thessaloniki, Greece"
+  },
+  "new-belgium-belgian-white-ale": {
+   "style": "Witbier",
+   "origin": "Fort Collins, Colorado, USA",
+   "grains": [
+    "barley",
+    "wheat"
+   ]
+  },
+  "new-belgium-fat-tire-ale": {
+   "style": "Amber Ale",
+   "origin": "Fort Collins, Colorado, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "new-belgium-voodoo-ranger-atomic-pumpkin-ale": {
+   "style": "Pumpkin Ale",
+   "origin": "Fort Collins, Colorado, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "north-coast-brewing-co-old-rasputin-imperial-russian-stout": {
+   "style": "Imperial Stout",
+   "origin": "Fort Bragg, California, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "omission-ipa": {
+   "style": "IPA",
+   "origin": "Portland, Oregon, USA"
+  },
+  "omission-lager": {
+   "style": "Lager",
+   "origin": "Portland, Oregon, USA"
+  },
+  "omission-pale-ale": {
+   "style": "Pale Ale",
+   "origin": "Portland, Oregon, USA"
+  },
+  "pabst-brewing-company-pabst-blue-ribbon": {
+   "style": "American Lager",
+   "origin": "Milwaukee, Wisconsin, USA"
+  },
+  "paulaner-brauerei-paulaner-weissbier": {
+   "style": "Hefeweizen",
+   "origin": "Munich, Germany"
+  },
+  "pelican-brewing-bad-santa": {
+   "style": "Winter Ale",
+   "origin": "Pacific City, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "petoskey-brewing-company-petoskey-sparkle": {
+   "style": "Wheat Ale",
+   "origin": "Petoskey, Michigan, USA"
+  },
+  "pirate-life-brewing-adelaide-pirate-life-pilsner": {
+   "style": "Pilsner",
+   "origin": "Adelaide, Australia",
+   "grains": [
+    "barley"
+   ]
+  },
+  "plzesky-prazdroj-gambrinus-premium": {
+   "style": "Czech Pale Lager",
+   "origin": "Plzeň, Czechia"
+  },
+  "plzesky-prazdroj-pilsner-urquell": {
+   "style": "Czech Pilsner",
+   "origin": "Plzeň, Czechia",
+   "grains": [
+    "barley"
+   ],
+   "ibu": 40
+  },
+  "radeberger-exportbierbrauerei-radeberger": {
+   "style": "Pilsner",
+   "origin": "Radeberg, Germany"
+  },
+  "s-a-damm-estrella-damm-daura": {
+   "style": "Lager",
+   "origin": "Barcelona, Spain"
+  },
+  "san-miguel-brewery-san-mig-light": {
+   "style": "Light Lager",
+   "origin": "Manila, Philippines"
+  },
+  "sapporo-sapporo-black-label": {
+   "style": "Dry Lager",
+   "origin": "Tokyo, Japan",
+   "grains": [
+    "barley",
+    "rice",
+    "corn"
+   ]
+  },
+  "sierra-nevada-narwhal-imperial-stout": {
+   "style": "Imperial Stout",
+   "origin": "Chico, California, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "sierra-nevada-sidecar-ipa": {
+   "style": "Orange Peel IPA",
+   "origin": "Chico, California, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "sinebrychoff-karhu-5-3": {
+   "style": "Pale Lager",
+   "origin": "Kerava, Finland"
+  },
+  "smithwick-s-sons-smithwick-s-red-ale": {
+   "style": "Irish Red Ale",
+   "origin": "Kilkenny, Ireland",
+   "grains": [
+    "barley"
+   ]
+  },
+  "spaten-franziskaner-brau-munich-spaten-oktoberfestbier": {
+   "style": "Oktoberfest Märzen",
+   "origin": "Munich, Germany"
+  },
+  "spoetzl-brewery-shiner-bock": {
+   "style": "Bock",
+   "origin": "Shiner, Texas, USA"
+  },
+  "stieglbrauerei-salzburg-stiegl-goldbrau": {
+   "style": "Märzen",
+   "origin": "Salzburg, Austria"
+  },
+  "stockade-brew-co-duel-hoppy-lager": {
+   "style": "Hoppy Lager",
+   "origin": "Kingston, New York, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "stone-brewery-stone-ipa": {
+   "style": "IPA",
+   "origin": "Escondido, California, USA"
+  },
+  "stone-brewing-delicious-ipa": {
+   "style": "IPA",
+   "origin": "Escondido, California, USA"
+  },
+  "stone-brewing-ipa": {
+   "style": "IPA",
+   "origin": "Escondido, California, USA",
+   "ibu": 77
+  },
+  "stormbreaker-brewing-winter-coat": {
+   "style": "Winter Ale",
+   "origin": "Portland, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "swinkels-family-brewers-bavaria-pilsener": {
+   "style": "Pilsner",
+   "origin": "Lieshout, Netherlands"
+  },
+  "swinkels-family-brewers-formerly-bavaria-brouwerij-hollandia-premium": {
+   "style": "Pilsner",
+   "origin": "Lieshout, Netherlands"
+  },
+  "trap-door-brewing-black-is-beautiful-oatmeal-cookie-stout": {
+   "style": "Imperial Stout",
+   "origin": "Vancouver, Washington, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "tsingtao-brewery-tsingtao": {
+   "style": "Pale Lager",
+   "origin": "Qingdao, China"
+  },
+  "united-breweries-group-kingfisher-premium-lager": {
+   "style": "Pale Lager",
+   "origin": "Bengaluru, India"
+  },
+  "warsteiner-brauerei-haus-cramer-kg-warsteiner-premium-verum": {
+   "style": "Pilsner",
+   "origin": "Warstein, Germany"
+  },
+  "zillertal-bier-gmbh-zillertaler-marzen": {
+   "style": "Märzen",
+   "origin": "Zell am Ziller, Austria"
+  },
+  "10-barrel-pub-beer-lager": {
+   "style": "Lager",
+   "origin": "Bend, Oregon, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "kona-brewing-co-castaway-ipa": {
+   "style": "IPA",
+   "origin": "Kailua-Kona, Hawaii, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "kona-brewing-co-fire-rock-pale-ale": {
+   "style": "Pale Ale",
+   "origin": "Kailua-Kona, Hawaii, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "kona-brewing-co-kanaha-blonde-ale": {
+   "style": "Blonde Ale",
+   "origin": "Kailua-Kona, Hawaii, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "kona-brewing-co-longboard-island-lager": {
+   "style": "Lager",
+   "origin": "Kailua-Kona, Hawaii, USA",
+   "grains": [
+    "barley"
+   ]
+  },
+  "bintang": {
+   "style": "Pilsner",
+   "origin": "Indonesia"
+  },
+  "vale-brewing-vale-lager": {
+   "style": "Lager",
+   "origin": "Australia",
+   "grains": [
+    "barley"
+   ]
+  }
+ },
+ "merge": {
+  "stone-brewery-stone-ipa": "stone-brewing-ipa",
+  "st-james-s-gate-brewery-diageo-guinness": "guinness-guinness-draught",
+  "kirin-heartland": "kirin-brewery-kirin-heartland",
+  "asahi-beer-k-k-asahi": "asahi-asahi-super-dry"
+ }
+}

@@ -7,6 +7,6 @@
   {"slug":"modelo-especial","name":"Modelo Especial","brewery":"Grupo Modelo","style":"Mexican Lager","abv":4.4,"ibu":null,"classification":"adjunct_low_ppm","grains":["barley","corn","rice"],"sourceUrl":null,"tests":[]},
   {"slug":"corona-extra","name":"Corona Extra","brewery":"Grupo Modelo","style":"Mexican Lager","abv":4.6,"ibu":null,"classification":"adjunct_low_ppm","grains":["barley","corn","rice"],"sourceUrl":null,"tests":[]},
   {"slug":"kona-big-wave","name":"Big Wave Golden Ale","brewery":"Kona Brewing","style":"Golden Ale","abv":4.4,"ibu":null,"classification":"standard_gluten","grains":["barley"],"sourceUrl":null,"tests":[]},
-  {"slug":"stone-ipa","name":"IPA","brewery":"Stone Brewing","style":"IPA","abv":6.9,"ibu":71,"classification":"standard_gluten","grains":["barley"],"sourceUrl":null,"tests":[]},
+  {"slug":"stone-ipa","name":"IPA","brewery":"Stone Brewing","style":"IPA","abv":6.9,"ibu":77,"classification":"standard_gluten","grains":["barley"],"sourceUrl":null,"tests":[]},
   {"slug":"sierra-nevada-pale-ale","name":"Pale Ale","brewery":"Sierra Nevada","style":"Pale Ale","abv":5.6,"ibu":38,"classification":"standard_gluten","grains":["barley"],"sourceUrl":null,"tests":[]}
 ]

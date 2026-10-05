@@ -13,6 +13,11 @@ export const beers = pgTable("beers", {
   sensoryProfile: text("sensory_profile").notNull(),
   celiacAssessment: text("celiac_assessment").notNull(),
   sourceUrl: text("source_url"),
+  origin: text("origin"),
+  flavor: text("flavor").notNull().default("[]"), // JSON array
+  notes: text("notes").notNull().default("[]"), // JSON array
+  grainsBasis: text("grains_basis"),
+  refs: text("refs").notNull().default("[]"), // JSON array
 });
 
 export const beerTests = pgTable("beer_tests", {

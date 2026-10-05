@@ -13,6 +13,10 @@ function assemble(rows: Row[], tests: TRow[]): Beer[] {
     ...r,
     classification: r.classification as Beer["classification"],
     grains: JSON.parse(r.grains) as string[],
+    flavor: JSON.parse(r.flavor) as string[],
+    notes: JSON.parse(r.notes) as string[],
+    refs: JSON.parse(r.refs) as Beer["refs"],
+    grainsBasis: r.grainsBasis as Beer["grainsBasis"],
     tests: tests.filter((t) => t.beerSlug === r.slug).map((t) => ({
       kit: t.kit, ppm: t.ppm, result: t.result as Beer["tests"][number]["result"], resultNote: t.resultNote,
       testedAt: t.testedAt, sourceName: t.sourceName, sourceUrl: t.sourceUrl,
