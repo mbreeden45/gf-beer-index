@@ -39,7 +39,7 @@ export function latestTest(tests: BeerTest[]): BeerTest | undefined {
 
 export function AssayTag({ tests }: { tests: BeerTest[] }) {
   const t = latestTest(tests);
-  const reading = !t ? "NO RECORD" : t.result === "numeric" ? `${t.ppm} ppm` : t.result === "negative" ? "NOT DETECTED" : t.result === "positive" ? "DETECTED" : "UNCLEAR";
+  const reading = !t ? "NO RECORD" : t.ppm != null ? `~${t.ppm} ppm est.` : t.result === "negative" ? "NOT DETECTED" : t.result === "positive" ? "DETECTED" : "UNCLEAR";
   const tone = !t ? "text-muted" : t.result === "positive" || (t.ppm ?? 0) >= 20 ? "text-[#a3341b]" : t.result === "inconclusive" ? "text-muted" : "text-pine";
   return (
     <dl className="grid grid-cols-[auto_1fr] gap-x-3 border border-dashed border-ink/50 bg-paper-deep px-3 py-2 font-mono text-[11px]">

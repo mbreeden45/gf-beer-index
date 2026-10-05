@@ -149,21 +149,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2017-11-10",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/amstel-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -185,22 +176,13 @@
     "sourceUrl": "https://www.lowgluten.org/bud-light-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
-        "testedAt": "2013-10-28",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/bud-light-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative; qualitative strip result, no ppm value.",
+        "testedAt": "2013-10-28",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/bud-light-gluten-test/"
       }
     ]
   },
@@ -222,22 +204,13 @@
     "sourceUrl": "https://www.lowgluten.org/budweiser-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
-        "testedAt": "2013-12-07",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/budweiser-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative; qualitative strip result, no ppm value.",
+        "testedAt": "2013-12-07",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/budweiser-gluten-test/"
       }
     ]
   },
@@ -258,22 +231,13 @@
     "sourceUrl": "https://www.lowgluten.org/busch-beer-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
-        "testedAt": "2013-11-07",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/busch-beer-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative; qualitative strip result, no ppm value.",
+        "testedAt": "2013-11-07",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/busch-beer-gluten-test/"
       }
     ]
   },
@@ -295,21 +259,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 1,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 1 ppm (visual, not a lab assay).",
         "testedAt": "2014-06-18",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/michelob-ultra-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 1,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -359,9 +314,9 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2017-09-17",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/stella-artois-gluten-test/"
@@ -374,15 +329,6 @@
         "testedAt": null,
         "sourceName": "smartgurlsolutions.com",
         "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -402,21 +348,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2017-02-08",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/asahi-dry-zero/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -440,30 +377,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 1,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 1 ppm (visual, not a lab assay).",
         "testedAt": "2017-03-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/asahi-super-dry-japan/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 1,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -486,10 +405,10 @@
     "sourceUrl": "https://www.lowgluten.org/asahi-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
         "testedAt": "2015-12-19",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/asahi-gluten-test/"
@@ -514,22 +433,13 @@
     "sourceUrl": "https://www.lowgluten.org/tiger-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2019-01-08",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/tiger-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2019-01-08",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/tiger-gluten-test/"
       }
     ]
   },
@@ -550,31 +460,13 @@
     "sourceUrl": "https://www.lowgluten.org/augustiner-gluten-tests/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
         "testedAt": "2015-09-20",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/augustiner-gluten-tests/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -621,21 +513,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2019-07-27",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/rothaus-pils-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -677,26 +560,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, so expect the full malt body of a traditional recipe. It carries a mid-weight 5.1% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/weihenstephaner-helles-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2016-04-03",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/weihenstephaner-helles-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -717,40 +591,22 @@
     "sourceUrl": "https://www.lowgluten.org/becks-gluten-test-2/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
         "testedAt": "2014-12-19",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/becks-gluten-test-2/"
       },
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2014-03-15",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/becks-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -861,8 +717,8 @@
         "result": "positive",
         "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
         "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/bintang-gluten-test/"
       }
     ]
   },
@@ -883,22 +739,13 @@
     "sourceUrl": "https://www.lowgluten.org/bitburger-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2015-08-16",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/bitburger-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2015-08-16",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/bitburger-gluten-test/"
       }
     ]
   },
@@ -924,15 +771,6 @@
         "testedAt": "2020-10-04",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/save-the-day-ipa-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -947,26 +785,17 @@
     "grains": [],
     "coldLagering": "Standard lagering with no gluten-targeted treatment.",
     "sensoryProfile": "A conventional Lager brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries a mid-weight 5% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/james-boags-premium-lager-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2016-09-04",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/james-boags-premium-lager-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -986,21 +815,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2018-11-24",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/samuel-adams-boston-lager-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1021,22 +841,13 @@
     "sourceUrl": "https://www.lowgluten.org/brand-pilsener-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2020-11-29",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/brand-pilsener-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2020-11-29",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/brand-pilsener-gluten-test/"
       }
     ]
   },
@@ -1054,26 +865,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, wheat, so expect the full malt body of a traditional recipe. It carries a mid-weight 5% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/cantillon-gueuze-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Tested with a threshold of 5 ppm. The limit of detection depe",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2019-02-23",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/cantillon-gueuze-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1094,22 +896,13 @@
     "sourceUrl": "https://www.lowgluten.org/la-chouffe-blonde-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2015-07-16",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/la-chouffe-blonde-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2015-07-16",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/la-chouffe-blonde-gluten-test/"
       }
     ]
   },
@@ -1156,21 +949,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2015-02-23",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/brooklyn-lager-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1189,22 +973,13 @@
     "sourceUrl": "https://www.lowgluten.org/duvel-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2015-03-18",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/duvel-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1225,31 +1000,22 @@
     "sourceUrl": "https://www.lowgluten.org/budweiser-original-gluten-test-2/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Oivind tested with the thresholds of 10 and 20 ppm. The limit",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 10 and 20 ppm threshold. Kit reported positive; qualitative strip result, no ppm value.",
         "testedAt": "2021-08-20",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/budweiser-original-gluten-test-2/"
       },
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2016-03-12",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/budweiser-original-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2016-03-12",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/budweiser-original-gluten-test/"
       }
     ]
   },
@@ -1270,22 +1036,13 @@
     "sourceUrl": "https://www.lowgluten.org/tuborg-christmasbeer/",
     "tests": [
       {
-        "kit": "Gluten Tox Home Kit I did the test with a threshold of 5 ppm.",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
-        "testedAt": "2017-07-02",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/tuborg-christmasbeer/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative; qualitative strip result, no ppm value.",
+        "testedAt": "2017-07-02",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/tuborg-christmasbeer/"
       }
     ]
   },
@@ -1307,21 +1064,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 2,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value. Spot-intensity estimate: 2 ppm (visual, not a lab assay).",
         "testedAt": "2020-04-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/tuborg-pilsener-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 2,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1342,31 +1090,13 @@
     "sourceUrl": "https://www.lowgluten.org/carlsberg-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I did the test twice, first with a threshold of 20 ppm and th",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative; qualitative strip result, no ppm value.",
         "testedAt": "2013-09-29",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/carlsberg-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1388,21 +1118,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2014-12-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/dorada-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1449,22 +1170,13 @@
     "sourceUrl": "https://www.lowgluten.org/bohemia-pilsner-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Joe tested with a threshold of 20 ppm. The limit of detection",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2018-01-13",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/bohemia-pilsner-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2018-01-13",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/bohemia-pilsner-gluten-test/"
       }
     ]
   },
@@ -1483,22 +1195,13 @@
     "sourceUrl": "https://www.lowgluten.org/carta-blanca-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Joe tested with a threshold of 20 ppm. The limit of detection",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2018-09-20",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/carta-blanca-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2018-09-20",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/carta-blanca-gluten-test/"
       }
     ]
   },
@@ -1517,22 +1220,13 @@
     "sourceUrl": "https://www.lowgluten.org/balboa-ice-atlas-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Joe tested with a threshold of 20 ppm. The limit of detection",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2018-05-27",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/balboa-ice-atlas-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2018-05-27",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/balboa-ice-atlas-gluten-test/"
       }
     ]
   },
@@ -1554,22 +1248,13 @@
     "sourceUrl": "https://www.lowgluten.org/quilmes-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2015-07-31",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/quilmes-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2015-07-31",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/quilmes-gluten-test/"
       }
     ]
   },
@@ -1591,21 +1276,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2018-08-24",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/snow-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1626,22 +1302,13 @@
     "sourceUrl": "https://www.lowgluten.org/coopers-birell-ultra-light-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2018-05-06",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/coopers-birell-ultra-light-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2018-05-06",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/coopers-birell-ultra-light-gluten-test/"
       }
     ]
   },
@@ -1660,22 +1327,13 @@
     "sourceUrl": "https://www.lowgluten.org/coopers-clear-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2016-09-25",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/coopers-clear-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2016-09-25",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/coopers-clear-gluten-test/"
       }
     ]
   },
@@ -1694,22 +1352,13 @@
     "sourceUrl": "https://www.lowgluten.org/coopers-lager-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2017-05-01",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/coopers-lager-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2017-05-01",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/coopers-lager-gluten-test/"
       }
     ]
   },
@@ -1726,26 +1375,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, so expect the full malt body of a traditional recipe. It carries a light 4.5% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/coopers-pale-ale-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 20 ppm. The limit of detection d",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2015-11-08",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/coopers-pale-ale-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -1766,22 +1406,13 @@
     "sourceUrl": "https://www.lowgluten.org/coors-light-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2014-02-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/coors-light-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -2276,22 +1907,13 @@
     "sourceUrl": "https://www.lowgluten.org/dab-export-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2017-04-15",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/dab-export-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2017-04-15",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/dab-export-gluten-test/"
       }
     ]
   },
@@ -2311,21 +1933,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2018-12-16",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/erzquell-pils-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -2453,21 +2066,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2019-06-26",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/timisoreana-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -2488,22 +2092,13 @@
     "sourceUrl": "https://www.lowgluten.org/firestone-walker-pale-31-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2015-10-15",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/firestone-walker-pale-31-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2015-10-15",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/firestone-walker-pale-31-gluten-test/"
       }
     ]
   },
@@ -2572,22 +2167,13 @@
     "sourceUrl": "https://www.lowgluten.org/fosters-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2016-06-25",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/fosters-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2016-06-25",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/fosters-gluten-test/"
       }
     ]
   },
@@ -2609,21 +2195,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 3,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 3 ppm (visual, not a lab assay).",
         "testedAt": "2020-05-10",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/perlenbacher-pils-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 3,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3110,21 +2687,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2013-09-06",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/corona-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3147,22 +2715,13 @@
     "sourceUrl": null,
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2016-10-16",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/modelo-especial-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2016-10-16",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/modelo-especial-gluten-test/"
       }
     ]
   },
@@ -3213,8 +2772,8 @@
         "result": "numeric",
         "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
         "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/karhu-53-lapin-kulta-gluten-test/"
       }
     ]
   },
@@ -3235,19 +2794,19 @@
     "sourceUrl": "https://www.lowgluten.org/heineken-4-7-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Oivind tested with a threshold of 20 ppm. The limit of detect",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported positive; qualitative strip result, no ppm value.",
         "testedAt": "2021-06-26",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/heineken-4-7-gluten-test/"
       },
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2015-05-07",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/heineken-gluten-test-2/"
@@ -3256,37 +2815,10 @@
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 40 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2013-09-22",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/heineken-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 40 ppm: no gluten indicated above 40 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3308,21 +2840,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2019-05-26",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/herforder-pils-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3339,26 +2862,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, so expect the full malt body of a traditional recipe. It carries a mid-weight 6.3% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/hofbrau-oktoberfestbier-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2013-10-17",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/hofbrau-oktoberfestbier-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3380,21 +2894,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 1,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 1 ppm (visual, not a lab assay).",
         "testedAt": "2017-10-15",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/hofbrau-sommerzwickl-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 1,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate (range 1–2 ppm), read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3567,26 +3072,17 @@
     "grains": [],
     "coldLagering": "Standard lagering with no gluten-targeted treatment.",
     "sensoryProfile": "A conventional Lager brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries a mid-weight 5.2% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/jacks-abby-house-lager-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Barrett tested with a threshold of 20 ppm. The limit of detec",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2018-10-20",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/jacks-abby-house-lager-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3604,26 +3100,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, wheat, so expect the full malt body of a traditional recipe. It carries a light 4.7% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/newcastle-brown-ale-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2015-09-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/newcastle-brown-ale-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3672,8 +3159,8 @@
         "result": "numeric",
         "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
         "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/kirin-hard-cidre-gluten-test/"
       }
     ]
   },
@@ -3697,8 +3184,8 @@
         "result": "numeric",
         "resultNote": "Spot-intensity estimate (range 3–4 ppm), read as positive. A visual estimate, not a lab assay.",
         "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/kirin-ichiban-shibori/"
       }
     ]
   },
@@ -3722,8 +3209,8 @@
         "result": "numeric",
         "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
         "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/kirin-nodogoshi-nama/"
       }
     ]
   },
@@ -3744,31 +3231,13 @@
     "sourceUrl": "https://www.lowgluten.org/kirin-heartland-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2016-04-30",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/kirin-heartland-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 1,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2016-04-30",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/kirin-heartland-gluten-test/"
       }
     ]
   },
@@ -3789,22 +3258,13 @@
     "sourceUrl": "https://www.lowgluten.org/tyskie-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2016-01-24",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/tyskie-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2016-01-24",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/tyskie-gluten-test/"
       }
     ]
   },
@@ -3952,22 +3412,13 @@
     "sourceUrl": "https://www.lowgluten.org/grolsch-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2018-04-04",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/grolsch-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2018-04-04",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/grolsch-gluten-test/"
       }
     ]
   },
@@ -3988,22 +3439,13 @@
     "sourceUrl": "https://www.lowgluten.org/grolsch-kanon-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 20 ppm. The limit of detection d",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2020-06-01",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/grolsch-kanon-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2020-06-01",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/grolsch-kanon-gluten-test/"
       }
     ]
   },
@@ -4024,22 +3466,13 @@
     "sourceUrl": "https://www.lowgluten.org/krombacher-hell-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2015-11-29",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/krombacher-hell-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2015-11-29",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/krombacher-hell-gluten-test/"
       }
     ]
   },
@@ -4060,22 +3493,13 @@
     "sourceUrl": "https://www.lowgluten.org/krombacher-pils-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2015-05-29",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/krombacher-pils-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2015-05-29",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/krombacher-pils-gluten-test/"
       }
     ]
   },
@@ -4094,22 +3518,13 @@
     "sourceUrl": "https://www.lowgluten.org/ambar-especial-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2016-08-20",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/ambar-especial-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2016-08-20",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/ambar-especial-gluten-test/"
       }
     ]
   },
@@ -4130,22 +3545,13 @@
     "sourceUrl": "https://www.lowgluten.org/steinlager-pure-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2017-02-19",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/steinlager-pure-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2017-02-19",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/steinlager-pure-gluten-test/"
       }
     ]
   },
@@ -4214,22 +3620,13 @@
     "sourceUrl": "https://www.lowgluten.org/lobethal-bohemian-philsner-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2018-02-16",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/lobethal-bohemian-philsner-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2018-02-16",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/lobethal-bohemian-philsner-gluten-test/"
       }
     ]
   },
@@ -4248,22 +3645,13 @@
     "sourceUrl": "https://www.lowgluten.org/lost-grounded-keller-pils-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Zoe tested with a threshold of 5 ppm. The limit of detection ",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
-        "testedAt": "2019-02-03",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/lost-grounded-keller-pils-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported positive; qualitative strip result, no ppm value.",
+        "testedAt": "2019-02-03",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/lost-grounded-keller-pils-gluten-test/"
       }
     ]
   },
@@ -4280,26 +3668,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, so expect the full malt body of a traditional recipe. It carries a mid-weight 6.1% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/lowenbrau-oktoberfestbier-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2013-10-11",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/lowenbrau-oktoberfestbier-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -4316,35 +3695,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, so expect the full malt body of a traditional recipe. It carries a mid-weight 5.2% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/lowenbrau-original-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with both thresholds 5 and 20 ppm. The limit of d",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
         "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2016-11-10",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/lowenbrau-original-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -4580,42 +3941,24 @@
     "style": "Unspecified",
     "abv": 4.5,
     "ibu": null,
-    "classification": "standard_gluten",
+    "classification": "adjunct_low_ppm",
     "grains": [
       "corn",
       "barley"
     ],
-    "coldLagering": "No gluten-targeted treatment documented.",
-    "sensoryProfile": "A conventional Unspecified brewed with corn, barley, so expect the full malt body of a traditional recipe. It carries a light 4.5% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
+    "sensoryProfile": "A Unspecified brewed with corn, barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a light 4.5% ABV.",
+    "celiacAssessment": "Heavy adjunct use and filtration tend to lower prolamin, and kit results on file read negative. Home kits are screening tools with limited sensitivity, so this is not a safety guarantee.",
     "sourceUrl": "https://www.lowgluten.org/san-miguel-4-5-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Oivind tested with a threshold of 20 ppm. The limit of detect",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
         "testedAt": "2021-06-13",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/san-miguel-4-5-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -4646,10 +3989,10 @@
         "sourceUrl": "https://www.lowgluten.org/san-miguel-gluten-test-2/"
       },
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2017-08-23",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/san-miguel-gluten-test/"
@@ -4673,22 +4016,13 @@
     "sourceUrl": "https://www.lowgluten.org/miller-high-life-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
-        "testedAt": "2013-11-30",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/miller-high-life-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative; qualitative strip result, no ppm value.",
+        "testedAt": "2013-11-30",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/miller-high-life-gluten-test/"
       }
     ]
   },
@@ -4710,21 +4044,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2014-09-04",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/miller-lite-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -4746,21 +4071,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 4,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 4 ppm (visual, not a lab assay).",
         "testedAt": "2014-05-27",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/moosehead-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 4,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate (range 4–5 ppm), read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -4782,21 +4098,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2017-12-08",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/mythos-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5124,40 +4431,22 @@
     "sourceUrl": "https://www.lowgluten.org/pabst-blue-ribbon-gluten-test-2/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
         "testedAt": "2016-05-28",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/pabst-blue-ribbon-gluten-test-2/"
       },
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 1,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value. Spot-intensity estimate: 1 ppm (visual, not a lab assay).",
         "testedAt": "2014-03-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/pabst-blue-ribbon-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 1,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate (range 1–2 ppm), read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5181,8 +4470,8 @@
         "result": "positive",
         "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
         "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/panama-balboa-soberana-gluten-test/"
       }
     ]
   },
@@ -5206,8 +4495,8 @@
         "result": "positive",
         "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
         "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/panama-balboa-soberana-gluten-test/"
       }
     ]
   },
@@ -5225,26 +4514,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, wheat, so expect the full malt body of a traditional recipe. It carries a mid-weight 5.5% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/paulaner-weissbier-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 20 ppm. The limit of detection d",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2016-02-21",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/paulaner-weissbier-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5291,21 +4571,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 4,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 4 ppm (visual, not a lab assay).",
         "testedAt": "2018-02-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/petoskey-sparkle-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 4,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5324,22 +4595,13 @@
     "sourceUrl": "https://www.lowgluten.org/pirate-life-pilsner-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2018-06-24",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/pirate-life-pilsner-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2018-06-24",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/pirate-life-pilsner-gluten-test/"
       }
     ]
   },
@@ -5361,21 +4623,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 8,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 8 ppm (visual, not a lab assay).",
         "testedAt": "2013-09-09",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/gambrinus-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 8,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate (range 8–9 ppm), read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5397,9 +4650,9 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2015-01-30",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/pilsner-urquell-gluten-test/"
@@ -5412,15 +4665,6 @@
         "testedAt": null,
         "sourceName": "smartgurlsolutions.com",
         "sourceUrl": "https://smartgurlsolutions.com/beer-low-gluten-test/test-outcomes/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5442,21 +4686,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2018-03-14",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/radeberger-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5479,21 +4714,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 5,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 5 ppm (visual, not a lab assay).",
         "testedAt": "2014-10-02",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/estrella-daura-damm-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 5,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate (range 5–6 ppm), read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5541,21 +4767,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 2,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 2 ppm (visual, not a lab assay).",
         "testedAt": "2017-06-25",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/sapporo-black-label-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 2,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate (range 2–3 ppm), read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5627,21 +4844,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2020-03-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/karhu-53-lapin-kulta-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5688,21 +4896,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 3,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 3 ppm (visual, not a lab assay).",
         "testedAt": "2019-04-20",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/spaten-oktoberfestbier-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 3,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5752,21 +4951,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 3,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 3 ppm (visual, not a lab assay).",
         "testedAt": "2013-12-28",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/guinness-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 3,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate (range 3–4 ppm), read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5783,26 +4973,17 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, so expect the full malt body of a traditional recipe. It carries a mid-weight 4.9% ABV.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/stiegl-goldbrau-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "inconclusive",
-        "resultNote": "Kit reported inconclusive; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported inconclusive; qualitative strip result, no ppm value.",
         "testedAt": "2016-07-23",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/stiegl-goldbrau-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5821,22 +5002,13 @@
     "sourceUrl": "https://www.lowgluten.org/stockade-duel-hoppy-lager-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2017-04-01",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/stockade-duel-hoppy-lager-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2017-04-01",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/stockade-duel-hoppy-lager-gluten-test/"
       }
     ]
   },
@@ -5941,22 +5113,13 @@
     "sourceUrl": "https://www.lowgluten.org/bavaria-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2020-04-12",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/bavaria-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2020-04-12",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/bavaria-gluten-test/"
       }
     ]
   },
@@ -5977,22 +5140,13 @@
     "sourceUrl": "https://www.lowgluten.org/hollandia-premium-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2018-07-16",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/hollandia-premium-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2018-07-16",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/hollandia-premium-gluten-test/"
       }
     ]
   },
@@ -6040,21 +5194,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 6,
         "result": "positive",
-        "resultNote": "Kit reported positive; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported positive; qualitative strip result, no ppm value. Spot-intensity estimate: 6 ppm (visual, not a lab assay).",
         "testedAt": "2014-08-11",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/tsingtao-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 6,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -6078,22 +5223,13 @@
     "sourceUrl": "https://www.lowgluten.org/kingfisher-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2017-02-01",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/kingfisher-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2017-02-01",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/kingfisher-gluten-test/"
       }
     ]
   },
@@ -6112,31 +5248,13 @@
     "sourceUrl": "https://www.lowgluten.org/panama-balboa-soberana-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Joe tested with a threshold of 20 ppm. The limit of detection",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative; qualitative strip result, no ppm value.",
         "testedAt": "2018-04-21",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/panama-balboa-soberana-gluten-test/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -6155,22 +5273,13 @@
     "sourceUrl": "https://www.lowgluten.org/vale-lager-gluten-test/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit Adam tested with a threshold of 20 ppm. The limit of detectio",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
-        "testedAt": "2017-06-03",
-        "sourceName": "lowgluten.org",
-        "sourceUrl": "https://www.lowgluten.org/vale-lager-gluten-test/"
-      },
-      {
         "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+        "resultNote": "Tested at the 20 ppm threshold. Kit reported negative (no gluten indicated above 20 ppm); qualitative strip result, no ppm value.",
+        "testedAt": "2017-06-03",
+        "sourceName": "lowgluten.org",
+        "sourceUrl": "https://www.lowgluten.org/vale-lager-gluten-test/"
       }
     ]
   },
@@ -6191,40 +5300,22 @@
     "sourceUrl": "https://www.lowgluten.org/warsteiner-gluten-test-2/",
     "tests": [
       {
-        "kit": "GlutenTox Home Kit I tested with a threshold of 5 ppm. The limit of detection de",
+        "kit": "GlutenTox Home Kit",
         "ppm": null,
         "result": "negative",
-        "resultNote": "Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
+        "resultNote": "Tested at the 5 ppm threshold. Kit reported negative (no gluten indicated above 5 ppm); qualitative strip result, no ppm value.",
         "testedAt": "2014-11-08",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/warsteiner-gluten-test-2/"
       },
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2014-04-25",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/warsteiner-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      },
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -6246,21 +5337,12 @@
     "tests": [
       {
         "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": null,
+        "ppm": 0,
         "result": "negative",
-        "resultNote": "Kit reported negative; qualitative strip result, no ppm value.",
+        "resultNote": "Kit reported negative; qualitative strip result, no ppm value. Spot-intensity estimate: 0 ppm (visual, not a lab assay).",
         "testedAt": "2019-03-23",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/zillertal-marzen-gluten-test/"
-      },
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   }

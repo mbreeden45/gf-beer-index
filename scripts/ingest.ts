@@ -98,7 +98,9 @@ async function lowGluten(): Promise<Beer[]> {
     const rest = (l: string) => labels.filter((x) => x !== l);
     const name = field(body, "Beer", rest("Beer"))?.split(/Beer:\s*/i).pop()?.trim();
     const producer = field(body, "Producer", rest("Producer")) ?? "Unknown";
-    const kit = field(body, "Test Kit", rest("Test Kit")) ?? "";
+    const kitRaw = field(body, "Test Kit", rest("Test Kit")) ?? "";
+    const kit = kitRaw.replace(/^Gluten Tox/i, "GlutenTox").match(/^(GlutenTox Home Kit|GlutenTox Pro|Imutest Gluten-in-Food Kit|EZ Gluten|Reveal 3-D)/i)?.[1] ?? kitRaw.split(/\s+(?=[A-Z][a-z]+ tested|I tested)/)[0];
+    const thr = /thresholds? of (\d+(?: and \d+)?) ppm/i.exec(kitRaw + " " + body)?.[1];
     const resultRaw = field(body, "Test result", rest("Test result")) ?? "";
     if (!name || !kit) continue;
     const abv = parseFloat(/([\d.,]+)\s*%/.exec(field(body, "Alcohol by volume", rest("Alcohol by volume")) ?? "")?.[1]?.replace(",", ".") ?? "");
@@ -110,7 +112,7 @@ async function lowGluten(): Promise<Beer[]> {
     const dateStr = $("time").first().attr("datetime") ?? /On (\d\d)\/(\d\d)\/(\d{4})/.exec($("body").text())?.slice(1).reverse().join("-") ?? null;
     const test: BeerTest = {
       kit: kit.slice(0, 80), ppm: ppmMatch ? +ppmMatch[1] : null, result: ppmMatch ? "numeric" : result,
-      resultNote: `Kit reported ${result}${result === "negative" && /above (\d+) ppm/i.test(lead) ? ` (no gluten indicated above ${/above (\d+) ppm/i.exec(lead)![1]} ppm)` : ""}${ppmMatch ? ` (page cites ${ppmMatch[1]} ppm)` : "; qualitative strip result, no ppm value"}.`,
+      resultNote: `${thr ? `Tested at the ${thr} ppm threshold. ` : ""}Kit reported ${result}${result === "negative" && /above (\d+) ppm/i.test(lead) ? ` (no gluten indicated above ${/above (\d+) ppm/i.exec(lead)![1]} ppm)` : ""}${ppmMatch ? ` (page cites ${ppmMatch[1]} ppm)` : "; qualitative strip result, no ppm value"}.`,
       testedAt: dateStr ? dateStr.slice(0, 10) : null, sourceName: "lowgluten.org", sourceUrl: url,
     };
     const slug = slugify(`${producer}-${name}`);
@@ -225,8 +227,19 @@ async function main() {
   for (const row of table) {
     const ns = ALIAS[slugify(row.name)] ?? slugify(row.name);
     const hit = [...merged.values()].find((v) => slugify(v.name) === ns) ?? [...merged.values()].find((v) => ns.length >= 5 && (slugify(v.name).startsWith(ns) || ns.startsWith(slugify(v.name))));
-    if (hit) hit.tests.push(...row.tests);
-    else { const f = FACTS[ns]; merged.set(ns, { slug: ns, name: row.name, brewery: f?.brewery ?? "Brewer not stated", style: f?.style ?? "Unspecified", abv: f?.abv ?? null, ibu: null, grains: f?.grains ?? [], classification: "adjunct_low_ppm", sourceUrl: f?.url ?? "https://www.lowgluten.org/gluten-test-results/", tests: row.tests, coldLagering: "", sensoryProfile: "", celiacAssessment: "" }); }
+    if (hit) {
+      // Detailed per-beer posts are the preferred source; the summary table only enriches them.
+      const posts = hit.tests.filter((t) => t.sourceName === "lowgluten.org");
+      for (const t of row.tests) {
+        const same = posts.filter((x) => x.kit === t.kit);
+        if (!same.length && !posts.length) hit.tests.push(t);
+        else if (t.kit.startsWith("Imutest") && same.length === 1 && t.ppm != null && same[0].ppm == null) {
+          same[0].ppm = t.ppm;
+          same[0].resultNote += ` Spot-intensity estimate: ${t.ppm} ppm (visual, not a lab assay).`;
+        }
+      }
+    }
+    else { const f = FACTS[ns]; merged.set(ns, { slug: ns, name: row.name, brewery: f?.brewery ?? "Brewer not stated", style: f?.style ?? "Unspecified", abv: f?.abv ?? null, ibu: null, grains: f?.grains ?? [], classification: "adjunct_low_ppm", sourceUrl: f?.url ?? "https://www.lowgluten.org/gluten-test-results/", tests: f ? row.tests.map((t) => ({ ...t, sourceUrl: f.url, sourceName: "lowgluten.org" })) : row.tests, coldLagering: "", sensoryProfile: "", celiacAssessment: "" }); }
   }
   const isNeg = (t: BeerTest) => t.result === "negative" || (t.result === "numeric" && (t.ppm ?? 99) < 20);
   const isPos = (t: BeerTest) => t.result === "positive" || (t.result === "numeric" && (t.ppm ?? 0) >= 20);

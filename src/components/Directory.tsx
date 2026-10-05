@@ -102,7 +102,7 @@ export default function Directory({ beers }: { beers: Beer[] }) {
                     {b.tests.map((t, i) => (
                       <div key={i} className="border border-dashed border-ink/40 bg-paper-deep p-3 font-mono text-[11px] leading-relaxed">
                         <div><span className="text-muted">KIT </span>{t.kit}</div>
-                        <div><span className="text-muted">READING </span><b>{t.ppm != null ? `${t.ppm} ppm` : t.result.toUpperCase()}</b></div>
+                        <div><span className="text-muted">READING </span><b>{t.ppm != null ? `~${t.ppm} ppm est.` : t.result.toUpperCase()}</b>{t.ppm != null && t.result !== "numeric" && <span className="text-muted"> ({t.result})</span>}</div>
                         <div><span className="text-muted">DATE </span>{t.testedAt ?? "not stated"}</div>
                         <div className="font-sans text-xs text-muted">{t.resultNote}</div>
                         <a href={t.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-1 inline-flex items-center gap-1 text-pine underline underline-offset-2">
