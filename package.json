@@ -12,6 +12,7 @@
     "db:setup": "tsx scripts/ingest.ts && tsx scripts/seed.ts"
   },
   "dependencies": {
+    "@google/genai": "^2.27.0",
     "better-sqlite3": "^13.0.3",
     "cheerio": "^1.2.0",
     "drizzle-orm": "^0.45.3",

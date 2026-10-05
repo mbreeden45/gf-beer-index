@@ -1,5 +1,6 @@
 import { getBeers } from "@/lib/data";
 import Directory from "@/components/Directory";
+import Sommelier from "@/components/Sommelier";
 
 export const revalidate = 3600;
 
@@ -18,6 +19,7 @@ export default async function Home() {
         </p>
       </header>
       <Directory beers={beers} />
+      <Sommelier />
       <footer className="mt-16 border-t border-rule pt-6 text-sm text-muted">
         <p>
           Facts compiled from public directories (allbeernogluten.com, lowgluten.org). Sensory notes and safety assessments are generated from ingredients and classification, not tasting. Home test kits are qualitative screens with limited sensitivity. This is information, not medical advice — people with coeliac disease should confirm with their clinician and the brewer.
