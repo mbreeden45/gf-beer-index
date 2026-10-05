@@ -4,6 +4,7 @@ import { Search, Pin, PinOff, ChevronDown, ExternalLink, Scale, X } from "lucide
 import type { Beer, Classification } from "@/lib/types";
 import { CLASS_LABEL } from "@/lib/types";
 import { AssayTag, ClassStamp, latestTest } from "./Stamps";
+import BeerComments from "./BeerComments";
 
 const TABS: { key: string; label: string; match: (c: Classification) => boolean }[] = [
   { key: "all", label: "All", match: () => true },
@@ -124,6 +125,7 @@ export default function Directory({ beers }: { beers: Beer[] }) {
                         ))}
                       </div>
                     )}
+                    <BeerComments beerId={b.slug} />
                     {b.sourceUrl && <a href={b.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[11px] text-pine underline underline-offset-2">Listing source <ExternalLink size={11} /></a>}
                   </div>
                 )}
