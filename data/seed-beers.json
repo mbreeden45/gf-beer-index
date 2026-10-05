@@ -566,6 +566,15 @@
         "testedAt": null,
         "sourceName": "lowgluten.org (results table)",
         "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+      },
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "negative",
+        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -668,7 +677,7 @@
     ],
     "coldLagering": "No gluten-targeted treatment documented.",
     "sensoryProfile": "A conventional Unspecified brewed with barley, so expect the full malt body of a traditional recipe. It carries a mid-weight 5.1% ABV.",
-    "celiacAssessment": "Traditional barley or wheat recipe with no gluten reduction. Not suitable for celiac disease.",
+    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
     "sourceUrl": "https://www.lowgluten.org/weihenstephaner-helles-gluten-test/",
     "tests": [
       {
@@ -679,6 +688,15 @@
         "testedAt": "2016-04-03",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/weihenstephaner-helles-gluten-test/"
+      },
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "positive",
+        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -820,6 +838,33 @@
     "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
     "sourceUrl": "https://allbeernogluten.com/beers",
     "tests": []
+  },
+  {
+    "slug": "bintang",
+    "name": "Bintang",
+    "brewery": "Bintang Indonesia Tbk",
+    "style": "Pilsner",
+    "abv": 4.7,
+    "ibu": null,
+    "classification": "standard_gluten",
+    "grains": [
+      "barley"
+    ],
+    "coldLagering": "Standard lagering with no gluten-targeted treatment.",
+    "sensoryProfile": "A conventional Pilsner brewed with barley, so expect the full malt body of a traditional recipe. It carries a light 4.7% ABV.",
+    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "sourceUrl": "https://www.lowgluten.org/bintang-gluten-test/",
+    "tests": [
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "positive",
+        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+      }
+    ]
   },
   {
     "slug": "bitburger-brauerei-bitburger-premium-pils",
@@ -1094,356 +1139,6 @@
     ]
   },
   {
-    "slug": "augustiner-edelstoff",
-    "name": "Augustiner Edelstoff",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "bintang",
-    "name": "Bintang",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "standard_gluten",
-    "grains": [],
-    "coldLagering": "No gluten-targeted treatment documented.",
-    "sensoryProfile": "A conventional Unspecified brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries an unstated strength.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "kirin-hard-cidre",
-    "name": "Kirin Hard Cidre",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "kirin-ichiban-shibori",
-    "name": "Kirin Ichiban Shibori",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 3,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate (range 3–4 ppm), read as positive. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "kirin-nodogoshi-nama",
-    "name": "Kirin Nodogoshi Nama",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "lapin-kulta",
-    "name": "Lapin Kulta",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "lobethal-bohemian-philsner",
-    "name": "Lobethal Bohemian Philsner",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "lost-grounded-keller-pils",
-    "name": "Lost & Grounded Keller Pils",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "standard_gluten",
-    "grains": [],
-    "coldLagering": "No gluten-targeted treatment documented.",
-    "sensoryProfile": "A conventional Unspecified brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries an unstated strength.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "panama-lager",
-    "name": "Panama Lager",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "standard_gluten",
-    "grains": [],
-    "coldLagering": "No gluten-targeted treatment documented.",
-    "sensoryProfile": "A conventional Unspecified brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries an unstated strength.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "soberana",
-    "name": "Soberana",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "standard_gluten",
-    "grains": [],
-    "coldLagering": "No gluten-targeted treatment documented.",
-    "sensoryProfile": "A conventional Unspecified brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries an unstated strength.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "stockade-duel-hoppy",
-    "name": "Stockade Duel Hoppy",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "tuborg-christmasbeer",
-    "name": "Tuborg Christmasbeer",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "negative",
-        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "weihenstephaner-helles",
-    "name": "Weihenstephaner Helles",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "standard_gluten",
-    "grains": [],
-    "coldLagering": "No gluten-targeted treatment documented.",
-    "sensoryProfile": "A conventional Unspecified brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries an unstated strength.",
-    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "GlutenTox Home Kit",
-        "ppm": null,
-        "result": "positive",
-        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
-    "slug": "zillertal-marzen",
-    "name": "Zillertal Märzen",
-    "brewery": "Brewer not stated",
-    "style": "Unspecified",
-    "abv": null,
-    "ibu": null,
-    "classification": "adjunct_low_ppm",
-    "grains": [],
-    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
-    "sensoryProfile": "A Unspecified brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries an unstated strength.",
-    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
-    "sourceUrl": "https://www.lowgluten.org/gluten-test-results/",
-    "tests": [
-      {
-        "kit": "Imutest Gluten-in-Food Kit",
-        "ppm": 0,
-        "result": "numeric",
-        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
-        "testedAt": null,
-        "sourceName": "lowgluten.org (results table)",
-        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
-      }
-    ]
-  },
-  {
     "slug": "brooklyn-brewery-brooklyn-lager",
     "name": "Brooklyn Lager",
     "brewery": "Brooklyn Brewery",
@@ -1582,6 +1277,15 @@
         "testedAt": "2017-07-02",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/tuborg-christmasbeer/"
+      },
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "negative",
+        "resultNote": "Threshold test at 5 ppm: no gluten indicated above 5 ppm.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -3488,6 +3192,33 @@
     ]
   },
   {
+    "slug": "lapin-kulta",
+    "name": "Lapin Kulta",
+    "brewery": "Hartwall",
+    "style": "Lager",
+    "abv": 5.2,
+    "ibu": null,
+    "classification": "adjunct_low_ppm",
+    "grains": [
+      "barley"
+    ],
+    "coldLagering": "Extended cold lagering and fine filtration strip much of the protein, alongside a high adjunct share.",
+    "sensoryProfile": "A Lager brewed with barley, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 5.2% ABV.",
+    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
+    "sourceUrl": "https://www.lowgluten.org/karhu-53-lapin-kulta-gluten-test/",
+    "tests": [
+      {
+        "kit": "Imutest Gluten-in-Food Kit",
+        "ppm": 0,
+        "result": "numeric",
+        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+      }
+    ]
+  },
+  {
     "slug": "heineken-brouwerijen-heineken",
     "name": "Heineken",
     "brewery": "Heineken Brouwerijen",
@@ -3918,6 +3649,81 @@
         "testedAt": "2017-08-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/kirin-heartland-gluten-test-2/"
+      }
+    ]
+  },
+  {
+    "slug": "kirin-hard-cidre",
+    "name": "Kirin Hard Cidre",
+    "brewery": "Kirin",
+    "style": "Hard Cider",
+    "abv": 4.5,
+    "ibu": null,
+    "classification": "adjunct_low_ppm",
+    "grains": [],
+    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
+    "sensoryProfile": "A Hard Cider brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries a light 4.5% ABV.",
+    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
+    "sourceUrl": "https://www.lowgluten.org/kirin-hard-cidre-gluten-test/",
+    "tests": [
+      {
+        "kit": "Imutest Gluten-in-Food Kit",
+        "ppm": 0,
+        "result": "numeric",
+        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+      }
+    ]
+  },
+  {
+    "slug": "kirin-ichiban-shibori",
+    "name": "Kirin Ichiban Shibori",
+    "brewery": "Kirin",
+    "style": "Lager",
+    "abv": 5,
+    "ibu": null,
+    "classification": "adjunct_low_ppm",
+    "grains": [],
+    "coldLagering": "Extended cold lagering and fine filtration strip much of the protein, alongside a high adjunct share.",
+    "sensoryProfile": "A Lager brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 5% ABV.",
+    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
+    "sourceUrl": "https://www.lowgluten.org/kirin-ichiban-shibori/",
+    "tests": [
+      {
+        "kit": "Imutest Gluten-in-Food Kit",
+        "ppm": 3,
+        "result": "numeric",
+        "resultNote": "Spot-intensity estimate (range 3–4 ppm), read as positive. A visual estimate, not a lab assay.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+      }
+    ]
+  },
+  {
+    "slug": "kirin-nodogoshi-nama",
+    "name": "Kirin Nodogoshi Nama",
+    "brewery": "Kirin",
+    "style": "Happoshu (malt-reduced)",
+    "abv": 5,
+    "ibu": null,
+    "classification": "adjunct_low_ppm",
+    "grains": [],
+    "coldLagering": "Cold conditioning and filtration; the adjunct share does most of the dilution.",
+    "sensoryProfile": "A Happoshu (malt-reduced) brewed with grains not itemised by the source, which typically gives a lighter, crisper body than an all-malt recipe. It carries a mid-weight 5% ABV.",
+    "celiacAssessment": "Kit results on file read negative despite an all-barley recipe, which may reflect kit sensitivity limits rather than true absence of gluten. Treat as unverified for celiac use.",
+    "sourceUrl": "https://www.lowgluten.org/kirin-nodogoshi-nama/",
+    "tests": [
+      {
+        "kit": "Imutest Gluten-in-Food Kit",
+        "ppm": 0,
+        "result": "numeric",
+        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -4415,6 +4221,15 @@
         "testedAt": "2018-02-16",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/lobethal-bohemian-philsner-gluten-test/"
+      },
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "negative",
+        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -4440,6 +4255,15 @@
         "testedAt": "2019-02-03",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/lost-grounded-keller-pils-gluten-test/"
+      },
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "positive",
+        "resultNote": "Threshold test at 5 ppm: gluten indicated at the 5 ppm threshold.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -5338,6 +5162,56 @@
     ]
   },
   {
+    "slug": "panama-lager",
+    "name": "Panama Lager",
+    "brewery": "Panama (brewer not stated)",
+    "style": "Lager",
+    "abv": null,
+    "ibu": null,
+    "classification": "standard_gluten",
+    "grains": [],
+    "coldLagering": "Standard lagering with no gluten-targeted treatment.",
+    "sensoryProfile": "A conventional Lager brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries an unstated strength.",
+    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "sourceUrl": "https://www.lowgluten.org/panama-balboa-soberana-gluten-test/",
+    "tests": [
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "positive",
+        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+      }
+    ]
+  },
+  {
+    "slug": "soberana",
+    "name": "Soberana",
+    "brewery": "Panama (brewer not stated)",
+    "style": "Lager",
+    "abv": null,
+    "ibu": null,
+    "classification": "standard_gluten",
+    "grains": [],
+    "coldLagering": "Standard lagering with no gluten-targeted treatment.",
+    "sensoryProfile": "A conventional Lager brewed with grains not itemised by the source, so expect the full malt body of a traditional recipe. It carries an unstated strength.",
+    "celiacAssessment": "Barley or wheat-based, and a kit on file read positive for gluten. Not suitable for celiac disease.",
+    "sourceUrl": "https://www.lowgluten.org/panama-balboa-soberana-gluten-test/",
+    "tests": [
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "positive",
+        "resultNote": "Threshold test at 20 ppm: gluten indicated at the 20 ppm threshold.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
+      }
+    ]
+  },
+  {
     "slug": "paulaner-brauerei-paulaner-weissbier",
     "name": "Paulaner Weissbier",
     "brewery": "Paulaner Brauerei",
@@ -5954,6 +5828,15 @@
         "testedAt": "2017-04-01",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/stockade-duel-hoppy-lager-gluten-test/"
+      },
+      {
+        "kit": "GlutenTox Home Kit",
+        "ppm": null,
+        "result": "negative",
+        "resultNote": "Threshold test at 20 ppm: no gluten indicated above 20 ppm.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   },
@@ -6369,6 +6252,15 @@
         "testedAt": "2019-03-23",
         "sourceName": "lowgluten.org",
         "sourceUrl": "https://www.lowgluten.org/zillertal-marzen-gluten-test/"
+      },
+      {
+        "kit": "Imutest Gluten-in-Food Kit",
+        "ppm": 0,
+        "result": "numeric",
+        "resultNote": "Spot-intensity estimate, read as negative. A visual estimate, not a lab assay.",
+        "testedAt": null,
+        "sourceName": "lowgluten.org (results table)",
+        "sourceUrl": "https://www.lowgluten.org/gluten-test-results/"
       }
     ]
   }

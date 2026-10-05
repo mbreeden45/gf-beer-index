@@ -208,12 +208,25 @@ async function main() {
     if (!prev) merged.set(k, { ...b, slug: k });
     else merged.set(k, { ...prev, style: prev.style === "Unspecified" ? b.style : prev.style, tests: [...prev.tests, ...b.tests], abv: prev.abv ?? b.abv, ibu: prev.ibu ?? b.ibu, grains: [...new Set([...prev.grains, ...b.grains])] });
   }
-  const ALIAS: Record<string, string> = { "estrella-daura": "estrella-damm-daura", "gambrinus": "gambrinus-premium", "budweiser-us": "budweiser", "budweiser-czech-original": "budweiser-original", "bohemia-pilser": "bohemia-pilsner", "atlas-premium": "balboa-premium-classic-lager" };
+  const ALIAS: Record<string, string> = { "estrella-daura": "estrella-damm-daura", "gambrinus": "gambrinus-premium", "budweiser-us": "budweiser", "budweiser-czech-original": "budweiser-original", "bohemia-pilser": "bohemia-pilsner", "atlas-premium": "balboa-premium-classic-lager",
+    "augustiner-edelstoff": "augustiner-helles-augustiner-edelstoff", "lobethal-bohemian-philsner": "bohemian-philsner", "lost-grounded-keller-pils": "keller-pils",
+    "stockade-duel-hoppy": "duel-hoppy-lager", "tuborg-christmasbeer": "tuborg-julebryg", "weihenstephaner-helles": "weihenstephaner-original-helles", "zillertal-marzen": "zillertaler-marzen" };
+  // Facts for table rows with no matching beer, taken from each beer's own lowgluten.org post.
+  const P = (x: string) => `https://www.lowgluten.org/${x}/`;
+  const FACTS: Record<string, { brewery: string; style: string; abv: number | null; grains: string[]; url: string }> = {
+    bintang: { brewery: "Bintang Indonesia Tbk", style: "Pilsner", abv: 4.7, grains: ["barley"], url: P("bintang-gluten-test") },
+    "kirin-hard-cidre": { brewery: "Kirin", style: "Hard Cider", abv: 4.5, grains: [], url: P("kirin-hard-cidre-gluten-test") },
+    "kirin-ichiban-shibori": { brewery: "Kirin", style: "Lager", abv: 5, grains: [], url: P("kirin-ichiban-shibori") },
+    "kirin-nodogoshi-nama": { brewery: "Kirin", style: "Happoshu (malt-reduced)", abv: 5, grains: [], url: P("kirin-nodogoshi-nama") },
+    "lapin-kulta": { brewery: "Hartwall", style: "Lager", abv: 5.2, grains: ["barley"], url: P("karhu-53-lapin-kulta-gluten-test") },
+    "panama-lager": { brewery: "Panama (brewer not stated)", style: "Lager", abv: null, grains: [], url: P("panama-balboa-soberana-gluten-test") },
+    soberana: { brewery: "Panama (brewer not stated)", style: "Lager", abv: null, grains: [], url: P("panama-balboa-soberana-gluten-test") },
+  };
   for (const row of table) {
     const ns = ALIAS[slugify(row.name)] ?? slugify(row.name);
     const hit = [...merged.values()].find((v) => slugify(v.name) === ns) ?? [...merged.values()].find((v) => ns.length >= 5 && (slugify(v.name).startsWith(ns) || ns.startsWith(slugify(v.name))));
     if (hit) hit.tests.push(...row.tests);
-    else merged.set(ns, { slug: ns, name: row.name, brewery: "Brewer not stated", style: "Unspecified", abv: null, ibu: null, grains: [], classification: "adjunct_low_ppm", sourceUrl: "https://www.lowgluten.org/gluten-test-results/", tests: row.tests, coldLagering: "", sensoryProfile: "", celiacAssessment: "" });
+    else { const f = FACTS[ns]; merged.set(ns, { slug: ns, name: row.name, brewery: f?.brewery ?? "Brewer not stated", style: f?.style ?? "Unspecified", abv: f?.abv ?? null, ibu: null, grains: f?.grains ?? [], classification: "adjunct_low_ppm", sourceUrl: f?.url ?? "https://www.lowgluten.org/gluten-test-results/", tests: row.tests, coldLagering: "", sensoryProfile: "", celiacAssessment: "" }); }
   }
   const isNeg = (t: BeerTest) => t.result === "negative" || (t.result === "numeric" && (t.ppm ?? 99) < 20);
   const isPos = (t: BeerTest) => t.result === "positive" || (t.result === "numeric" && (t.ppm ?? 0) >= 20);
