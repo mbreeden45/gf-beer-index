@@ -43,3 +43,8 @@ next-env.d.ts
 # ingest cache + local db
 .cache/
 data/beers.db*
+
+# third-party agent skills (unreviewed)
+.agents/
+.claude/
+skills-lock.json
