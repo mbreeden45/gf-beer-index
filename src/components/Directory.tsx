@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import { Search, Pin, PinOff, ChevronDown, ExternalLink, Scale, X } from "lucide-react";
+import { Search, Pin, PinOff, ChevronDown, ExternalLink, Scale, X, MessageSquare } from "lucide-react";
 import type { Beer, Classification } from "@/lib/types";
 import { CLASS_LABEL } from "@/lib/types";
 import { AssayTag, ClassStamp, latestTest } from "./Stamps";
@@ -25,6 +25,7 @@ export default function Directory({ beers }: { beers: Beer[] }) {
   const [tab, setTab] = useState("all");
   const [q, setQ] = useState("");
   const [open, setOpen] = useState<string | null>(null);
+  const [notesOpen, setNotesOpen] = useState<string | null>(null);
   const [pinned, setPinned] = useState<string[]>([]);
   const [compareOpen, setCompareOpen] = useState(false);
 
@@ -97,10 +98,18 @@ export default function Directory({ beers }: { beers: Beer[] }) {
 
               <div className="mt-auto pt-4">
                 <AssayTag tests={b.tests} />
-                <button onClick={() => setOpen(isOpen ? null : b.slug)} aria-expanded={isOpen}
-                  className="mt-3 flex w-full items-center justify-between border-t border-rule pt-3 font-mono text-[11px] uppercase tracking-wider text-copper hover:text-stout">
-                  Test provenance <ChevronDown size={14} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                </button>
+                <div className="mt-3 grid grid-cols-2 gap-2 border-t border-rule pt-3">
+                  <button onClick={() => setOpen(isOpen ? null : b.slug)} aria-expanded={isOpen}
+                    className="flex items-center justify-between border border-rule px-2.5 py-2 font-mono text-[10px] uppercase tracking-wider text-copper hover:border-copper">
+                    Test provenance <ChevronDown size={13} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  <button onClick={() => setNotesOpen(notesOpen === b.slug ? null : b.slug)} aria-expanded={notesOpen === b.slug}
+                    className={`flex items-center justify-between border px-2.5 py-2 font-mono text-[10px] uppercase tracking-wider ${notesOpen === b.slug ? "border-copper bg-copper text-paper" : "border-rule text-copper hover:border-copper"}`}>
+                    <span className="inline-flex items-center gap-1.5"><MessageSquare size={13} aria-hidden /> Reader notes</span>
+                    <ChevronDown size={13} className={`transition-transform ${notesOpen === b.slug ? "rotate-180" : ""}`} />
+                  </button>
+                </div>
+                {notesOpen === b.slug && <div className="slide-up mt-2"><BeerComments beerId={b.slug} /></div>}
                 {isOpen && (
                   <div className="slide-up mt-2 space-y-3">
                     {b.tests.length === 0 && <p className="text-sm text-muted">No lab or kit result on file. Classification is based on recipe and brewing method{b.sourceUrl ? "" : ", as publicly documented by the brewer"}.</p>}
@@ -125,7 +134,6 @@ export default function Directory({ beers }: { beers: Beer[] }) {
                         ))}
                       </div>
                     )}
-                    <BeerComments beerId={b.slug} />
                     {b.sourceUrl && <a href={b.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[11px] text-pine underline underline-offset-2">Listing source <ExternalLink size={11} /></a>}
                   </div>
                 )}
