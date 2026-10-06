@@ -1,4 +1,4 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenAI, ThinkingLevel } from "@google/genai";
 import { getBeers } from "@/lib/data";
 import { CLASS_LABEL, type Beer } from "@/lib/types";
 
@@ -98,7 +98,7 @@ export async function POST(req: Request) {
       ai.models.generateContentStream({
         model,
         contents: msgs,
-        config: { systemInstruction: systemPrompt(matches), temperature: 0.7, maxOutputTokens: 700, abortSignal: AbortSignal.timeout(15_000) },
+        config: { systemInstruction: systemPrompt(matches), temperature: 0.7, maxOutputTokens: 1500, thinkingConfig: { thinkingLevel: ThinkingLevel.LOW }, abortSignal: AbortSignal.timeout(15_000) },
       });
     let stream;
     for (let attempt = 0; ; attempt++) {
