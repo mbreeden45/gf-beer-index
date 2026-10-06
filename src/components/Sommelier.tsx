@@ -3,11 +3,26 @@ import { useEffect, useRef, useState } from "react";
 import { MessageCircle, Send, X, Wheat } from "lucide-react";
 
 type Msg = { role: "user" | "assistant"; content: string; status?: string };
-const SUGGESTIONS = [
-  "I have celiac and love hoppy IPAs",
-  "Something light for a hot day",
-  "Best dark beer without barley?",
-  "Is Modelo Especial okay for me?",
+type Profile = "celiac" | "sensitive" | "other";
+type Pick = { label: string; benchmark?: string; msg: string };
+
+const PROFILES: { id: Profile; label: string; sub: string; who: string; intro: string }[] = [
+  { id: "celiac", label: "Strict Celiac", sub: "Dedicated NGCI only; no barley, no enzyme-reduced", who: "a strict celiac", intro: "I have strict celiac disease and" },
+  { id: "sensitive", label: "Gluten Sensitive", sub: "Tolerates low-ppm adjuncts like Modelo or Clarex beers", who: "gluten sensitive", intro: "I'm gluten sensitive and" },
+  { id: "other", label: "Ordering for Someone Else", sub: "Help me find a safe choice for a friend", who: "ordering for someone else who needs gluten-free beer", intro: "I'm ordering for a friend who avoids gluten, and they" },
+];
+
+const CELIAC_PICKS: Pick[] = [
+  { label: "Crisp Lager / Blonde", benchmark: "Holidaily Favorite Blonde", msg: "love crisp lagers and blondes like Holidaily Favorite Blonde. What dedicated NGCI beers match that profile?" },
+  { label: "Hoppy West Coast / Hazy IPA", benchmark: "Ghostfish Grapefruit / Watcher", msg: "love hoppy West Coast and hazy IPAs like Ghostfish Grapefruit and Watcher. What dedicated NGCI beers match that profile?" },
+  { label: "Dark Stout / Porter", benchmark: "Ground Breaker Dark Ale", msg: "love dark stouts and porters like Ground Breaker Dark Ale. What dedicated NGCI beers match that profile?" },
+  { label: "Cider / Tart Sour", msg: "love ciders and tart sours. What dedicated NGCI options match that profile?" },
+];
+const OTHER_PICKS: Pick[] = [
+  { label: "Mexican / Crisp Adjunct Lager", benchmark: "Modelo Especial / Corona", msg: "usually drink Mexican lagers like Modelo Especial or Corona. What other low-ppm or gluten-safe beers should I try?" },
+  { label: "Gluten-Reduced Craft IPA", benchmark: "Stone Delicious IPA", msg: "usually drink gluten-reduced craft IPAs like Stone Delicious IPA. What similar beers should I try?" },
+  { label: "Dedicated NGCI Craft", benchmark: "Ghostfish", msg: "enjoy dedicated NGCI craft beer like Ghostfish. What else in the catalog should I try?" },
+  { label: "Session / Golden Ale", benchmark: "Kona Big Wave profile", msg: "enjoy session golden ales like Kona Big Wave. What similar beers should I try?" },
 ];
 
 export default function Sommelier() {
@@ -15,6 +30,8 @@ export default function Sommelier() {
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
+  const [step, setStep] = useState<1 | 2>(1);
+  const [toleranceProfile, setToleranceProfile] = useState<Profile | null>(null);
   const end = useRef<HTMLDivElement>(null);
   const box = useRef<HTMLTextAreaElement>(null);
 
@@ -84,16 +101,41 @@ export default function Sommelier() {
             <button onClick={() => setOpen(false)} aria-label="Close"><X size={18} /></button>
           </header>
           <div className="flex-1 space-y-3 overflow-y-auto p-4 text-sm leading-relaxed">
-            {msgs.length === 0 && (
-              <div>
-                <p className="text-muted">Tell me what you like and how careful you need to be. I only pour from this index, and I&apos;ll always say how solid the evidence is.</p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {SUGGESTIONS.map((s) => (
-                    <button key={s} onClick={() => send(s)} className="border border-rule bg-paper-deep px-2.5 py-1.5 text-left text-xs hover:border-copper hover:text-copper">{s}</button>
-                  ))}
+            {msgs.length === 0 && (() => {
+              const prof = PROFILES.find((x) => x.id === toleranceProfile);
+              const chip = "block w-full border border-rule bg-paper px-3 py-2 text-left hover:border-copper hover:text-copper disabled:opacity-50";
+              return (
+                <div className="border border-rule bg-paper-deep p-4">
+                  <p className="font-mono text-[10px] uppercase tracking-wider text-muted">Tasting Intake: Step {step} of 2</p>
+                  {step === 1 || !prof ? (
+                    <>
+                      <h2 className="mt-1 font-display text-lg leading-snug">Welcome to the taproom. To calibrate recommendations, what is your tolerance profile?</h2>
+                      <div className="mt-3 space-y-2">
+                        {PROFILES.map((x) => (
+                          <button key={x.id} onClick={() => { setToleranceProfile(x.id); setStep(2); }} className={chip}>
+                            <span className="block font-semibold">{x.label}</span>
+                            <span className="block text-xs text-muted">{x.sub}</span>
+                          </button>
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <h2 className="mt-1 font-display text-lg leading-snug">What style or benchmark beer do you usually enjoy?</h2>
+                      <div className="mt-3 space-y-2">
+                        {(prof.id === "celiac" ? CELIAC_PICKS : OTHER_PICKS).map((x) => (
+                          <button key={x.label} disabled={busy} onClick={() => send(`${prof.intro} ${x.msg}`)} className={chip}>
+                            <span className="block font-semibold">{x.label}</span>
+                            {x.benchmark && <span className="block font-mono text-xs text-muted">{x.benchmark}</span>}
+                          </button>
+                        ))}
+                      </div>
+                      <button disabled={busy} onClick={() => send(`I am ${prof.who}. What are the best options for me in the catalog?`)} className="mt-3 text-xs text-muted underline hover:text-copper">Skip and just recommend top picks</button>
+                    </>
+                  )}
                 </div>
-              </div>
-            )}
+              );
+            })()}
             {msgs.map((m, i) => (
               <div key={i} className={m.role === "user" ? "ml-8 border border-rule bg-paper-deep p-3" : "border-l-2 border-gold pl-3"}>
                 <p className="whitespace-pre-wrap">{m.content ? render(m.content) : <span className="text-muted">{m.status ?? "Pulling a few taps…"}</span>}</p>
