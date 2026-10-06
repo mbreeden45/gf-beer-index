@@ -1,13 +1,13 @@
 import { GoogleGenAI } from "@google/genai";
 import { getBeers } from "@/lib/data";
-import type { Beer } from "@/lib/types";
+import { CLASS_LABEL, type Beer } from "@/lib/types";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
 // Newest models are often capacity-limited; fall through the list on 429/5xx.
 const MODELS = [process.env.GEMINI_MODEL, "gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.8-flash"].filter((m, i, a): m is string => !!m && a.indexOf(m) === i);
-const MAX_MESSAGES = 16;
+const MAX_MESSAGES = 5; // last 3 user turns (plus the 2 replies between them)
 const MAX_CHARS = 1200;
 
 // Naive per-instance rate limit: 12 requests / minute / IP.
@@ -22,28 +22,53 @@ function limited(ip: string) {
 
 const CLS: Record<Beer["classification"], string> = { dedicated_ngci: "NGCI", crafted_to_remove: "CTR", adjunct_low_ppm: "LOW", standard_gluten: "STD" };
 
-// Compact on purpose: the whole catalog rides along on every request, so tokens matter for rate limits.
+// Compact on purpose: only a few retrieved beers ride along, so tokens stay low for rate limits.
 function catalogLine(b: Beer) {
   const t = [...b.tests].sort((x, y) => (y.testedAt ?? "").localeCompare(x.testedAt ?? ""))[0];
   const test = t ? (t.ppm != null ? `~${t.ppm}ppm` : t.result === "inconclusive" ? "unclear" : t.result) : "-";
-  const where = b.origin?.split(",").pop()?.trim() ?? "";
-  return [b.brewery.split(/[(/]/)[0].trim(), b.name, b.style, CLS[b.classification], b.abv != null ? `${b.abv}%` : "", b.ibu ? `${b.ibu}IBU` : "", b.grains.join("+"), test, where].join("|");
+  return [b.brewery.split(/[(/]/)[0].trim(), b.name, b.style, CLS[b.classification], b.abv != null ? `${b.abv}%` : "", b.grains.join("+"), test].join("|");
 }
 
-function systemPrompt(beers: Beer[]) {
-  return `You are the Sommelier for the Gluten-Free Beer Index: a warm, knowledgeable, slightly witty taproom guide for people avoiding gluten.
+const STOP = new Set(["the", "and", "for", "with", "any", "can", "you", "are", "what", "which", "beer", "beers", "gluten", "free", "recommend", "have", "about", "like", "good", "best", "something"]);
 
-RULES
-- Recommend ONLY beers from the catalog below, by exact brewery and name. If nothing fits, say so and suggest the closest options.
-- Class codes: NGCI = 100% NGCI, CTR = Crafted to Remove, LOW = Naturally Low ppm, STD = Standard Gluten. In plain words: 100% NGCI (brewed from naturally gluten-free grains, no barley), Crafted to Remove (barley beer treated with enzymes; kits can misread it, many celiac organisations advise caution), Naturally Low ppm (barley beer that read negative on home kits; unverified, NOT a safety guarantee), Standard Gluten (not for celiac).
-- For anyone who says they have celiac disease, lead with 100% NGCI beers and be candid about the limits of the other classes. Never claim a beer is "safe". Home kits are qualitative screens, and ppm figures are visual estimates, not lab results.
-- Quote test evidence from the catalog when relevant (kit, result). Never invent ppm values, ABV, or test results.
-- Keep replies concise (under ~180 words), with short lists of 2-4 beers, each with one line on why. Talk about flavour using style, grains and ABV.
-- Formatting: plain text with **bold** for beer names only; use "-" for bullets; no italics or other markdown.
-- You are not a doctor; for medical questions suggest consulting a clinician. Decline unrelated requests politely.
+// Basic keyword retrieval over name/brewery/style/grains/class; returns the top 3-5 matches.
+function retrieve(query: string, beers: Beer[]) {
+  const words = (query.toLowerCase().match(/[a-z0-9]{3,}/g) ?? []).filter((w) => !STOP.has(w));
+  if (!words.length) return [];
+  const scored = beers
+    .map((b) => {
+      const name = `${b.name} ${b.brewery}`.toLowerCase();
+      const meta = `${b.style} ${b.grains.join(" ")} ${CLASS_LABEL[b.classification]}`.toLowerCase();
+      let score = 0;
+      for (const w of words) {
+        if (name.includes(w)) score += 3;
+        else if (meta.includes(w)) score += 1;
+      }
+      return { b, score };
+    })
+    .filter((x) => x.score > 0)
+    .sort((x, y) => y.score - x.score);
+  return scored.slice(0, 5).map((x) => x.b);
+}
 
-CATALOG (brewery|name|style|class|ABV|IBU|grains|latest test|country)
-${beers.map(catalogLine).join("\n")}`;
+const SYSTEM = `You are the Taproom Sommelier and Celiac Safety Advisor for the Gluten-Free Beer Index: a warm, knowledgeable, slightly witty guide for people avoiding gluten.
+
+TAXONOMY
+- NGCI: brewed from naturally gluten-free grains (millet, rice, sorghum), no barley. The safest category for celiacs.
+- Enzyme-reduced / Crafted to Remove (e.g. Clarex-treated): barley beer where enzymes break down gluten. Test kits can misread it and many celiac organisations advise caution.
+- Low-ppm lagers (e.g. Modelo, Corona): barley beers that read low or negative on home kits. Unverified, not a safety guarantee.
+
+SAFETY RULES
+- Warn celiacs against barley-based and enzyme-reduced beers; lead with NGCI options.
+- For sensitive drinkers, give practical ppm estimates (<20 ppm is the usual gluten-free threshold) and say clearly they are estimates from home kits, not lab results.
+- Never call a beer "safe". Never invent ppm, ABV or test results; use only the matched beers below, by exact brewery and name. If none match, say so and suggest the closest style.
+- You are not a doctor; suggest consulting a clinician for medical questions. Decline unrelated requests politely.
+
+STYLE
+Concise (under ~180 words), 2-4 beers in short "-" lists with one line each. Plain text, **bold** for beer names only.`;
+
+function systemPrompt(matches: Beer[]) {
+  return matches.length ? `${SYSTEM}\n\nMATCHED BEERS (brewery|name|style|class|ABV|grains|latest test; NGCI=100% NGCI, CTR=Crafted to Remove, LOW=Naturally Low ppm, STD=Standard)\n${matches.map(catalogLine).join("\n")}` : SYSTEM;
 }
 
 export async function POST(req: Request) {
@@ -66,13 +91,14 @@ export async function POST(req: Request) {
   if (!msgs.length || msgs[msgs.length - 1].role !== "user") return Response.json({ error: "Send a question." }, { status: 400 });
 
   const ai = new GoogleGenAI({ apiKey });
-  const beers = await getBeers();
+  const lastUser = msgs[msgs.length - 1].parts[0].text;
+  const matches = retrieve(lastUser, await getBeers());
   try {
     const start = (model: string) =>
       ai.models.generateContentStream({
         model,
         contents: msgs,
-        config: { systemInstruction: systemPrompt(beers), temperature: 0.7, maxOutputTokens: 700, abortSignal: AbortSignal.timeout(15_000) },
+        config: { systemInstruction: systemPrompt(matches), temperature: 0.7, maxOutputTokens: 700, abortSignal: AbortSignal.timeout(15_000) },
       });
     let stream;
     for (let attempt = 0; ; attempt++) {
