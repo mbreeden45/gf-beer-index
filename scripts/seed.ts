@@ -20,6 +20,8 @@ async function main() {
     await db.delete(pgSchema.beers);
     for (const c of chunk(beerRows)) await db.insert(pgSchema.beers).values(c);
     for (const c of chunk(testRows)) await db.insert(pgSchema.beerTests).values(c);
+    // Supabase exposes public tables via its REST API; RLS with no policies blocks that. The app connects as the owner role, which bypasses RLS.
+    for (const t of ["beers", "beer_tests", "beer_submissions", "beer_comments"]) await client.unsafe(`ALTER TABLE IF EXISTS ${t} ENABLE ROW LEVEL SECURITY`);
     await client.end();
     console.log(`Postgres seeded: ${beerRows.length} beers, ${testRows.length} tests`);
   } else {
