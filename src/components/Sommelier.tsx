@@ -43,6 +43,22 @@ export default function Sommelier() {
     el.style.height = `${el.scrollHeight}px`;
   }, [input, open]);
 
+  // Full-screen on phones: lock page scroll and let the system back gesture close the sheet.
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    history.pushState({ sommelier: true }, "");
+    const onPop = () => setOpen(false);
+    window.addEventListener("popstate", onPop);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("popstate", onPop);
+    };
+  }, [open]);
+
+  const close = () => { if (history.state?.sommelier) history.back(); else setOpen(false); };
+
   useEffect(() => { end.current?.scrollIntoView({ behavior: "smooth", block: "end" }); }, [msgs, open]);
 
   async function send(text: string) {
@@ -95,10 +111,10 @@ export default function Sommelier() {
         </button>
       )}
       {open && (
-        <section aria-label="Ask the Sommelier" className="spec-card slide-up fixed inset-x-3 bottom-3 z-50 flex max-h-[80vh] flex-col sm:inset-x-auto sm:right-5 sm:bottom-5 sm:w-[26rem]">
-          <header className="chalk flex items-center justify-between px-4 py-3 text-paper">
+        <section aria-label="Ask the Sommelier" className="spec-card slide-up fixed inset-0 z-50 flex h-dvh flex-col max-sm:border-0 max-sm:shadow-none sm:inset-auto sm:right-5 sm:bottom-5 sm:h-auto sm:max-h-[80vh] sm:w-[26rem]">
+          <header className="chalk flex items-center justify-between px-4 pb-3 pt-[max(0.75rem,env(safe-area-inset-top))] text-paper">
             <div className="flex items-center gap-2"><Wheat size={16} className="text-gold" aria-hidden /><span className="font-display text-lg">The Sommelier</span></div>
-            <button onClick={() => setOpen(false)} aria-label="Close"><X size={18} /></button>
+            <button onClick={close} aria-label="Close" className="flex items-center gap-1.5 text-sm"><span className="sm:hidden">Back to the index</span><X size={18} /></button>
           </header>
           <div className="flex-1 space-y-3 overflow-y-auto p-4 text-sm leading-relaxed">
             {msgs.length === 0 && (() => {
@@ -150,7 +166,7 @@ export default function Sommelier() {
               className="max-h-40 min-w-0 flex-1 resize-none overflow-y-auto border border-rule bg-paper px-3 py-2 text-base leading-snug md:text-sm outline-none focus:border-copper" />
             <button type="submit" disabled={busy || !input.trim()} aria-label="Send" className="h-9 shrink-0 bg-copper px-3 text-paper disabled:opacity-40"><Send size={16} /></button>
           </form>
-          <p className="border-t border-rule px-3 py-1.5 text-[10px] text-muted">AI guide, not medical advice. Test kits are screens, not safety guarantees.</p>
+          <p className="border-t border-rule px-3 pb-[max(0.375rem,env(safe-area-inset-bottom))] pt-1.5 text-[10px] text-muted">AI guide, not medical advice. Test kits are screens, not safety guarantees.</p>
         </section>
       )}
     </>
