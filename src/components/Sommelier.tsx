@@ -105,7 +105,7 @@ export default function Sommelier() {
             <textarea ref={box} rows={1} value={input} maxLength={1000} placeholder="Ask about a beer, style or mood…" aria-label="Your question"
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); send(input); } }}
-              className="max-h-40 min-w-0 flex-1 resize-none overflow-y-auto border border-rule bg-paper px-3 py-2 text-sm leading-snug outline-none focus:border-copper" />
+              className="max-h-40 min-w-0 flex-1 resize-none overflow-y-auto border border-rule bg-paper px-3 py-2 text-base leading-snug md:text-sm outline-none focus:border-copper" />
             <button type="submit" disabled={busy || !input.trim()} aria-label="Send" className="h-9 shrink-0 bg-copper px-3 text-paper disabled:opacity-40"><Send size={16} /></button>
           </form>
           <p className="border-t border-rule px-3 py-1.5 text-[10px] text-muted">AI guide, not medical advice. Test kits are screens, not safety guarantees.</p>
