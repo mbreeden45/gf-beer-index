@@ -3,6 +3,8 @@ import { useMemo, useState } from "react";
 import { Search, Pin, PinOff, ChevronDown, ExternalLink, Scale, X, MessageSquare } from "lucide-react";
 import type { Beer, Classification } from "@/lib/types";
 import { CLASS_LABEL } from "@/lib/types";
+import { slugify } from "@/lib/site";
+import Link from "next/link";
 import { AssayTag, ClassStamp, latestTest } from "./Stamps";
 import BeerComments from "./BeerComments";
 
@@ -74,9 +76,9 @@ export default function Directory({ beers }: { beers: Beer[] }) {
                   {isPinned ? <PinOff size={14} /> : <Pin size={14} />}
                 </button>
               </div>
-              <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">{b.brewery}</p>
-              <h2 className="font-display text-2xl font-semibold leading-tight">{b.name}</h2>
-              <p className="text-sm italic text-muted">{b.style}{b.origin ? <span className="not-italic"> · {b.origin}</span> : null}</p>
+              <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-muted"><Link href={`/brewery/${slugify(b.brewery)}`} className="hover:text-copper hover:underline underline-offset-4">{b.brewery}</Link></p>
+              <h2 className="font-display text-2xl font-semibold leading-tight"><Link href={`/beer/${b.slug}`} className="hover:text-copper hover:underline underline-offset-4">{b.name}</Link></h2>
+              <p className="text-sm italic text-muted"><Link href={`/style/${slugify(b.style)}`} className="hover:text-copper hover:underline underline-offset-4">{b.style}</Link>{b.origin ? <span className="not-italic"> · {b.origin}</span> : null}</p>
 
               <dl className="mt-4 grid grid-cols-2 divide-x divide-rule border-y border-rule font-mono">
                 <div className="py-2 pr-3"><dt className="text-[10px] text-muted">ABV</dt><dd className="text-lg font-bold">{b.abv != null ? `${b.abv}%` : "—"}</dd></div>
