@@ -60,7 +60,7 @@ export async function POST(req: Request) {
         );
       }
       await q.run(`UPDATE beer_submissions SET status = 'approved' WHERE id = ?`, [body.id]);
-      revalidatePath("/");
+      revalidatePath("/", "layout"); // home, beer/brewery/style/class pages and sitemap
       return Response.json({ ok: true, slug });
     });
   } catch (e) {
