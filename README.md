@@ -29,6 +29,19 @@ Classification of tested beers is derived from the kit results on file: any posi
 - **Admin panel (`/admin`):** passcode-gated review of pending submissions (approve inserts the beer into the directory; reject asks for confirmation) and comment moderation (delete with confirmation).
 - **Email alerts:** new submissions send an email (via Resend) with a link to `/admin`.
 
+## SEO
+
+Every beer, brewery, style and class has its own statically generated, crawlable page (revalidated hourly, with new beers rendered on demand):
+
+| Route | Content |
+|---|---|
+| `/beer/[slug]` | "Is X gluten-free?" page with test results, FAQ and Breadcrumb/Product/FAQPage JSON-LD |
+| `/brewery/[slug]`, `/style/[slug]` | Beers grouped by brewery or style, sorted by gluten status |
+| `/class/[slug]` | The four classes (`dedicated-gluten-free`, `gluten-reduced`, `naturally-low-ppm`, `standard-gluten`) |
+| `/sitemap.xml`, `/robots.txt` | Generated from the catalog; `/admin` and `/api` are excluded and `/admin` is `noindex` |
+
+Set `NEXT_PUBLIC_SITE_URL` to the canonical origin (for example a custom domain) so canonicals, the sitemap and JSON-LD use it. Approving a submission revalidates all of these pages.
+
 ## Tech stack
 
 Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS 4, Drizzle ORM, postgres-js, better-sqlite3, Zod 4, Cheerio, Playwright, `@google/genai`, Resend, Lucide icons. Fonts: Fraunces, Work Sans, JetBrains Mono. Hosted on Vercel with Supabase Postgres.
@@ -101,7 +114,7 @@ Approving a submission inserts the beer with generated copy and a "Community sub
 ## Project layout
 
 ```
-src/app/            pages (/, /admin) and API routes
+src/app/            pages (/, /beer, /brewery, /style, /class, /admin), sitemap, robots, OG image and API routes
 src/components/     Directory, Stamps, Sommelier, BeerComments, SubmitBeer
 src/lib/            types (Zod), data access, store, profile/flavor copy, guards
 src/db/             Drizzle schemas and idempotent DDL
