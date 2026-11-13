@@ -6,7 +6,7 @@ export const runtime = "nodejs";
 export const maxDuration = 60;
 
 // Newest models are often capacity-limited; fall through the list on 429/5xx.
-const MODELS = [process.env.GEMINI_MODEL, "gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.8-flash"].filter((m, i, a): m is string => !!m && a.indexOf(m) === i);
+const MODELS = [process.env.GEMINI_MODEL, "gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.8-flash"].filter((m, i, a): m is string => !!m && a.indexOf(m) === i);
 const MAX_MESSAGES = 5; // last 3 user turns (plus the 2 replies between them)
 const MAX_CHARS = 1200;
 

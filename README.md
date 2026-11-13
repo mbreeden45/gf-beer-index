@@ -98,7 +98,7 @@ Only objective facts are stored: name, brewery, ABV, ingredients, kit, result, d
 
 ### Sommelier chat (`src/app/api/chat/route.ts`)
 
-Each question sends the full compacted catalog (about 6.6k tokens) plus rules to Gemini and streams the answer. It tries `gemini-3.5-flash` first with fallbacks on temporary (5xx) errors, filters out model "thought" output, and is limited to 12 requests per minute per IP. A quota error (429) is never retried, because retrying only burns free-tier quota; the UI shows "Taproom Sommelier is catching its breath. Please try again in a minute."
+Each question sends a short rules prompt plus the top 3-5 keyword-matched beers (and the last 3 turns of history) to Gemini and streams the answer. It tries `gemini-3.5-flash-lite` first with fallbacks on temporary (5xx) errors, filters out model "thought" output, and is limited to 12 requests per minute per IP. A quota error (429) is never retried, because retrying only burns free-tier quota; the UI shows "Taproom Sommelier is catching its breath. Please try again in a minute."
 
 ### Community features
 
