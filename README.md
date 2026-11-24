@@ -2,7 +2,7 @@
 
 A field guide and test tracker for gluten-free, gluten-reduced and naturally low-ppm beer. About 240 beers, each sorted into one of four classes and linked to the public home-kit test results found for it.
 
-**Live:** https://gf-beer-index.vercel.app
+**Live:** https://gf-beer.michaelbreeden.me
 
 > Not medical advice. Home test kits are qualitative screens with limited sensitivity. People with coeliac disease should confirm with their clinician and the brewer.
 

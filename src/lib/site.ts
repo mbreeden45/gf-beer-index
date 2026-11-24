@@ -1,5 +1,6 @@
-/** Canonical origin used for metadata, sitemap and JSON-LD. Set NEXT_PUBLIC_SITE_URL when a custom domain is attached. */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://gf-beer-index.vercel.app").replace(/\/+$/, "");
+/** Canonical origin used for metadata, sitemap and JSON-LD. NEXT_PUBLIC_SITE_URL overrides it (e.g. for a different domain). */
+export const CANONICAL_HOST = "gf-beer.michaelbreeden.me";
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || `https://${CANONICAL_HOST}`).replace(/\/+$/, "");
 export const SITE_NAME = "The Gluten-Free Beer Index";
 
 export function slugify(s: string): string {
