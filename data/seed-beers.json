@@ -522,6 +522,32 @@
     ]
   },
   {
+    "slug": "anheuser-busch-redbridge",
+    "name": "Redbridge",
+    "brewery": "Anheuser-Busch",
+    "style": "Amber Lager",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "sorghum"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on sorghum rather than barley, this Amber Lager leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://www.foodingredientsfirst.com/news/anheuser-busch-introduces-first-nationally-available-sorghum-beer-redbridge_1.html",
+    "origin": "St. Louis, Missouri, USA",
+    "flavor": [
+      "clean",
+      "crisp",
+      "easy-drinking"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "anheuser-busch-inbev-stella-artois",
     "name": "Stella Artois",
     "brewery": "Anheuser-Busch InBev",
