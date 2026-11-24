@@ -4497,6 +4497,55 @@
     "tests": []
   },
   {
+    "slug": "green-s-endeavour-dubbel",
+    "name": "Endeavour Dubbel",
+    "brewery": "Green's",
+    "style": "Dubbel",
+    "abv": 7,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "millet",
+      "buckwheat",
+      "rice",
+      "sorghum"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on millet, buckwheat, rice, sorghum rather than barley, this Dubbel leans on the grain's natural character instead of a wheat-style malt backbone. It carries a robust 7% ABV.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://merchantduvin.com/the-beers/greens-dubbel-ale/",
+    "origin": "Lochristi, Belgium",
+    "flavor": [],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
+    "slug": "green-s-gluten-free-ipa",
+    "name": "Gluten Free IPA",
+    "brewery": "Green's",
+    "style": "IPA",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on grains not itemised by the source rather than barley, this IPA leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://merchantduvin.com/the-beers/greens-india-pale-ale",
+    "origin": "Lochristi, Belgium",
+    "flavor": [
+      "hoppy",
+      "citrus",
+      "piney"
+    ],
+    "notes": [],
+    "grainsBasis": null,
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "ground-breaker-brewing-99-light",
     "name": "99 Light",
     "brewery": "Ground Breaker Brewing",
@@ -6118,6 +6167,33 @@
     ]
   },
   {
+    "slug": "lakefront-brewery-new-grist",
+    "name": "New Grist",
+    "brewery": "Lakefront Brewery",
+    "style": "Pilsner",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "sorghum",
+      "rice"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on sorghum, rice rather than barley, this Pilsner leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://lakefrontbrewery.com/beer/new-grist",
+    "origin": "Milwaukee, Wisconsin, USA",
+    "flavor": [
+      "crisp",
+      "grassy hops",
+      "snappy"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "lion-nathan-steinlager-pure",
     "name": "Steinlager Pure",
     "brewery": "Lion Nathan",
@@ -7278,6 +7354,30 @@
         "sourceUrl": "https://smartgurlsolutions.com/2020/10/28/atomic-pumpkin-ale/"
       }
     ]
+  },
+  {
+    "slug": "new-planet-gluten-free-blonde-ale",
+    "name": "Gluten-Free Blonde Ale",
+    "brewery": "New Planet",
+    "style": "Blonde Ale",
+    "abv": 4.5,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on grains not itemised by the source rather than barley, this Blonde Ale leans on the grain's natural character instead of a wheat-style malt backbone. It carries a light 4.5% ABV.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://bestglutenfreebeers.com/new-planet-blonde-ale/",
+    "origin": "Colorado, USA",
+    "flavor": [
+      "light",
+      "smooth",
+      "lightly sweet"
+    ],
+    "notes": [],
+    "grainsBasis": null,
+    "refs": [],
+    "tests": []
   },
   {
     "slug": "north-coast-brewing-co-old-rasputin-imperial-russian-stout",
