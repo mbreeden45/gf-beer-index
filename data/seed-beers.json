@@ -767,6 +767,130 @@
     ]
   },
   {
+    "slug": "aurochs-brewing-aurochs-amber-ale",
+    "name": "Aurochs Amber Ale",
+    "brewery": "Aurochs Brewing",
+    "style": "Amber Ale",
+    "abv": 5.5,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on grains not itemised by the source rather than barley, this Amber Ale leans on the grain's natural character instead of a wheat-style malt backbone. It carries a mid-weight 5.5% ABV.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://glutenfreedad.org/gluten-free-beer-list/",
+    "origin": null,
+    "flavor": [
+      "toasty",
+      "caramel",
+      "malty"
+    ],
+    "notes": [],
+    "grainsBasis": null,
+    "refs": [],
+    "tests": []
+  },
+  {
+    "slug": "aurochs-brewing-aurochs-blonde-ale",
+    "name": "Aurochs Blonde Ale",
+    "brewery": "Aurochs Brewing",
+    "style": "Blonde Ale",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on grains not itemised by the source rather than barley, this Blonde Ale leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://glutenfreedad.org/gluten-free-beer-list/",
+    "origin": null,
+    "flavor": [
+      "light",
+      "smooth",
+      "lightly sweet"
+    ],
+    "notes": [],
+    "grainsBasis": null,
+    "refs": [],
+    "tests": []
+  },
+  {
+    "slug": "aurochs-brewing-aurochs-hazy-ipa",
+    "name": "Aurochs Hazy IPA",
+    "brewery": "Aurochs Brewing",
+    "style": "Hazy IPA",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "millet",
+      "quinoa",
+      "buckwheat"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on millet, quinoa, buckwheat rather than barley, this Hazy IPA leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://glutenfreedad.org/gluten-free-beer-list/",
+    "origin": null,
+    "flavor": [
+      "juicy",
+      "tropical",
+      "soft"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
+    "slug": "aurochs-brewing-aurochs-light-lager",
+    "name": "Aurochs Light Lager",
+    "brewery": "Aurochs Brewing",
+    "style": "Light Lager",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on grains not itemised by the source rather than barley, this Light Lager leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://glutenfreedad.org/gluten-free-beer-list/",
+    "origin": null,
+    "flavor": [
+      "clean",
+      "crisp",
+      "easy-drinking"
+    ],
+    "notes": [],
+    "grainsBasis": null,
+    "refs": [],
+    "tests": []
+  },
+  {
+    "slug": "aurochs-brewing-aurochs-porter",
+    "name": "Aurochs Porter",
+    "brewery": "Aurochs Brewing",
+    "style": "Porter",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on grains not itemised by the source rather than barley, this Porter leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://glutenfreedad.org/gluten-free-beer-list/",
+    "origin": null,
+    "flavor": [
+      "roasty",
+      "cocoa",
+      "coffee"
+    ],
+    "notes": [],
+    "grainsBasis": null,
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "ayinger-celebrator-doppelbock",
     "name": "Celebrator Doppelbock",
     "brewery": "Ayinger",
@@ -847,6 +971,32 @@
         "sourceUrl": "https://www.lowgluten.org/rothaus-pils-gluten-test/"
       }
     ]
+  },
+  {
+    "slug": "bard-s-tale-beer-company-original-sorghum-malt-beer",
+    "name": "Original Sorghum Malt Beer",
+    "brewery": "Bard's Tale Beer Company",
+    "style": "Lager",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "sorghum"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on sorghum rather than barley, this Lager leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://www.beeradvocate.com/beer/profile/11034/63083/",
+    "origin": null,
+    "flavor": [
+      "clean",
+      "crisp",
+      "easy-drinking"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
   },
   {
     "slug": "bass-brewers-ltd-bass-ale",
@@ -4497,6 +4647,35 @@
     "tests": []
   },
   {
+    "slug": "green-s-discovery-amber-ale",
+    "name": "Discovery Amber Ale",
+    "brewery": "Green's",
+    "style": "Amber Ale",
+    "abv": 6,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "buckwheat",
+      "millet",
+      "sorghum",
+      "rice"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on buckwheat, millet, sorghum, rice rather than barley, this Amber Ale leans on the grain's natural character instead of a wheat-style malt backbone. It carries a mid-weight 6% ABV.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://merchantduvin.com/the-beers/greens-amber-ale/",
+    "origin": "Lochristi, Belgium",
+    "flavor": [
+      "toasty",
+      "caramel",
+      "malty"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "green-s-endeavour-dubbel",
     "name": "Endeavour Dubbel",
     "brewery": "Green's",
@@ -4516,6 +4695,35 @@
     "sourceUrl": "https://merchantduvin.com/the-beers/greens-dubbel-ale/",
     "origin": "Lochristi, Belgium",
     "flavor": [],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
+    "slug": "green-s-enterprise-dry-hopped-lager",
+    "name": "Enterprise Dry-Hopped Lager",
+    "brewery": "Green's",
+    "style": "Lager",
+    "abv": 4.1,
+    "ibu": 18,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "millet",
+      "buckwheat",
+      "rice",
+      "sorghum"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on millet, buckwheat, rice, sorghum rather than barley, this Lager leans on the grain's natural character instead of a wheat-style malt backbone. It carries a light 4.1% ABV.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://merchantduvin.com/the-beers/greens-dry-hopped-lager/",
+    "origin": "Lochristi, Belgium",
+    "flavor": [
+      "clean",
+      "crisp",
+      "easy-drinking"
+    ],
     "notes": [],
     "grainsBasis": "listing",
     "refs": [],
@@ -6194,6 +6402,30 @@
     "tests": []
   },
   {
+    "slug": "lakefront-brewery-new-grist-gose-with-lime",
+    "name": "New Grist Gose with Lime",
+    "brewery": "Lakefront Brewery",
+    "style": "Gose",
+    "abv": null,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on grains not itemised by the source rather than barley, this Gose leans on the grain's natural character instead of a wheat-style malt backbone. It carries an unstated strength.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://lakefrontbrewery.com/beer/new-grist-gose-with-lime",
+    "origin": null,
+    "flavor": [
+      "tart",
+      "bright",
+      "salty-sour"
+    ],
+    "notes": [],
+    "grainsBasis": null,
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "lion-nathan-steinlager-pure",
     "name": "Steinlager Pure",
     "brewery": "Lion Nathan",
@@ -7078,6 +7310,32 @@
     ]
   },
   {
+    "slug": "martin-city-brewing-company-operation-yoga-pants",
+    "name": "Operation Yoga Pants",
+    "brewery": "Martin City Brewing Company",
+    "style": "Golden Ale",
+    "abv": 4.8,
+    "ibu": 15,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "millet"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on millet rather than barley, this Golden Ale leans on the grain's natural character instead of a wheat-style malt backbone. It carries a mid-weight 4.8% ABV.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://martincitytelegraph.com/martin-city-brewery-debuts-yoga-pants-in-a-can/",
+    "origin": null,
+    "flavor": [
+      "light",
+      "smooth",
+      "lightly sweet"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "miller-brewing-company-miller-high-life",
     "name": "Miller High Life",
     "brewery": "Miller Brewing Company",
@@ -7380,6 +7638,34 @@
     "tests": []
   },
   {
+    "slug": "new-planet-gluten-free-pale-ale",
+    "name": "Gluten-Free Pale Ale",
+    "brewery": "New Planet",
+    "style": "Pale Ale",
+    "abv": 6,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "millet",
+      "gluten-free oats",
+      "corn"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on millet, gluten-free oats, corn rather than barley, this Pale Ale leans on the grain's natural character instead of a wheat-style malt backbone. It carries a mid-weight 6% ABV.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://bestglutenfreebeers.com/gluten-free-beer-review-new-planet-pale-ale/",
+    "origin": "Colorado, USA",
+    "flavor": [
+      "balanced",
+      "fruity",
+      "hoppy"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "north-coast-brewing-co-old-rasputin-imperial-russian-stout",
     "name": "Old Rasputin Imperial Russian Stout",
     "brewery": "North Coast Brewing Co.",
@@ -7497,6 +7783,32 @@
       "balanced",
       "fruity",
       "hoppy"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
+    "slug": "omission-ultimate-light-golden-ale",
+    "name": "Ultimate Light Golden Ale",
+    "brewery": "Omission",
+    "style": "Golden Ale",
+    "abv": null,
+    "ibu": null,
+    "classification": "crafted_to_remove",
+    "grains": [
+      "barley"
+    ],
+    "coldLagering": "Enzyme (e.g. prolyl endopeptidase) added during fermentation, then cold conditioning to drop out protein haze.",
+    "sensoryProfile": "A barley-malt Golden Ale where the grain bill keeps a familiar malt-forward structure before enzymatic treatment. It carries an unstated strength.",
+    "celiacAssessment": "Made from barley and treated with an enzyme to cut gluten fragments, and the test kits used on such beers can misread broken-down gluten. Many celiac organisations advise caution with this category.",
+    "sourceUrl": "https://glutenfreedad.org/gluten-free-beer-list/",
+    "origin": null,
+    "flavor": [
+      "light",
+      "smooth",
+      "lightly sweet"
     ],
     "notes": [],
     "grainsBasis": "listing",
@@ -8618,6 +8930,32 @@
     ]
   },
   {
+    "slug": "st-peter-s-brewery-sorgham-beer",
+    "name": "Sorgham Beer",
+    "brewery": "St. Peter's Brewery",
+    "style": "Ale",
+    "abv": 4.2,
+    "ibu": null,
+    "classification": "dedicated_ngci",
+    "grains": [
+      "sorghum"
+    ],
+    "coldLagering": "Not applicable: no gluten-bearing grains to settle out; fermentation is of GF grains.",
+    "sensoryProfile": "Built on sorghum rather than barley, this Ale leans on the grain's natural character instead of a wheat-style malt backbone. It carries a light 4.2% ABV.",
+    "celiacAssessment": "Brewed from naturally gluten-free grains, so there is no barley or wheat in the recipe to remove. Check the brewery's own facility statement if you need confirmation about cross-contact.",
+    "sourceUrl": "https://beermenus.com/beers/4989-st-peter-s-sorgham-beer",
+    "origin": null,
+    "flavor": [
+      "balanced",
+      "fruity",
+      "hoppy"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
+    "tests": []
+  },
+  {
     "slug": "stieglbrauerei-salzburg-stiegl-goldbrau",
     "name": "Stiegl Goldbräu",
     "brewery": "Stieglbrauerei Salzburg",
@@ -8723,6 +9061,32 @@
         "url": "https://untappd.com/b/stone-brewing-stone-delicious-ipa/392748"
       }
     ],
+    "tests": []
+  },
+  {
+    "slug": "stone-brewing-features-benefits-ipa",
+    "name": "Features & Benefits IPA",
+    "brewery": "Stone Brewing",
+    "style": "IPA",
+    "abv": null,
+    "ibu": null,
+    "classification": "crafted_to_remove",
+    "grains": [
+      "barley"
+    ],
+    "coldLagering": "Enzyme (e.g. prolyl endopeptidase) added during fermentation, then cold conditioning to drop out protein haze.",
+    "sensoryProfile": "A barley-malt IPA where the grain bill keeps a familiar malt-forward structure before enzymatic treatment. It carries an unstated strength.",
+    "celiacAssessment": "Made from barley and treated with an enzyme to cut gluten fragments, and the test kits used on such beers can misread broken-down gluten. Many celiac organisations advise caution with this category.",
+    "sourceUrl": "https://glutenfreedad.org/gluten-free-beer-list/",
+    "origin": null,
+    "flavor": [
+      "hoppy",
+      "citrus",
+      "piney"
+    ],
+    "notes": [],
+    "grainsBasis": "listing",
+    "refs": [],
     "tests": []
   },
   {
